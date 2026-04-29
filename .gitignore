@@ -22,17 +22,21 @@ env/
 .DS_Store
 Thumbs.db
 
-# Project artifacts
-experiments/**/checkpoints/
-experiments/**/*.pt
-experiments/**/*.pth
-experiments/**/optuna.db
-experiments/**/optuna_journal.log
-*.log
-
-# Keep experiments/final/ predictions, plots, summary
+# Project artifacts: ignore every experiment run by default, then un-ignore
+# the curated dirs we explicitly want tracked (baselines, final).
+experiments/*
+!experiments/.gitkeep
+!experiments/baselines/
+!experiments/baselines/**
 !experiments/final/
 !experiments/final/**
+
+# Within tracked experiment dirs, still ignore checkpoints + optuna DBs
+**/checkpoints/
+*.pt
+*.pth
+**/optuna.db
+**/optuna_journal.log
 
 # Data: keep Xtrain.mat (it's small, 1 KB), but ignore Xtest if it ever appears next to it
 # Xtest will be added later by the team / instructor

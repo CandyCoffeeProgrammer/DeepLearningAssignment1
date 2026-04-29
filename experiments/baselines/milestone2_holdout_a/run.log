@@ -1,0 +1,120 @@
+11:39:36 [INFO] device = cuda, seed = 42, run_dir = C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\baselines\milestone2_holdout_a
+11:39:36 [INFO] holdout A: train=700  inner_val=100  test=200  seed_window=30
+11:39:36 [INFO] 
+=== training MLP on holdout A ===
+11:39:36 [INFO] model = mlp, params = 6209
+11:39:36 [INFO] epoch    5  train_loss=0.09370  val_mae= 67.621  val_mse= 5067.91  best_mae= 67.621@e5  bad=0/30
+11:39:36 [INFO] epoch   10  train_loss=0.04302  val_mae= 38.957  val_mse= 2087.75  best_mae= 38.957@e10  bad=0/30
+11:39:36 [INFO] epoch   15  train_loss=0.02098  val_mae= 22.745  val_mse=  925.71  best_mae= 22.745@e15  bad=0/30
+11:39:36 [INFO] epoch   20  train_loss=0.01330  val_mae= 20.583  val_mse=  630.26  best_mae= 20.583@e20  bad=0/30
+11:39:37 [INFO] epoch   25  train_loss=0.01041  val_mae= 30.351  val_mse= 1448.87  best_mae= 20.583@e20  bad=1/30
+11:39:37 [INFO] epoch   30  train_loss=0.00833  val_mae= 21.689  val_mse=  829.43  best_mae= 20.583@e20  bad=2/30
+11:39:37 [INFO] epoch   35  train_loss=0.00702  val_mae= 12.305  val_mse=  289.12  best_mae= 12.305@e35  bad=0/30
+11:39:37 [INFO] epoch   40  train_loss=0.00555  val_mae= 16.098  val_mse=  452.98  best_mae= 12.305@e35  bad=1/30
+11:39:37 [INFO] epoch   45  train_loss=0.00425  val_mae= 12.076  val_mse=  288.00  best_mae= 12.076@e45  bad=0/30
+11:39:37 [INFO] epoch   50  train_loss=0.00397  val_mae= 15.296  val_mse=  440.86  best_mae= 12.076@e45  bad=1/30
+11:39:38 [INFO] epoch   55  train_loss=0.00323  val_mae= 14.329  val_mse=  364.52  best_mae= 12.076@e45  bad=2/30
+11:39:38 [INFO] epoch   60  train_loss=0.00261  val_mae= 14.138  val_mse=  356.56  best_mae= 12.076@e45  bad=3/30
+11:39:38 [INFO] epoch   65  train_loss=0.00252  val_mae= 18.562  val_mse=  572.88  best_mae= 12.076@e45  bad=4/30
+11:39:38 [INFO] epoch   70  train_loss=0.00283  val_mae= 14.420  val_mse=  369.47  best_mae= 12.076@e45  bad=5/30
+11:39:38 [INFO] epoch   75  train_loss=0.00179  val_mae=  9.745  val_mse=  234.03  best_mae=  9.745@e75  bad=0/30
+11:39:38 [INFO] epoch   80  train_loss=0.00176  val_mae=  9.277  val_mse=  152.68  best_mae=  9.277@e80  bad=0/30
+11:39:39 [INFO] epoch   85  train_loss=0.00158  val_mae= 12.485  val_mse=  273.80  best_mae=  9.277@e80  bad=1/30
+11:39:39 [INFO] epoch   90  train_loss=0.00146  val_mae= 11.295  val_mse=  233.36  best_mae=  9.277@e80  bad=2/30
+11:39:39 [INFO] epoch   95  train_loss=0.00157  val_mae=  6.771  val_mse=   62.28  best_mae=  6.771@e95  bad=0/30
+11:39:39 [INFO] epoch  100  train_loss=0.00143  val_mae=  2.802  val_mse=   10.72  best_mae=  2.802@e100  bad=0/30
+11:39:39 [INFO] epoch  105  train_loss=0.00149  val_mae=  9.178  val_mse=  169.82  best_mae=  2.802@e100  bad=1/30
+11:39:40 [INFO] epoch  110  train_loss=0.00119  val_mae=  9.106  val_mse=  154.33  best_mae=  2.802@e100  bad=2/30
+11:39:40 [INFO] epoch  115  train_loss=0.00141  val_mae=  2.560  val_mse=   10.27  best_mae=  2.560@e115  bad=0/30
+11:39:40 [INFO] epoch  120  train_loss=0.00113  val_mae= 12.618  val_mse=  284.91  best_mae=  2.560@e115  bad=1/30
+11:39:40 [INFO] epoch  125  train_loss=0.00128  val_mae=  6.744  val_mse=   88.73  best_mae=  2.560@e115  bad=2/30
+11:39:40 [INFO] epoch  130  train_loss=0.00126  val_mae=  8.130  val_mse=  140.24  best_mae=  2.560@e115  bad=3/30
+11:39:40 [INFO] epoch  135  train_loss=0.00098  val_mae=  7.239  val_mse=  105.08  best_mae=  2.560@e115  bad=4/30
+11:39:41 [INFO] epoch  140  train_loss=0.00099  val_mae=  9.065  val_mse=  156.53  best_mae=  2.560@e115  bad=5/30
+11:39:41 [INFO] epoch  145  train_loss=0.00100  val_mae=  3.236  val_mse=   15.63  best_mae=  2.560@e115  bad=6/30
+11:39:41 [INFO] epoch  150  train_loss=0.00117  val_mae=  5.676  val_mse=   65.39  best_mae=  2.560@e115  bad=7/30
+11:39:41 [INFO] epoch  155  train_loss=0.00093  val_mae=  5.032  val_mse=   36.22  best_mae=  2.560@e115  bad=8/30
+11:39:41 [INFO] epoch  160  train_loss=0.00100  val_mae=  7.177  val_mse=   94.54  best_mae=  2.560@e115  bad=9/30
+11:39:41 [INFO] epoch  165  train_loss=0.00124  val_mae=  8.921  val_mse=  166.59  best_mae=  2.560@e115  bad=10/30
+11:39:42 [INFO] epoch  170  train_loss=0.00096  val_mae=  6.116  val_mse=   70.72  best_mae=  2.560@e115  bad=11/30
+11:39:42 [INFO] epoch  175  train_loss=0.00083  val_mae=  3.137  val_mse=   13.84  best_mae=  2.560@e115  bad=12/30
+11:39:42 [INFO] epoch  180  train_loss=0.00090  val_mae=  7.783  val_mse=  114.75  best_mae=  2.560@e115  bad=13/30
+11:39:42 [INFO] epoch  185  train_loss=0.00085  val_mae=  4.292  val_mse=   25.68  best_mae=  2.560@e115  bad=14/30
+11:39:42 [INFO] epoch  190  train_loss=0.00101  val_mae=  5.392  val_mse=   41.65  best_mae=  2.560@e115  bad=15/30
+11:39:42 [INFO] epoch  195  train_loss=0.00102  val_mae=  4.336  val_mse=   25.87  best_mae=  2.560@e115  bad=16/30
+11:39:43 [INFO] epoch  200  train_loss=0.00081  val_mae=  4.375  val_mse=   26.30  best_mae=  2.560@e115  bad=17/30
+11:39:43 [INFO] finished mlp: best_inner_val_mae=2.560 @epoch 115
+11:39:43 [INFO] holdout A recursive 200-step: MAE=14.654  MSE=1060.32  RMSE=32.562  NMSE=0.5341
+11:39:43 [INFO] saved C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\baselines\milestone2_holdout_a\mlp_A_prediction.png
+11:39:43 [INFO] 
+=== training LSTM on holdout A ===
+11:39:43 [INFO] model = lstm, params = 50497
+11:39:43 [INFO] epoch    5  train_loss=0.08305  val_mae= 50.520  val_mse= 3042.96  best_mae= 50.520@e5  bad=0/30
+11:39:43 [INFO] epoch   10  train_loss=0.03951  val_mae= 19.651  val_mse=  490.97  best_mae= 19.651@e10  bad=0/30
+11:39:44 [INFO] epoch   15  train_loss=0.03928  val_mae= 19.542  val_mse=  493.06  best_mae= 19.542@e15  bad=0/30
+11:39:44 [INFO] epoch   20  train_loss=0.03861  val_mae= 19.462  val_mse=  496.51  best_mae= 19.462@e20  bad=0/30
+11:39:44 [INFO] epoch   25  train_loss=0.03747  val_mae= 19.206  val_mse=  546.29  best_mae= 19.206@e25  bad=0/30
+11:39:44 [INFO] epoch   30  train_loss=0.01324  val_mae= 21.881  val_mse=  701.08  best_mae= 19.206@e25  bad=1/30
+11:39:45 [INFO] epoch   35  train_loss=0.01074  val_mae= 37.340  val_mse= 2097.73  best_mae= 19.206@e25  bad=2/30
+11:39:45 [INFO] epoch   40  train_loss=0.00697  val_mae=  5.627  val_mse=   51.77  best_mae=  5.627@e40  bad=0/30
+11:39:45 [INFO] epoch   45  train_loss=0.00560  val_mae= 43.402  val_mse= 2843.42  best_mae=  5.627@e40  bad=1/30
+11:39:45 [INFO] epoch   50  train_loss=0.00490  val_mae= 27.661  val_mse= 1231.05  best_mae=  5.627@e40  bad=2/30
+11:39:46 [INFO] epoch   55  train_loss=0.00455  val_mae= 17.314  val_mse=  484.95  best_mae=  5.627@e40  bad=3/30
+11:39:46 [INFO] epoch   60  train_loss=0.00363  val_mae= 31.047  val_mse= 2307.49  best_mae=  5.627@e40  bad=4/30
+11:39:46 [INFO] epoch   65  train_loss=0.00381  val_mae= 18.340  val_mse=  599.60  best_mae=  5.627@e40  bad=5/30
+11:39:47 [INFO] epoch   70  train_loss=0.00294  val_mae= 12.581  val_mse=  276.16  best_mae=  5.627@e40  bad=6/30
+11:39:47 [INFO] epoch   75  train_loss=0.00262  val_mae=  4.850  val_mse=   71.46  best_mae=  4.850@e75  bad=0/30
+11:39:47 [INFO] epoch   80  train_loss=0.00234  val_mae= 14.262  val_mse=  347.76  best_mae=  4.850@e75  bad=1/30
+11:39:47 [INFO] epoch   85  train_loss=0.00209  val_mae= 16.452  val_mse=  472.60  best_mae=  4.850@e75  bad=2/30
+11:39:48 [INFO] epoch   90  train_loss=0.00172  val_mae= 17.650  val_mse=  509.18  best_mae=  4.850@e75  bad=3/30
+11:39:48 [INFO] epoch   95  train_loss=0.00189  val_mae= 10.988  val_mse=  221.18  best_mae=  4.850@e75  bad=4/30
+11:39:48 [INFO] epoch  100  train_loss=0.00098  val_mae= 15.351  val_mse=  385.04  best_mae=  4.850@e75  bad=5/30
+11:39:48 [INFO] epoch  105  train_loss=0.00132  val_mae=  5.609  val_mse=   55.11  best_mae=  4.850@e75  bad=6/30
+11:39:49 [INFO] epoch  110  train_loss=0.00090  val_mae= 18.495  val_mse=  562.62  best_mae=  4.850@e75  bad=7/30
+11:39:49 [INFO] epoch  115  train_loss=0.00074  val_mae= 17.134  val_mse=  531.45  best_mae=  4.850@e75  bad=8/30
+11:39:49 [INFO] epoch  120  train_loss=0.00066  val_mae= 16.092  val_mse=  487.69  best_mae=  4.850@e75  bad=9/30
+11:39:50 [INFO] epoch  125  train_loss=0.00061  val_mae= 18.334  val_mse=  597.28  best_mae=  4.850@e75  bad=10/30
+11:39:50 [INFO] epoch  130  train_loss=0.00095  val_mae= 14.905  val_mse=  367.28  best_mae=  4.850@e75  bad=11/30
+11:39:50 [INFO] epoch  135  train_loss=0.00067  val_mae=  9.727  val_mse=  191.55  best_mae=  4.850@e75  bad=12/30
+11:39:50 [INFO] epoch  140  train_loss=0.00072  val_mae=  6.211  val_mse=   59.45  best_mae=  4.850@e75  bad=13/30
+11:39:51 [INFO] epoch  145  train_loss=0.00066  val_mae=  9.005  val_mse=  127.49  best_mae=  4.850@e75  bad=14/30
+11:39:51 [INFO] epoch  150  train_loss=0.00066  val_mae= 16.311  val_mse=  468.64  best_mae=  4.850@e75  bad=15/30
+11:39:51 [INFO] epoch  155  train_loss=0.00082  val_mae=  5.584  val_mse=   51.21  best_mae=  4.850@e75  bad=16/30
+11:39:51 [INFO] epoch  160  train_loss=0.00049  val_mae= 14.710  val_mse=  398.91  best_mae=  4.850@e75  bad=17/30
+11:39:52 [INFO] epoch  165  train_loss=0.00042  val_mae= 14.917  val_mse=  429.34  best_mae=  4.850@e75  bad=18/30
+11:39:52 [INFO] epoch  170  train_loss=0.00044  val_mae= 13.018  val_mse=  318.53  best_mae=  4.850@e75  bad=19/30
+11:39:52 [INFO] epoch  175  train_loss=0.00053  val_mae= 14.405  val_mse=  402.89  best_mae=  4.850@e75  bad=20/30
+11:39:53 [INFO] epoch  180  train_loss=0.00048  val_mae= 15.492  val_mse=  450.50  best_mae=  4.850@e75  bad=21/30
+11:39:53 [INFO] epoch  185  train_loss=0.00035  val_mae= 14.943  val_mse=  420.22  best_mae=  4.850@e75  bad=22/30
+11:39:53 [INFO] epoch  190  train_loss=0.00041  val_mae= 15.192  val_mse=  430.69  best_mae=  4.850@e75  bad=23/30
+11:39:53 [INFO] epoch  195  train_loss=0.00026  val_mae= 15.168  val_mse=  427.60  best_mae=  4.850@e75  bad=24/30
+11:39:54 [INFO] epoch  200  train_loss=0.00038  val_mae= 15.124  val_mse=  426.32  best_mae=  4.850@e75  bad=25/30
+11:39:54 [INFO] finished lstm: best_inner_val_mae=4.850 @epoch 75
+11:39:54 [INFO] holdout A recursive 200-step: MAE=50.645  MSE=4967.77  RMSE=70.482  NMSE=2.5021
+11:39:54 [INFO] saved C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\baselines\milestone2_holdout_a\lstm_A_prediction.png
+11:39:54 [INFO] 
+summary written to C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\baselines\milestone2_holdout_a\summary.json
+11:39:54 [INFO] {
+  "mlp": {
+    "best_epoch": 115,
+    "best_inner_val_mae": 2.5597910837829114,
+    "test_metrics": {
+      "mae": 14.65357848838903,
+      "mse": 1060.315337362732,
+      "rmse": 32.56248358713954,
+      "nmse": 0.5340504693626442
+    },
+    "n_params": 6209
+  },
+  "lstm": {
+    "best_epoch": 75,
+    "best_inner_val_mae": 4.850319056734443,
+    "test_metrics": {
+      "mae": 50.64530064854771,
+      "mse": 4967.772502558833,
+      "rmse": 70.48242690599433,
+      "nmse": 2.5021247389263994
+    },
+    "n_params": 50497
+  }
+}
