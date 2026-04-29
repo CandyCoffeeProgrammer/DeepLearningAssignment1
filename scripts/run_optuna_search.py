@@ -27,7 +27,9 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from src.data import load_xtrain                                  # noqa: E402
-from src.search import run_search                                  # noqa: E402
+from src.search import (                                            # noqa: E402
+    FULL_SEARCH_CAPS, LITE_SEARCH_CAPS, run_search,
+)
 from src.utils import get_device, load_yaml, setup_logger          # noqa: E402
 
 
@@ -45,6 +47,10 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--storage", default=None,
                    help="Optuna SQLite storage URL (default: sqlite:///experiments/search/optuna.db)")
     p.add_argument("--study-name", default=None)
+    p.add_argument("--full-caps", action="store_true",
+                   help="use FULL_SEARCH_CAPS (spec-faithful, slower) instead of LITE")
+    p.add_argument("--status-path", default=None,
+                   help="where to write live JSON status (default: experiments/search/STATUS.json)")
     return p.parse_args()
 
 
@@ -63,15 +69,19 @@ def main() -> int:
     storage = args.storage or f"sqlite:///{(out_root / 'optuna.db').as_posix()}"
     study_name = args.study_name or f"santa_fe_{args.family}"
     leaderboard = family_dir / "trials.csv"
+    status_path = Path(args.status_path) if args.status_path else (out_root / "STATUS.json")
+    caps = FULL_SEARCH_CAPS if args.full_caps else LITE_SEARCH_CAPS
 
     device = get_device(cfg.get("device", "auto"))
     series = load_xtrain(ROOT / cfg["data"]["path"], key=cfg["data"]["key"])
 
     log.info(
         f"family={args.family}  n_trials={args.n_trials}  seed={args.seed}  "
-        f"epochs={cfg['training']['epochs']}  device={device}"
+        f"epochs={cfg['training']['epochs']}  device={device}  "
+        f"caps={'FULL' if args.full_caps else 'LITE'}"
     )
     log.info(f"storage={storage}  study={study_name}  leaderboard={leaderboard}")
+    log.info(f"live status: {status_path}")
 
     study = run_search(
         family=args.family,
@@ -84,6 +94,8 @@ def main() -> int:
         study_name=study_name,
         leaderboard_path=leaderboard,
         logger=log,
+        caps=caps,
+        status_path=status_path,
     )
 
     # ---- summary ----

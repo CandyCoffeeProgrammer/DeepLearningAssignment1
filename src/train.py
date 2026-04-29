@@ -12,7 +12,11 @@ The training step is delegated to `src.losses.multistep_step`; with `k_max=1`,
 from __future__ import annotations
 
 import copy
+import json
 import logging
+import time
+from datetime import datetime, timedelta
+from pathlib import Path
 from typing import Any
 
 import torch
@@ -24,6 +28,47 @@ from src.evaluate import compute_metrics
 from src.losses import anneal_k, linear_anneal, multistep_step
 from src.models import BaseForecaster
 from src.predict import predict_inner_val
+
+
+def _write_status(
+    status_path: Path | None,
+    status_meta: dict | None,
+    *,
+    epoch: int,
+    total_epochs: int,
+    train_loss: float,
+    val_mae: float | None = None,
+    best_mae: float | None = None,
+    best_epoch: int | None = None,
+    started_at: float | None = None,
+) -> None:
+    """Atomically write the current status JSON. No-op if path is None."""
+    if status_path is None:
+        return
+    meta = status_meta or {}
+    elapsed = time.time() - started_at if started_at else None
+    info: dict[str, Any] = {
+        "updated_at": datetime.utcnow().isoformat() + "Z",
+        "epoch": epoch,
+        "total_epochs": total_epochs,
+        "train_loss": float(train_loss),
+        **meta,
+    }
+    if val_mae is not None:
+        info["val_mae"] = float(val_mae)
+    if best_mae is not None:
+        info["best_mae"] = float(best_mae)
+    if best_epoch is not None:
+        info["best_epoch"] = int(best_epoch)
+    if elapsed is not None:
+        info["elapsed_seconds"] = float(elapsed)
+        info["elapsed_human"] = str(timedelta(seconds=int(elapsed)))
+
+    tmp = status_path.with_suffix(status_path.suffix + ".tmp")
+    tmp.parent.mkdir(parents=True, exist_ok=True)
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(info, f, indent=2)
+    tmp.replace(status_path)
 
 
 def _build_optimizer(model: nn.Module, cfg: dict) -> torch.optim.Optimizer:
@@ -71,13 +116,27 @@ def train_model(
     *,
     device: torch.device,
     logger: logging.Logger | None = None,
+    tag: str = "",
+    status_path: Path | None = None,
+    status_meta: dict | None = None,
 ) -> dict[str, Any]:
     """Train one model on one holdout's training portion.
 
     cfg is the `training` block of the YAML (see configs/base.yaml).
     Inner-val recursive eval drives early stopping.
+
+    Optional progress-tracking knobs:
+        tag         — short string prefixed to every per-epoch log line so the
+                       caller can identify which trial / holdout this run is.
+        status_path — JSON file the trainer atomically rewrites after every
+                       eval cycle so an external watcher can `cat` it to see
+                       current trial / holdout / epoch / loss / best.
+        status_meta — extra dict merged into the status JSON (e.g. trial
+                       number, family, holdout name).
     """
     log = logger or logging.getLogger("train")
+    started_at = time.time()
+    prefix = f"[{tag}] " if tag else ""
 
     # ---- trick configs ----
     ms_cfg = cfg.get("multistep", {}) or {}
@@ -165,13 +224,20 @@ def train_model(
                 bad_evals += 1
 
             log.info(
-                f"epoch {epoch:4d}  train_loss={epoch_loss:.5f}  "
+                f"{prefix}epoch {epoch:4d}/{epochs}  train_loss={epoch_loss:.5f}  "
                 f"val_mae={metrics['mae']:7.3f}  val_mse={metrics['mse']:8.2f}  "
                 f"best_mae={best_mae:7.3f}@e{best_epoch}  bad={bad_evals}/{patience}"
             )
+            _write_status(
+                status_path, status_meta,
+                epoch=epoch, total_epochs=epochs,
+                train_loss=epoch_loss, val_mae=metrics["mae"],
+                best_mae=best_mae, best_epoch=best_epoch,
+                started_at=started_at,
+            )
 
             if bad_evals >= patience:
-                log.info(f"early stopping at epoch {epoch} (no inner-val improvement for {patience} evals)")
+                log.info(f"{prefix}early stopping at epoch {epoch} (no inner-val improvement for {patience} evals)")
                 history.append(entry)
                 break
 

@@ -42,6 +42,10 @@ def train_eval_one(
     seed: int,
     device: torch.device,
     logger: logging.Logger | None = None,
+    *,
+    tag: str = "",
+    status_path: "Path | None" = None,
+    status_meta: dict | None = None,
 ) -> dict:
     """Train a fresh model with `seed` on `holdout`'s training portion, return
     recursive 200-step test metrics on its held-out segment.
@@ -58,7 +62,10 @@ def train_eval_one(
         kernel_size=cfg["model"].get("kernel_size", 3),
         conv_layers=cfg["model"].get("conv_layers", 2),
     )
-    result = train_model(model, holdout, cfg["training"], device=device, logger=logger)
+    result = train_model(
+        model, holdout, cfg["training"], device=device, logger=logger,
+        tag=tag, status_path=status_path, status_meta=status_meta,
+    )
     model.load_state_dict(result["best_state_dict"])
     model.to(device)
     pred = predict_holdout(model, holdout)
@@ -225,21 +232,28 @@ def make_objective(
     seed: int,
     logger: logging.Logger | None = None,
     leaderboard_path: Path | None = None,
+    *,
+    caps: dict | None = None,
+    n_trials_total: int | None = None,
+    status_path: Path | None = None,
 ) -> Callable[[optuna.Trial], float]:
     """Produce an Optuna objective that minimises mean test MAE across A/B/C.
 
     Each trial:
-      1. samples a config,
+      1. samples a config (subject to `caps` — defaults to LITE_SEARCH_CAPS),
       2. rebuilds holdouts with the sampled window + scaler,
       3. trains one model per holdout with seed `seed`,
       4. returns the mean recursive 200-step test MAE.
 
-    Per-trial details are appended to `leaderboard_path` (CSV) if provided.
+    Per-trial details are appended to `leaderboard_path` (CSV).
+    Live-status JSON is rewritten under `status_path` after every eval cycle
+    so external watchers can `cat` it to see current trial / holdout / epoch.
+    `n_trials_total` is purely cosmetic — used in log line prefixes ("trial 7/100").
     """
     log = logger or logging.getLogger("search")
 
     def objective(trial: optuna.Trial) -> float:
-        cfg = sample_config(trial, family, base_cfg)
+        cfg = sample_config(trial, family, base_cfg, caps=caps)
         holdouts = make_holdouts(
             series,
             cfg["data"]["holdouts"],
@@ -247,14 +261,37 @@ def make_objective(
             inner_val_len=cfg["data"]["inner_val_len"],
             scaler_name=cfg["data"]["scaler"],
         )
+        trial_label = f"{trial.number + 1}/{n_trials_total}" if n_trials_total else f"{trial.number + 1}"
+        log.info(
+            f"\n=== trial {trial_label}  family={family}  "
+            f"window={cfg['window']}  hidden={cfg['model']['hidden_dim']}  "
+            f"layers={cfg['model']['num_layers']}  k_max={cfg['training']['multistep']['k_max']}  "
+            f"p_max={cfg['training']['scheduled_sampling']['p_max']}  "
+            f"noise={cfg['training']['input_noise_sigma']}  scaler={cfg['data']['scaler']} ==="
+        )
 
         per_holdout: dict[str, dict] = {}
+        n_holdouts = len(holdouts)
         try:
-            for name, h in holdouts.items():
-                res = train_eval_one(cfg, h, seed=seed, device=device, logger=None)
+            for h_idx, (name, h) in enumerate(holdouts.items(), start=1):
+                tag = f"trial {trial_label} {family} hold {name} ({h_idx}/{n_holdouts})"
+                status_meta = {
+                    "family": family,
+                    "trial": trial.number + 1,
+                    "n_trials_total": n_trials_total,
+                    "holdout": name,
+                    "holdout_idx": h_idx,
+                    "n_holdouts": n_holdouts,
+                    "best_so_far": (trial.study.best_value if len(trial.study.trials) > 0 and any(
+                        t.state.name == "COMPLETE" for t in trial.study.trials) else None),
+                }
+                res = train_eval_one(
+                    cfg, h, seed=seed, device=device, logger=log,
+                    tag=tag, status_path=status_path, status_meta=status_meta,
+                )
                 per_holdout[name] = res
         except Exception as exc:
-            log.warning(f"trial {trial.number} crashed: {exc!r}")
+            log.warning(f"trial {trial_label} crashed: {exc!r}")
             raise optuna.TrialPruned() from exc
 
         maes = [r["test_mae"] for r in per_holdout.values()]
@@ -316,6 +353,8 @@ def run_search(
     study_name: str | None = None,
     leaderboard_path: Path | None = None,
     logger: logging.Logger | None = None,
+    caps: dict | None = None,
+    status_path: Path | None = None,
 ) -> optuna.Study:
     """Run an Optuna TPE study for one family, return the completed study."""
     sampler = optuna.samplers.TPESampler(seed=seed, multivariate=True)
@@ -334,6 +373,9 @@ def run_search(
         seed=seed,
         logger=logger,
         leaderboard_path=leaderboard_path,
+        caps=caps,
+        n_trials_total=n_trials,
+        status_path=status_path,
     )
     study.optimize(objective, n_trials=n_trials, gc_after_trial=True)
     return study
