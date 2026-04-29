@@ -1,11 +1,12 @@
-"""Training loop with one-step MSE + recursive inner-val evaluation.
-
-Milestone 2: pure one-step training. Multi-step loss, scheduled sampling, and
-input noise are added in milestone 3 (toggled via config) and won't change this
-file's public surface — only the inner training step.
+"""Training loop with multi-step loss + scheduled sampling + input noise +
+recursive inner-val evaluation.
 
 Public entry point: `train_model(model, holdout, cfg, ...)` returns a dict with
 the best state-dict and the full training history.
+
+The training step is delegated to `src.losses.multistep_step`; with `k_max=1`,
+`p_max=0`, and `input_noise=0` it collapses exactly to plain one-step MSE
+(milestone 2 behaviour), so the same call works for ablations.
 """
 
 from __future__ import annotations
@@ -14,13 +15,13 @@ import copy
 import logging
 from typing import Any
 
-import numpy as np
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
 
 from src.data import Holdout, LaserWindowDataset
 from src.evaluate import compute_metrics
+from src.losses import anneal_k, linear_anneal, multistep_step
 from src.models import BaseForecaster
 from src.predict import predict_inner_val
 
@@ -78,9 +79,20 @@ def train_model(
     """
     log = logger or logging.getLogger("train")
 
+    # ---- trick configs ----
+    ms_cfg = cfg.get("multistep", {}) or {}
+    k_max = int(ms_cfg.get("k_max", 1))
+    k_anneal = int(ms_cfg.get("anneal_epochs", 50))
+
+    ss_cfg = cfg.get("scheduled_sampling", {}) or {}
+    p_max = float(ss_cfg.get("p_max", 0.0))
+    p_anneal = int(ss_cfg.get("anneal_epochs", 50))
+
+    input_noise = float(cfg.get("input_noise_sigma", 0.0))
+
     # ---- data ----
     window = int(holdout.window)
-    horizon = 1                          # one-step training; multi-step lands in milestone 3
+    horizon = max(1, k_max)              # need k_max future targets for multi-step unroll
     train_ds = LaserWindowDataset(holdout.train_scaled, window=window, horizon=horizon)
     train_loader = DataLoader(
         train_ds,
@@ -97,7 +109,6 @@ def train_model(
     is_onecycle = isinstance(scheduler, torch.optim.lr_scheduler.OneCycleLR)
     is_plateau = isinstance(scheduler, torch.optim.lr_scheduler.ReduceLROnPlateau)
     grad_clip = float(cfg.get("grad_clip", 0.0))
-    loss_fn = nn.MSELoss()
 
     # ---- early-stopping state ----
     eval_every = int(cfg.get("recursive_eval_every", 5))
@@ -109,14 +120,20 @@ def train_model(
     history: list[dict[str, Any]] = []
 
     for epoch in range(1, epochs + 1):
+        # zero-indexed for anneal helpers
+        k_t = anneal_k(epoch - 1, k_anneal, k_max)
+        p_t = linear_anneal(epoch - 1, p_anneal, start=0.0, end=p_max)
+
         model.train()
         running = 0.0
         n_obs = 0
         for x, y in train_loader:
-            x = x.to(device, non_blocking=True)
-            y = y.to(device, non_blocking=True)             # (B, 1)
-            pred = model(x)                                  # (B, 1)
-            loss = loss_fn(pred, y)
+            x = x.to(device, non_blocking=True)              # (B, W, 1)
+            y = y.to(device, non_blocking=True)              # (B, horizon)
+            loss = multistep_step(
+                model, x, y,
+                k_t=k_t, p_t=p_t, input_noise=input_noise,
+            )
             optimizer.zero_grad(set_to_none=True)
             loss.backward()
             if grad_clip > 0:
@@ -127,7 +144,7 @@ def train_model(
             running += loss.item() * x.size(0)
             n_obs += x.size(0)
         epoch_loss = running / max(1, n_obs)
-        entry: dict[str, Any] = {"epoch": epoch, "train_loss": epoch_loss}
+        entry: dict[str, Any] = {"epoch": epoch, "train_loss": epoch_loss, "k_t": k_t, "p_t": p_t}
 
         # ---- recursive inner-val evaluation ----
         if epoch % eval_every == 0 or epoch == epochs:
