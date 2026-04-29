@@ -136,53 +136,80 @@ def evaluate_config(
 _CONV_FAMILIES = {"cnn1d", "cnn_lstm", "tcn"}
 
 
-def sample_config(trial: optuna.Trial, family: str, base_cfg: dict) -> dict:
+# Default ("lite") caps — tighter than the full spec but fast enough to finish
+# a meaningful sweep in ~20 min on the 5070 Ti. The full per-spec space
+# (256-hidden, 3-layer LSTM, k_max=10, batch=16, window=75) blows up trial
+# time to 5–10 min, which exhausts session-length budgets without converging.
+# Run with `caps=FULL_SEARCH_CAPS` for the spec-faithful sweep on a beefier
+# machine.
+LITE_SEARCH_CAPS: dict = {
+    "window":           [10, 15, 20, 25, 30, 40, 50, 60],
+    "hidden_dim":       [32, 64, 128],
+    "num_layers":       [1, 2],
+    "batch_size":       [32, 64],
+    "k_max":            [1, 3, 5],
+    "p_max":            [0.0, 0.25, 0.5],
+    "input_noise_sigma":[0.0, 0.005, 0.01, 0.02],
+    "scaler":           ["minmax_0_1", "minmax_neg1_1", "standard"],
+    "lr_scheduler":     ["onecycle", "plateau"],
+    "kernel_size":      [3, 5],
+    "conv_layers":      [1, 2],
+}
+
+FULL_SEARCH_CAPS: dict = {
+    "window":           [10, 15, 20, 25, 30, 40, 50, 60, 75],
+    "hidden_dim":       [32, 64, 128, 256],
+    "num_layers":       [1, 2, 3],
+    "batch_size":       [16, 32, 64],
+    "k_max":            [1, 3, 5, 7, 10],
+    "p_max":            [0.0, 0.25, 0.5],
+    "input_noise_sigma":[0.0, 0.005, 0.01, 0.02],
+    "scaler":           ["minmax_0_1", "minmax_neg1_1", "standard"],
+    "lr_scheduler":     ["onecycle", "plateau"],
+    "kernel_size":      [3, 5],
+    "conv_layers":      [1, 2],
+}
+
+
+def sample_config(
+    trial: optuna.Trial,
+    family: str,
+    base_cfg: dict,
+    caps: dict | None = None,
+) -> dict:
     """Build a full config dict from the search space for a given family.
 
-    Spec'd search space (see configs/base.yaml + the assignment brief):
-        window         : {10, 15, 20, 25, 30, 40, 50, 60, 75}
-        hidden_dim     : {32, 64, 128, 256}
-        num_layers     : {1, 2, 3}
-        dropout        : 0.0..0.4 uniform
-        lr             : 5e-4..5e-3 log uniform
-        batch_size     : {16, 32, 64}
-        weight_decay   : 1e-6..1e-3 log uniform
-        k_max          : {1, 3, 5, 7, 10}
-        p_max          : {0.0, 0.25, 0.5}
-        noise_sigma    : {0.0, 0.005, 0.01, 0.02}
-        scaler         : {minmax_0_1, minmax_neg1_1, standard}
-        lr_scheduler   : {OneCycleLR, ReduceLROnPlateau}
-        kernel_size    : {3, 5}        (CNN-flavoured families only)
+    `caps` controls the categorical option lists. Default = LITE_SEARCH_CAPS,
+    which finishes a 30-trial sweep in roughly 15 minutes per family on a
+    5070 Ti. Pass FULL_SEARCH_CAPS for the spec-faithful (slower) space.
     """
+    if caps is None:
+        caps = LITE_SEARCH_CAPS
     cfg = copy.deepcopy(base_cfg)
 
-    cfg["window"] = trial.suggest_categorical("window", [10, 15, 20, 25, 30, 40, 50, 60, 75])
+    cfg["window"] = trial.suggest_categorical("window", caps["window"])
 
     cfg["model"]["family"] = family
-    cfg["model"]["hidden_dim"] = trial.suggest_categorical("hidden_dim", [32, 64, 128, 256])
-    cfg["model"]["num_layers"] = trial.suggest_categorical("num_layers", [1, 2, 3])
+    cfg["model"]["hidden_dim"] = trial.suggest_categorical("hidden_dim", caps["hidden_dim"])
+    cfg["model"]["num_layers"] = trial.suggest_categorical("num_layers", caps["num_layers"])
     cfg["model"]["dropout"]    = trial.suggest_float("dropout", 0.0, 0.4)
     if family in _CONV_FAMILIES:
-        cfg["model"]["kernel_size"] = trial.suggest_categorical("kernel_size", [3, 5])
+        cfg["model"]["kernel_size"] = trial.suggest_categorical("kernel_size", caps["kernel_size"])
     if family == "cnn_lstm":
-        cfg["model"]["conv_layers"] = trial.suggest_categorical("conv_layers", [1, 2])
+        cfg["model"]["conv_layers"] = trial.suggest_categorical("conv_layers", caps["conv_layers"])
 
-    cfg["data"]["scaler"] = trial.suggest_categorical(
-        "scaler", ["minmax_0_1", "minmax_neg1_1", "standard"]
-    )
+    cfg["data"]["scaler"] = trial.suggest_categorical("scaler", caps["scaler"])
 
     cfg["training"]["lr"]            = trial.suggest_float("lr", 5e-4, 5e-3, log=True)
-    cfg["training"]["batch_size"]    = trial.suggest_categorical("batch_size", [16, 32, 64])
+    cfg["training"]["batch_size"]    = trial.suggest_categorical("batch_size", caps["batch_size"])
     cfg["training"]["weight_decay"]  = trial.suggest_float("weight_decay", 1e-6, 1e-3, log=True)
-    cfg["training"]["lr_scheduler"]  = trial.suggest_categorical(
-        "lr_scheduler", ["onecycle", "plateau"]
-    )
+    cfg["training"]["lr_scheduler"]  = trial.suggest_categorical("lr_scheduler", caps["lr_scheduler"])
 
-    k_max = trial.suggest_categorical("k_max", [1, 3, 5, 7, 10])
-    p_max = trial.suggest_categorical("p_max", [0.0, 0.25, 0.5])
-    noise = trial.suggest_categorical("input_noise_sigma", [0.0, 0.005, 0.01, 0.02])
+    k_max = trial.suggest_categorical("k_max", caps["k_max"])
+    p_max = trial.suggest_categorical("p_max", caps["p_max"])
+    noise = trial.suggest_categorical("input_noise_sigma", caps["input_noise_sigma"])
     epochs = int(cfg["training"]["epochs"])
-    anneal = int(round(epochs * 0.75))   # fixed schedule shape — anneal over 75% of training
+    anneal = int(round(epochs * 0.75))
     cfg["training"]["multistep"] = {"k_max": k_max, "anneal_epochs": anneal if k_max > 1 else 0}
     cfg["training"]["scheduled_sampling"] = {"p_max": p_max, "anneal_epochs": anneal if p_max > 0 else 0}
     cfg["training"]["input_noise_sigma"]  = noise

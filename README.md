@@ -22,11 +22,17 @@ notebooks/           EDA
 scripts/             entry-point scripts (run_search.sh, run_final.sh, make_test_evaluation.py)
 ```
 
-## Usage (planned)
+## Usage
+
 | Command | What it does |
 | --- | --- |
-| `python -m src.search --config configs/base.yaml` | Run the Optuna sweep across the three synthetic holdouts |
-| `python -m src.predict --final` | Retrain best ensemble on full Xtrain and dump predictions |
+| `python scripts/run_holdout_a.py` | Train MLP + LSTM on Holdout A only (quick sanity check) |
+| `python scripts/ablation_holdout_a.py --variants multistep --families mlp lstm gru cnn1d cnn_lstm tcn` | Compare every model family on Holdout A |
+| `python scripts/run_three_holdouts.py --family lstm --variant all_tricks` | Evaluate one config across A, B, C with N seeds |
+| `bash scripts/run_search.sh` | Run the full Optuna sweep across all six families (~50–60 min on a 5070 Ti) |
+| `python scripts/run_optuna_search.py --family lstm --n-trials 100` | Search just one family |
+| `python scripts/run_ensemble_holdouts.py` | Train an ensemble manifest on the three holdouts and pick the winning aggregation strategy |
+| `python scripts/run_final_predictions.py --manifest configs/final_ensemble.yaml --strategy median` | Retrain the chosen ensemble on the full Xtrain and dump 200-step predictions to `experiments/final/predictions.npy` |
 | `python scripts/make_test_evaluation.py --xtest data/Xtest.mat` | Score saved predictions once the real test arrives |
 
 ## Validation protocol

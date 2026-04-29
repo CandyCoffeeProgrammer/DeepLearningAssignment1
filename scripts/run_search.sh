@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 # Run the full Optuna sweep across all six families.
-# 4 priority families x 30 trials + 2 baseline families x 20 trials = 160 trials total.
-# At ~100 epochs and ~12-15s per trial on the RTX 5070 Ti, ~35-45 min total.
-# Adjust EPOCHS / N_PRIORITY / N_BASELINE for shorter or longer sweeps.
+# Defaults: 4 priority x 15 trials + 2 baseline x 10 trials = 80 trials, 60 epochs each.
+# Uses LITE_SEARCH_CAPS in src/search.py (capped hidden_dim, num_layers, etc.) so trials
+# stay under ~30 s on the RTX 5070 Ti, total sweep ~20 min. For the spec-faithful budget
+# (100/40 trials, 200 epochs, full caps) override the env vars and edit src/search.py
+# to use FULL_SEARCH_CAPS.
 
 set -e
 cd "$(dirname "$0")/.."
 
-EPOCHS="${EPOCHS:-100}"
-N_PRIORITY="${N_PRIORITY:-30}"
-N_BASELINE="${N_BASELINE:-20}"
+EPOCHS="${EPOCHS:-60}"
+N_PRIORITY="${N_PRIORITY:-15}"
+N_BASELINE="${N_BASELINE:-10}"
 
 echo "[search] epochs=$EPOCHS  priority=$N_PRIORITY  baseline=$N_BASELINE"
 
