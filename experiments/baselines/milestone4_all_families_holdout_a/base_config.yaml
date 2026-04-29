@@ -1,0 +1,62 @@
+seed: 42
+device: cuda
+data:
+  path: data/Xtrain.mat
+  key: Xtrain
+  horizon: 200
+  inner_val_len: 100
+  holdouts:
+    A:
+    - 801
+    - 1000
+    B:
+    - 701
+    - 900
+    C:
+    - 601
+    - 800
+  scaler: minmax_0_1
+window: 30
+model:
+  family: lstm
+  hidden_dim: 64
+  num_layers: 2
+  dropout: 0.1
+  kernel_size: 3
+  conv_layers: 2
+training:
+  epochs: 200
+  batch_size: 32
+  optimizer: adamw
+  lr: 0.001
+  weight_decay: 1.0e-05
+  grad_clip: 1.0
+  lr_scheduler: onecycle
+  amp: false
+  multistep:
+    k_max: 5
+    anneal_epochs: 50
+  scheduled_sampling:
+    p_max: 0.25
+    anneal_epochs: 50
+  input_noise_sigma: 0.005
+  recursive_eval_every: 5
+  early_stop_patience: 30
+ensemble:
+  strategy: mean
+  seeds:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  members: []
+search:
+  n_trials: 100
+  sampler: tpe
+  pruner: median
+  study_name: santa_fe
+  storage: experiments/optuna.db
+logging:
+  output_root: experiments
+  save_checkpoints: true

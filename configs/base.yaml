@@ -21,10 +21,12 @@ data:
 window: 30
 
 model:
-  family: lstm        # mlp | lstm | gru | cnn1d | cnn_lstm | tcn | nbeats
+  family: lstm        # mlp | lstm | gru | cnn1d | cnn_lstm | tcn
   hidden_dim: 64
   num_layers: 2
   dropout: 0.1
+  kernel_size: 3       # used by cnn1d, cnn_lstm, tcn
+  conv_layers: 2       # used by cnn_lstm (front-end depth)
 
 training:
   epochs: 200

@@ -65,6 +65,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--anneal-frac", type=float, default=0.75,
                    help="fraction of training over which k and p anneal to their max")
     p.add_argument("--families", nargs="+", default=["mlp", "lstm"])
+    p.add_argument("--variants", nargs="+", default=None,
+                   help="optional filter; default runs all four (baseline, multistep, multi+sched, all_tricks)")
     p.add_argument("--holdout", default="A")
     p.add_argument("--out-dir", default="experiments/baselines/milestone3_ablation_holdout_a")
     return p.parse_args()
@@ -86,6 +88,12 @@ def main() -> int:
     epochs = int(base_cfg["training"]["epochs"])
     anneal = int(round(epochs * args.anneal_frac))
     variants = make_variants(anneal)
+    if args.variants is not None:
+        keep = set(args.variants)
+        unknown = keep - {n for n, _ in variants}
+        if unknown:
+            raise SystemExit(f"unknown variants {sorted(unknown)}; available: {[n for n, _ in variants]}")
+        variants = [(n, o) for n, o in variants if n in keep]
 
     out_dir = (ROOT / args.out_dir).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -138,6 +146,8 @@ def main() -> int:
                     hidden_dim=cfg["model"]["hidden_dim"],
                     num_layers=cfg["model"]["num_layers"],
                     dropout=cfg["model"]["dropout"],
+                    kernel_size=cfg["model"].get("kernel_size", 3),
+                    conv_layers=cfg["model"].get("conv_layers", 2),
                 )
                 result = train_model(model, holdout, cfg["training"], device=device, logger=log)
                 model.load_state_dict(result["best_state_dict"])
@@ -192,7 +202,7 @@ def main() -> int:
         json.dump(rows, f, indent=2)
 
     md = [
-        "# Milestone 3 ablation — Holdout A",
+        f"# Ablation on Holdout {holdout.name}",
         "",
         f"Seeds {list(args.seeds)} • {epochs} epochs • anneal_epochs={anneal} "
         f"({int(args.anneal_frac*100)}% of training) • window {base_cfg['window']} "

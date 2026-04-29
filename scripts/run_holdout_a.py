@@ -90,6 +90,8 @@ def main() -> int:
             hidden_dim=cfg["model"]["hidden_dim"],
             num_layers=cfg["model"]["num_layers"],
             dropout=cfg["model"]["dropout"],
+            kernel_size=cfg["model"].get("kernel_size", 3),
+            conv_layers=cfg["model"].get("conv_layers", 2),
         )
         n_params = sum(p.numel() for p in model.parameters())
         log.info(f"model = {family}, params = {n_params}")
