@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project artifacts
+experiments/**/checkpoints/
+experiments/**/*.pt
+experiments/**/*.pth
+experiments/**/optuna.db
+experiments/**/optuna_journal.log
+*.log
+
+# Keep experiments/final/ predictions, plots, summary
+!experiments/final/
+!experiments/final/**
+
+# Data: keep Xtrain.mat (it's small, 1 KB), but ignore Xtest if it ever appears next to it
+# Xtest will be added later by the team / instructor

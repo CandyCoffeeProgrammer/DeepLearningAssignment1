@@ -1,0 +1,66 @@
+# Default configuration. Override fields from the CLI or via Optuna search.
+
+seed: 42
+device: cuda          # cuda | cpu | auto
+
+data:
+  path: data/Xtrain.mat
+  key: Xtrain
+  horizon: 200        # recursive prediction horizon (real test = 200 steps)
+  inner_val_len: 100  # last N points of each holdout's training portion held out for early stopping
+
+  # Three synthetic holdouts. Each entry: [test_start, test_end] (1-indexed, inclusive).
+  # The model trains on points 1 .. test_start-1 and predicts test_start .. test_end recursively.
+  holdouts:
+    A: [801, 1000]
+    B: [701, 900]
+    C: [601, 800]
+
+  scaler: minmax_0_1   # minmax_0_1 | minmax_neg1_1 | standard
+
+window: 30
+
+model:
+  family: lstm        # mlp | lstm | gru | cnn1d | cnn_lstm | tcn | nbeats
+  hidden_dim: 64
+  num_layers: 2
+  dropout: 0.1
+
+training:
+  epochs: 200
+  batch_size: 32
+  optimizer: adamw
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  grad_clip: 1.0
+  lr_scheduler: onecycle      # onecycle | plateau
+  amp: false                  # mixed precision
+
+  multistep:
+    k_max: 5                  # max unroll steps for multi-step training loss
+    anneal_epochs: 50         # epochs over which k climbs 1 -> k_max
+
+  scheduled_sampling:
+    p_max: 0.25               # 0 disables scheduled sampling
+    anneal_epochs: 50
+
+  input_noise_sigma: 0.005    # Gaussian noise stddev in scaled space; 0 disables
+
+  recursive_eval_every: 5     # epochs between full 200-step inner-validation rollouts
+  early_stop_patience: 30     # in units of recursive_eval_every
+
+ensemble:
+  strategy: mean              # mean | median | weighted
+  seeds: [0, 1, 2, 3, 4]
+  members: []                 # list of {family, config_hash} once selected from search
+
+search:
+  n_trials: 100
+  sampler: tpe
+  pruner: median
+  study_name: santa_fe
+  storage: experiments/optuna.db
+
+logging:
+  output_root: experiments
+  save_checkpoints: true

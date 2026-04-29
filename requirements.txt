@@ -1,0 +1,22 @@
+# Core deep learning
+# Install torch from the CUDA 12.8 index (Blackwell sm_120 support):
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu128
+torch>=2.7.0
+numpy>=1.26,<3
+scipy>=1.11
+
+# Hyperparameter search
+optuna>=3.6
+optuna-dashboard>=0.15
+
+# Data + IO
+pandas>=2.1
+pyyaml>=6.0
+tqdm>=4.66
+
+# Plotting
+matplotlib>=3.8
+
+# EDA notebook
+jupyter>=1.0
+ipykernel>=6.29
