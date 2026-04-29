@@ -1,0 +1,37 @@
+12:45:05 [INFO] family=mlp  n_trials=10  seed=42  epochs=60  device=cuda
+12:45:05 [INFO] storage=sqlite:///C:/Users/renat/OneDrive/Desktop/faks/Utrecht/Deep Learning/DeepLearningAssignment1/experiments/search/optuna.db  study=santa_fe_mlp  leaderboard=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\mlp\trials.csv
+12:45:16 [INFO] trial   0  family=mlp  mean_mae= 33.470  worst= 57.218  per_holdout=A=57.22, B=24.84, C=18.35
+12:45:22 [INFO] trial   1  family=mlp  mean_mae= 25.383  worst= 33.597  per_holdout=A=33.60, B=23.89, C=18.66
+12:45:28 [INFO] trial   2  family=mlp  mean_mae= 21.678  worst= 36.730  per_holdout=A=21.28, B=7.03, C=36.73
+12:45:31 [INFO] trial   3  family=mlp  mean_mae= 24.577  worst= 30.040  per_holdout=A=30.04, B=22.88, C=20.81
+12:45:40 [INFO] trial   4  family=mlp  mean_mae= 26.645  worst= 35.777  per_holdout=A=35.78, B=24.79, C=19.36
+12:45:45 [INFO] trial   5  family=mlp  mean_mae= 26.605  worst= 35.006  per_holdout=A=35.01, B=25.80, C=19.01
+12:45:49 [INFO] trial   6  family=mlp  mean_mae= 32.034  worst= 37.349  per_holdout=A=30.39, B=37.35, C=28.36
+12:45:56 [INFO] trial   7  family=mlp  mean_mae= 24.838  worst= 38.616  per_holdout=A=38.62, B=25.65, C=10.25
+12:46:09 [INFO] trial   8  family=mlp  mean_mae= 30.333  worst= 37.260  per_holdout=A=28.97, B=24.77, C=37.26
+12:46:15 [INFO] trial   9  family=mlp  mean_mae= 24.181  worst= 29.095  per_holdout=A=29.10, B=25.01, C=18.44
+12:46:15 [INFO] 
+finished mlp: 10 trials
+12:46:15 [INFO] best trial #2  mean_mae=21.6783
+12:46:15 [INFO] best params:
+{
+  "window": 25,
+  "hidden_dim": 128,
+  "num_layers": 2,
+  "dropout": 0.04634762381005189,
+  "scaler": "minmax_0_1",
+  "lr": 0.0005787997763336387,
+  "batch_size": 64,
+  "weight_decay": 0.0001544608907504709,
+  "lr_scheduler": "plateau",
+  "k_max": 5,
+  "p_max": 0.5,
+  "input_noise_sigma": 0.005
+}
+12:46:15 [INFO] best per-holdout:
+{
+  "A": 21.276198585107924,
+  "B": 7.028538299351931,
+  "C": 36.730086880847814
+}
+12:46:15 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\mlp\best.json

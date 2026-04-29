@@ -1,0 +1,106 @@
+{
+  "rows": [
+    {
+      "holdout": "A",
+      "strategy": "mean",
+      "mae": 27.617081180678994,
+      "mse": 1518.7651305833895,
+      "nmse": 0.7649585007956948,
+      "n_members": 18
+    },
+    {
+      "holdout": "A",
+      "strategy": "median",
+      "mae": 24.915891173928976,
+      "mse": 1498.8680274723454,
+      "nmse": 0.7549368997860936,
+      "n_members": 18
+    },
+    {
+      "holdout": "A",
+      "strategy": "weighted",
+      "mae": 26.88863515166434,
+      "mse": 1586.9369793447324,
+      "nmse": 0.7992947086627509,
+      "n_members": 18
+    },
+    {
+      "holdout": "A",
+      "strategy": "best_individual (mlp_best/s0)",
+      "mae": 11.933603577446192,
+      "mse": 640.6937157236164,
+      "nmse": NaN,
+      "n_members": 1
+    },
+    {
+      "holdout": "B",
+      "strategy": "mean",
+      "mae": 22.654560594819486,
+      "mse": 824.2924697951879,
+      "nmse": 0.8670684461965602,
+      "n_members": 18
+    },
+    {
+      "holdout": "B",
+      "strategy": "median",
+      "mae": 24.10873407483101,
+      "mse": 901.3596190662207,
+      "nmse": 0.9481349314791883,
+      "n_members": 18
+    },
+    {
+      "holdout": "B",
+      "strategy": "weighted",
+      "mae": 22.851034262492668,
+      "mse": 829.6622814737585,
+      "nmse": 0.8727169198137743,
+      "n_members": 18
+    },
+    {
+      "holdout": "B",
+      "strategy": "best_individual (mlp_best/s1)",
+      "mae": 11.380882199704647,
+      "mse": 287.39724650903634,
+      "nmse": NaN,
+      "n_members": 1
+    },
+    {
+      "holdout": "C",
+      "strategy": "mean",
+      "mae": 24.469139491897078,
+      "mse": 970.7174002041843,
+      "nmse": 1.4274429332921852,
+      "n_members": 18
+    },
+    {
+      "holdout": "C",
+      "strategy": "median",
+      "mae": 28.508230001758783,
+      "mse": 1331.6235978275952,
+      "nmse": 1.95815661089859,
+      "n_members": 18
+    },
+    {
+      "holdout": "C",
+      "strategy": "weighted",
+      "mae": 26.24278815444578,
+      "mse": 1135.1560409954718,
+      "nmse": 1.6692504621448896,
+      "n_members": 18
+    },
+    {
+      "holdout": "C",
+      "strategy": "best_individual (cnn1d_best/s1)",
+      "mae": 22.042082253843546,
+      "mse": 972.8323136331392,
+      "nmse": NaN,
+      "n_members": 1
+    }
+  ],
+  "overall": {
+    "mean": 24.91359375579852,
+    "median": 25.844285083506254,
+    "weighted": 25.327485856200926
+  },
+  "winning": "mean"
+}

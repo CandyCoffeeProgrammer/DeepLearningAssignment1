@@ -122,23 +122,40 @@ def main() -> int:
     )
 
     series = load_xtrain(ROOT / base_cfg["data"]["path"], key=base_cfg["data"]["key"])
-    holdouts = make_holdouts(
-        series,
-        base_cfg["data"]["holdouts"],
-        window=base_cfg["window"],
+
+    # We need test-segment ranges (consistent across members). Holdouts are
+    # rebuilt per member because window + scaler vary per member.
+    holdouts_meta = base_cfg["data"]["holdouts"]
+    holdout_names = list(holdouts_meta.keys())
+
+    # Build a single "reference" holdouts dict purely to read out the truth
+    # arrays for plotting; predictions don't use this.
+    ref_holdouts = make_holdouts(
+        series, holdouts_meta,
+        window=int(base_cfg["window"]),
         inner_val_len=base_cfg["data"]["inner_val_len"],
         scaler_name=base_cfg["data"]["scaler"],
     )
 
     # ---- run every (member, seed) on every holdout, store predictions ----
-    # per_holdout[h] = list of dicts {member, seed, pred, inner_val_mae, individual_mae}
-    per_holdout: dict[str, list[dict]] = {name: [] for name in holdouts}
+    per_holdout: dict[str, list[dict]] = {name: [] for name in holdout_names}
 
     for member in members:
         m_cfg = _build_member_cfg(base_cfg, member)
+        # rebuild holdouts with the MEMBER'S window + scaler so the scaler is
+        # fitted correctly and the seed-window length matches the model
+        member_holdouts = make_holdouts(
+            series, holdouts_meta,
+            window=int(m_cfg["window"]),
+            inner_val_len=m_cfg["data"]["inner_val_len"],
+            scaler_name=m_cfg["data"]["scaler"],
+        )
         for seed in args.seeds:
-            for name, h in holdouts.items():
-                log.info(f"\n--- member={member['name']}  seed={seed}  holdout={name} ---")
+            for name, h in member_holdouts.items():
+                log.info(
+                    f"\n--- member={member['name']}  seed={seed}  holdout={name}  "
+                    f"window={h.window}  scaler={m_cfg['data']['scaler']} ---"
+                )
                 res = train_eval_one(m_cfg, h, seed=seed, device=device, logger=log)
                 log.info(
                     f"  test MAE={res['test_mae']:.3f}  "
@@ -154,6 +171,9 @@ def main() -> int:
                     "inner_val_mae": res["best_inner_val_mae"],
                     "best_epoch": res["best_epoch"],
                 })
+
+    # for the rest of the script, use the reference holdouts to read out test truth
+    holdouts = ref_holdouts
 
     # ---- aggregate per holdout ----
     rows: list[dict] = []

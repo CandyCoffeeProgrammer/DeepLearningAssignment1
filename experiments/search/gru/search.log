@@ -1,0 +1,42 @@
+12:35:14 [INFO] family=gru  n_trials=15  seed=42  epochs=60  device=cuda
+12:35:14 [INFO] storage=sqlite:///C:/Users/renat/OneDrive/Desktop/faks/Utrecht/Deep Learning/DeepLearningAssignment1/experiments/search/optuna.db  study=santa_fe_gru  leaderboard=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\gru\trials.csv
+12:35:32 [INFO] trial   0  family=gru  mean_mae= 34.223  worst= 51.279  per_holdout=A=20.23, B=31.16, C=51.28
+12:35:40 [INFO] trial   1  family=gru  mean_mae= 31.284  worst= 35.509  per_holdout=A=35.51, B=23.25, C=35.09
+12:35:51 [INFO] trial   2  family=gru  mean_mae= 39.997  worst= 48.949  per_holdout=A=45.28, B=25.76, C=48.95
+12:35:55 [INFO] trial   3  family=gru  mean_mae= 51.275  worst= 54.256  per_holdout=A=47.64, B=54.26, C=51.92
+12:36:11 [INFO] trial   4  family=gru  mean_mae= 37.230  worst= 47.558  per_holdout=A=38.02, B=26.12, C=47.56
+12:36:19 [INFO] trial   5  family=gru  mean_mae= 29.715  worst= 50.110  per_holdout=A=12.17, B=26.87, C=50.11
+12:36:24 [INFO] trial   6  family=gru  mean_mae= 40.051  worst= 48.061  per_holdout=A=48.06, B=26.32, C=45.77
+12:36:38 [INFO] trial   7  family=gru  mean_mae= 42.833  worst= 53.686  per_holdout=A=35.29, B=39.52, C=53.69
+12:36:59 [INFO] trial   8  family=gru  mean_mae= 45.287  worst= 46.770  per_holdout=A=44.77, B=44.32, C=46.77
+12:37:10 [INFO] trial   9  family=gru  mean_mae= 33.702  worst= 44.716  per_holdout=A=24.41, B=31.98, C=44.72
+12:37:16 [INFO] trial  10  family=gru  mean_mae= 35.161  worst= 48.381  per_holdout=A=31.13, B=25.97, C=48.38
+12:37:23 [INFO] trial  11  family=gru  mean_mae= 25.988  worst= 31.261  per_holdout=A=31.26, B=27.17, C=19.53
+12:37:31 [INFO] trial  12  family=gru  mean_mae= 37.297  worst= 48.406  per_holdout=A=37.16, B=26.32, C=48.41
+12:37:42 [INFO] trial  13  family=gru  mean_mae= 18.592  worst= 27.357  per_holdout=A=3.13, B=27.36, C=25.29
+12:37:52 [INFO] trial  14  family=gru  mean_mae= 36.559  worst= 48.599  per_holdout=A=34.73, B=26.34, C=48.60
+12:37:52 [INFO] 
+finished gru: 15 trials
+12:37:52 [INFO] best trial #13  mean_mae=18.5923
+12:37:52 [INFO] best params:
+{
+  "window": 10,
+  "hidden_dim": 64,
+  "num_layers": 1,
+  "dropout": 0.39035860829291213,
+  "scaler": "minmax_neg1_1",
+  "lr": 0.004986605544517985,
+  "batch_size": 32,
+  "weight_decay": 3.9395320896035135e-06,
+  "lr_scheduler": "onecycle",
+  "k_max": 3,
+  "p_max": 0.25,
+  "input_noise_sigma": 0.02
+}
+12:37:52 [INFO] best per-holdout:
+{
+  "A": 3.1277215551957487,
+  "B": 27.357493284344674,
+  "C": 25.291707477942108
+}
+12:37:52 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\gru\best.json

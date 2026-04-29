@@ -1,0 +1,129 @@
+# Final-stage ensemble: full-data retrain manifest (one entry per member).
+# Same configs as configs/ensemble_top_per_family.yaml + per-member epoch budgets
+# and seed lists for the final retrain on Xtrain[1..1000].
+
+members:
+
+  - name: gru_best
+    epochs: 100
+    seeds: [0, 1, 2, 3, 4]
+    window: 10
+    scaler: minmax_neg1_1
+    inner_val_mae_proxy: 18.59
+    model:
+      family: gru
+      hidden_dim: 64
+      num_layers: 1
+      dropout: 0.39035860829291213
+    training_overrides:
+      lr: 0.004986605544517985
+      batch_size: 32
+      weight_decay: 3.9395320896035135e-06
+      lr_scheduler: onecycle
+      multistep:           {k_max: 3, anneal_epochs: 75}
+      scheduled_sampling:  {p_max: 0.25, anneal_epochs: 75}
+      input_noise_sigma:   0.02
+
+  - name: tcn_best
+    epochs: 100
+    seeds: [0, 1, 2, 3, 4]
+    window: 10
+    scaler: minmax_neg1_1
+    inner_val_mae_proxy: 20.60
+    model:
+      family: tcn
+      hidden_dim: 32
+      num_layers: 2
+      dropout: 0.21868411173731186
+      kernel_size: 5
+    training_overrides:
+      lr: 0.001980933895203292
+      batch_size: 32
+      weight_decay: 3.87211803217458e-06
+      lr_scheduler: plateau
+      multistep:           {k_max: 5, anneal_epochs: 75}
+      scheduled_sampling:  {p_max: 0.5, anneal_epochs: 75}
+      input_noise_sigma:   0.02
+
+  - name: mlp_best
+    epochs: 100
+    seeds: [0, 1, 2, 3, 4]
+    window: 25
+    scaler: minmax_0_1
+    inner_val_mae_proxy: 21.68
+    model:
+      family: mlp
+      hidden_dim: 128
+      num_layers: 2
+      dropout: 0.04634762381005189
+    training_overrides:
+      lr: 0.0005787997763336387
+      batch_size: 64
+      weight_decay: 0.0001544608907504709
+      lr_scheduler: plateau
+      multistep:           {k_max: 5, anneal_epochs: 75}
+      scheduled_sampling:  {p_max: 0.5, anneal_epochs: 75}
+      input_noise_sigma:   0.005
+
+  - name: cnn1d_best
+    epochs: 100
+    seeds: [0, 1, 2, 3, 4]
+    window: 50
+    scaler: minmax_0_1
+    inner_val_mae_proxy: 27.16
+    model:
+      family: cnn1d
+      hidden_dim: 64
+      num_layers: 2
+      dropout: 0.16784002497111597
+      kernel_size: 5
+    training_overrides:
+      lr: 0.0005558692452498921
+      batch_size: 64
+      weight_decay: 0.0001291140720054991
+      lr_scheduler: onecycle
+      multistep:           {k_max: 1, anneal_epochs: 0}
+      scheduled_sampling:  {p_max: 0.0, anneal_epochs: 0}
+      input_noise_sigma:   0.0
+
+  - name: cnn_lstm_best
+    epochs: 100
+    seeds: [0, 1, 2, 3, 4]
+    window: 40
+    scaler: minmax_0_1
+    inner_val_mae_proxy: 29.48
+    model:
+      family: cnn_lstm
+      hidden_dim: 128
+      num_layers: 1
+      dropout: 0.16906601855699682
+      kernel_size: 5
+      conv_layers: 1
+    training_overrides:
+      lr: 0.0011025839141573896
+      batch_size: 64
+      weight_decay: 0.00011478935083235049
+      lr_scheduler: plateau
+      multistep:           {k_max: 3, anneal_epochs: 75}
+      scheduled_sampling:  {p_max: 0.25, anneal_epochs: 75}
+      input_noise_sigma:   0.0
+
+  - name: lstm_best
+    epochs: 100
+    seeds: [0, 1, 2, 3, 4]
+    window: 30
+    scaler: standard
+    inner_val_mae_proxy: 29.78
+    model:
+      family: lstm
+      hidden_dim: 128
+      num_layers: 1
+      dropout: 0.006182646611546972
+    training_overrides:
+      lr: 0.004598222491825369
+      batch_size: 32
+      weight_decay: 1.4298589094443983e-05
+      lr_scheduler: onecycle
+      multistep:           {k_max: 5, anneal_epochs: 75}
+      scheduled_sampling:  {p_max: 0.0, anneal_epochs: 0}
+      input_noise_sigma:   0.005

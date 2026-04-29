@@ -1,0 +1,186 @@
+12:56:40 [INFO] loaded Xtrain shape=(1000,), range=[2,255]
+12:56:40 [INFO] 
+--- training gru_best_s0 on full Xtrain  (family=gru, window=10, epochs=100) ---
+12:56:42 [INFO] epoch   25  train_loss=0.00702  k_t=2  p_t=0.080
+12:56:44 [INFO] epoch   50  train_loss=0.00388  k_t=2  p_t=0.163
+12:56:47 [INFO] epoch   75  train_loss=0.00229  k_t=3  p_t=0.247
+12:56:50 [INFO] epoch  100  train_loss=0.00166  k_t=3  p_t=0.250
+12:56:50 [INFO] 
+--- training gru_best_s1 on full Xtrain  (family=gru, window=10, epochs=100) ---
+12:56:51 [INFO] epoch   25  train_loss=0.00726  k_t=2  p_t=0.080
+12:56:53 [INFO] epoch   50  train_loss=0.00505  k_t=2  p_t=0.163
+12:56:56 [INFO] epoch   75  train_loss=0.00214  k_t=3  p_t=0.247
+12:56:58 [INFO] epoch  100  train_loss=0.00196  k_t=3  p_t=0.250
+12:56:58 [INFO] 
+--- training gru_best_s2 on full Xtrain  (family=gru, window=10, epochs=100) ---
+12:57:00 [INFO] epoch   25  train_loss=0.00710  k_t=2  p_t=0.080
+12:57:02 [INFO] epoch   50  train_loss=0.00378  k_t=2  p_t=0.163
+12:57:05 [INFO] epoch   75  train_loss=0.00205  k_t=3  p_t=0.247
+12:57:07 [INFO] epoch  100  train_loss=0.00157  k_t=3  p_t=0.250
+12:57:07 [INFO] 
+--- training gru_best_s3 on full Xtrain  (family=gru, window=10, epochs=100) ---
+12:57:09 [INFO] epoch   25  train_loss=0.00727  k_t=2  p_t=0.080
+12:57:11 [INFO] epoch   50  train_loss=0.00553  k_t=2  p_t=0.163
+12:57:13 [INFO] epoch   75  train_loss=0.00261  k_t=3  p_t=0.247
+12:57:16 [INFO] epoch  100  train_loss=0.00179  k_t=3  p_t=0.250
+12:57:16 [INFO] 
+--- training gru_best_s4 on full Xtrain  (family=gru, window=10, epochs=100) ---
+12:57:18 [INFO] epoch   25  train_loss=0.00640  k_t=2  p_t=0.080
+12:57:20 [INFO] epoch   50  train_loss=0.00411  k_t=2  p_t=0.163
+12:57:22 [INFO] epoch   75  train_loss=0.00224  k_t=3  p_t=0.247
+12:57:25 [INFO] epoch  100  train_loss=0.00156  k_t=3  p_t=0.250
+12:57:25 [INFO] 
+--- training tcn_best_s0 on full Xtrain  (family=tcn, window=10, epochs=100) ---
+12:57:29 [INFO] epoch   25  train_loss=0.01087  k_t=2  p_t=0.160
+12:57:35 [INFO] epoch   50  train_loss=0.00885  k_t=4  p_t=0.327
+12:57:43 [INFO] epoch   75  train_loss=0.00853  k_t=5  p_t=0.493
+12:57:53 [INFO] epoch  100  train_loss=0.00722  k_t=5  p_t=0.500
+12:57:53 [INFO] 
+--- training tcn_best_s1 on full Xtrain  (family=tcn, window=10, epochs=100) ---
+12:57:56 [INFO] epoch   25  train_loss=0.00989  k_t=2  p_t=0.160
+12:58:02 [INFO] epoch   50  train_loss=0.00776  k_t=4  p_t=0.327
+12:58:10 [INFO] epoch   75  train_loss=0.00938  k_t=5  p_t=0.493
+12:58:19 [INFO] epoch  100  train_loss=0.00657  k_t=5  p_t=0.500
+12:58:19 [INFO] 
+--- training tcn_best_s2 on full Xtrain  (family=tcn, window=10, epochs=100) ---
+12:58:23 [INFO] epoch   25  train_loss=0.01072  k_t=2  p_t=0.160
+12:58:29 [INFO] epoch   50  train_loss=0.01077  k_t=4  p_t=0.327
+12:58:37 [INFO] epoch   75  train_loss=0.00973  k_t=5  p_t=0.493
+12:58:46 [INFO] epoch  100  train_loss=0.01031  k_t=5  p_t=0.500
+12:58:46 [INFO] 
+--- training tcn_best_s3 on full Xtrain  (family=tcn, window=10, epochs=100) ---
+12:58:50 [INFO] epoch   25  train_loss=0.00885  k_t=2  p_t=0.160
+12:58:56 [INFO] epoch   50  train_loss=0.00833  k_t=4  p_t=0.327
+12:59:04 [INFO] epoch   75  train_loss=0.00914  k_t=5  p_t=0.493
+12:59:13 [INFO] epoch  100  train_loss=0.00903  k_t=5  p_t=0.500
+12:59:13 [INFO] 
+--- training tcn_best_s4 on full Xtrain  (family=tcn, window=10, epochs=100) ---
+12:59:17 [INFO] epoch   25  train_loss=0.01006  k_t=2  p_t=0.160
+12:59:22 [INFO] epoch   50  train_loss=0.01087  k_t=4  p_t=0.327
+12:59:30 [INFO] epoch   75  train_loss=0.00755  k_t=5  p_t=0.493
+12:59:39 [INFO] epoch  100  train_loss=0.00718  k_t=5  p_t=0.500
+12:59:40 [INFO] 
+--- training mlp_best_s0 on full Xtrain  (family=mlp, window=25, epochs=100) ---
+12:59:40 [INFO] epoch   25  train_loss=0.00190  k_t=2  p_t=0.160
+12:59:42 [INFO] epoch   50  train_loss=0.00116  k_t=4  p_t=0.327
+12:59:43 [INFO] epoch   75  train_loss=0.00063  k_t=5  p_t=0.493
+12:59:45 [INFO] epoch  100  train_loss=0.00053  k_t=5  p_t=0.500
+12:59:45 [INFO] 
+--- training mlp_best_s1 on full Xtrain  (family=mlp, window=25, epochs=100) ---
+12:59:46 [INFO] epoch   25  train_loss=0.00210  k_t=2  p_t=0.160
+12:59:47 [INFO] epoch   50  train_loss=0.00082  k_t=4  p_t=0.327
+12:59:49 [INFO] epoch   75  train_loss=0.00058  k_t=5  p_t=0.493
+12:59:50 [INFO] epoch  100  train_loss=0.00046  k_t=5  p_t=0.500
+12:59:50 [INFO] 
+--- training mlp_best_s2 on full Xtrain  (family=mlp, window=25, epochs=100) ---
+12:59:51 [INFO] epoch   25  train_loss=0.00157  k_t=2  p_t=0.160
+12:59:52 [INFO] epoch   50  train_loss=0.00074  k_t=4  p_t=0.327
+12:59:54 [INFO] epoch   75  train_loss=0.00054  k_t=5  p_t=0.493
+12:59:56 [INFO] epoch  100  train_loss=0.00040  k_t=5  p_t=0.500
+12:59:56 [INFO] 
+--- training mlp_best_s3 on full Xtrain  (family=mlp, window=25, epochs=100) ---
+12:59:57 [INFO] epoch   25  train_loss=0.00152  k_t=2  p_t=0.160
+12:59:58 [INFO] epoch   50  train_loss=0.00080  k_t=4  p_t=0.327
+12:59:59 [INFO] epoch   75  train_loss=0.00050  k_t=5  p_t=0.493
+13:00:01 [INFO] epoch  100  train_loss=0.00040  k_t=5  p_t=0.500
+13:00:01 [INFO] 
+--- training mlp_best_s4 on full Xtrain  (family=mlp, window=25, epochs=100) ---
+13:00:02 [INFO] epoch   25  train_loss=0.00197  k_t=2  p_t=0.160
+13:00:03 [INFO] epoch   50  train_loss=0.00089  k_t=4  p_t=0.327
+13:00:05 [INFO] epoch   75  train_loss=0.00066  k_t=5  p_t=0.493
+13:00:07 [INFO] epoch  100  train_loss=0.00049  k_t=5  p_t=0.500
+13:00:07 [INFO] 
+--- training cnn1d_best_s0 on full Xtrain  (family=cnn1d, window=50, epochs=100) ---
+13:00:07 [INFO] epoch   25  train_loss=0.02148  k_t=1  p_t=0.000
+13:00:08 [INFO] epoch   50  train_loss=0.01767  k_t=1  p_t=0.000
+13:00:09 [INFO] epoch   75  train_loss=0.01661  k_t=1  p_t=0.000
+13:00:10 [INFO] epoch  100  train_loss=0.01590  k_t=1  p_t=0.000
+13:00:10 [INFO] 
+--- training cnn1d_best_s1 on full Xtrain  (family=cnn1d, window=50, epochs=100) ---
+13:00:11 [INFO] epoch   25  train_loss=0.02029  k_t=1  p_t=0.000
+13:00:11 [INFO] epoch   50  train_loss=0.01797  k_t=1  p_t=0.000
+13:00:12 [INFO] epoch   75  train_loss=0.01552  k_t=1  p_t=0.000
+13:00:13 [INFO] epoch  100  train_loss=0.01529  k_t=1  p_t=0.000
+13:00:13 [INFO] 
+--- training cnn1d_best_s2 on full Xtrain  (family=cnn1d, window=50, epochs=100) ---
+13:00:14 [INFO] epoch   25  train_loss=0.02237  k_t=1  p_t=0.000
+13:00:15 [INFO] epoch   50  train_loss=0.01729  k_t=1  p_t=0.000
+13:00:15 [INFO] epoch   75  train_loss=0.01714  k_t=1  p_t=0.000
+13:00:16 [INFO] epoch  100  train_loss=0.01616  k_t=1  p_t=0.000
+13:00:16 [INFO] 
+--- training cnn1d_best_s3 on full Xtrain  (family=cnn1d, window=50, epochs=100) ---
+13:00:17 [INFO] epoch   25  train_loss=0.02263  k_t=1  p_t=0.000
+13:00:18 [INFO] epoch   50  train_loss=0.01916  k_t=1  p_t=0.000
+13:00:19 [INFO] epoch   75  train_loss=0.01698  k_t=1  p_t=0.000
+13:00:19 [INFO] epoch  100  train_loss=0.01652  k_t=1  p_t=0.000
+13:00:19 [INFO] 
+--- training cnn1d_best_s4 on full Xtrain  (family=cnn1d, window=50, epochs=100) ---
+13:00:20 [INFO] epoch   25  train_loss=0.02185  k_t=1  p_t=0.000
+13:00:21 [INFO] epoch   50  train_loss=0.01752  k_t=1  p_t=0.000
+13:00:22 [INFO] epoch   75  train_loss=0.01703  k_t=1  p_t=0.000
+13:00:23 [INFO] epoch  100  train_loss=0.01725  k_t=1  p_t=0.000
+13:00:23 [INFO] 
+--- training cnn_lstm_best_s0 on full Xtrain  (family=cnn_lstm, window=40, epochs=100) ---
+13:00:24 [INFO] epoch   25  train_loss=0.00097  k_t=2  p_t=0.080
+13:00:25 [INFO] epoch   50  train_loss=0.00049  k_t=2  p_t=0.163
+13:00:27 [INFO] epoch   75  train_loss=0.00098  k_t=3  p_t=0.247
+13:00:29 [INFO] epoch  100  train_loss=0.00073  k_t=3  p_t=0.250
+13:00:29 [INFO] 
+--- training cnn_lstm_best_s1 on full Xtrain  (family=cnn_lstm, window=40, epochs=100) ---
+13:00:30 [INFO] epoch   25  train_loss=0.00053  k_t=2  p_t=0.080
+13:00:31 [INFO] epoch   50  train_loss=0.00045  k_t=2  p_t=0.163
+13:00:33 [INFO] epoch   75  train_loss=0.00043  k_t=3  p_t=0.247
+13:00:35 [INFO] epoch  100  train_loss=0.00151  k_t=3  p_t=0.250
+13:00:35 [INFO] 
+--- training cnn_lstm_best_s2 on full Xtrain  (family=cnn_lstm, window=40, epochs=100) ---
+13:00:36 [INFO] epoch   25  train_loss=0.00057  k_t=2  p_t=0.080
+13:00:38 [INFO] epoch   50  train_loss=0.00031  k_t=2  p_t=0.163
+13:00:40 [INFO] epoch   75  train_loss=0.00064  k_t=3  p_t=0.247
+13:00:42 [INFO] epoch  100  train_loss=0.00163  k_t=3  p_t=0.250
+13:00:42 [INFO] 
+--- training cnn_lstm_best_s3 on full Xtrain  (family=cnn_lstm, window=40, epochs=100) ---
+13:00:43 [INFO] epoch   25  train_loss=0.00047  k_t=2  p_t=0.080
+13:00:44 [INFO] epoch   50  train_loss=0.00145  k_t=2  p_t=0.163
+13:00:46 [INFO] epoch   75  train_loss=0.00060  k_t=3  p_t=0.247
+13:00:48 [INFO] epoch  100  train_loss=0.00035  k_t=3  p_t=0.250
+13:00:48 [INFO] 
+--- training cnn_lstm_best_s4 on full Xtrain  (family=cnn_lstm, window=40, epochs=100) ---
+13:00:49 [INFO] epoch   25  train_loss=0.00071  k_t=2  p_t=0.080
+13:00:50 [INFO] epoch   50  train_loss=0.00067  k_t=2  p_t=0.163
+13:00:52 [INFO] epoch   75  train_loss=0.00073  k_t=3  p_t=0.247
+13:00:54 [INFO] epoch  100  train_loss=0.00050  k_t=3  p_t=0.250
+13:00:54 [INFO] 
+--- training lstm_best_s0 on full Xtrain  (family=lstm, window=30, epochs=100) ---
+13:00:56 [INFO] epoch   25  train_loss=0.02652  k_t=2  p_t=0.000
+13:00:58 [INFO] epoch   50  train_loss=0.00149  k_t=4  p_t=0.000
+13:01:02 [INFO] epoch   75  train_loss=0.00059  k_t=5  p_t=0.000
+13:01:06 [INFO] epoch  100  train_loss=0.00051  k_t=5  p_t=0.000
+13:01:06 [INFO] 
+--- training lstm_best_s1 on full Xtrain  (family=lstm, window=30, epochs=100) ---
+13:01:07 [INFO] epoch   25  train_loss=0.02907  k_t=2  p_t=0.000
+13:01:10 [INFO] epoch   50  train_loss=0.00268  k_t=4  p_t=0.000
+13:01:13 [INFO] epoch   75  train_loss=0.00059  k_t=5  p_t=0.000
+13:01:17 [INFO] epoch  100  train_loss=0.00050  k_t=5  p_t=0.000
+13:01:17 [INFO] 
+--- training lstm_best_s2 on full Xtrain  (family=lstm, window=30, epochs=100) ---
+13:01:19 [INFO] epoch   25  train_loss=0.01798  k_t=2  p_t=0.000
+13:01:22 [INFO] epoch   50  train_loss=0.00209  k_t=4  p_t=0.000
+13:01:25 [INFO] epoch   75  train_loss=0.00068  k_t=5  p_t=0.000
+13:01:29 [INFO] epoch  100  train_loss=0.00057  k_t=5  p_t=0.000
+13:01:29 [INFO] 
+--- training lstm_best_s3 on full Xtrain  (family=lstm, window=30, epochs=100) ---
+13:01:31 [INFO] epoch   25  train_loss=0.03590  k_t=2  p_t=0.000
+13:01:33 [INFO] epoch   50  train_loss=0.00252  k_t=4  p_t=0.000
+13:01:36 [INFO] epoch   75  train_loss=0.00073  k_t=5  p_t=0.000
+13:01:40 [INFO] epoch  100  train_loss=0.00052  k_t=5  p_t=0.000
+13:01:40 [INFO] 
+--- training lstm_best_s4 on full Xtrain  (family=lstm, window=30, epochs=100) ---
+13:01:42 [INFO] epoch   25  train_loss=0.01936  k_t=2  p_t=0.000
+13:01:45 [INFO] epoch   50  train_loss=0.00176  k_t=4  p_t=0.000
+13:01:48 [INFO] epoch   75  train_loss=0.00059  k_t=5  p_t=0.000
+13:01:52 [INFO] epoch  100  train_loss=0.00047  k_t=5  p_t=0.000
+13:01:52 [INFO] 
+wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\final\predictions.npy  ((200,), min=19.20, max=161.98)
+13:01:52 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\final\predictions.csv
+13:01:52 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\final\metadata.json
+13:01:52 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\final\ensemble_preview.png

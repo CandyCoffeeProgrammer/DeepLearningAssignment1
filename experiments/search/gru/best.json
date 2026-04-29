@@ -1,0 +1,25 @@
+{
+  "family": "gru",
+  "trial": 13,
+  "mean_mae": 18.592307439160844,
+  "worst_mae": 27.357493284344674,
+  "per_holdout_mae": {
+    "A": 3.1277215551957487,
+    "B": 27.357493284344674,
+    "C": 25.291707477942108
+  },
+  "params": {
+    "window": 10,
+    "hidden_dim": 64,
+    "num_layers": 1,
+    "dropout": 0.39035860829291213,
+    "scaler": "minmax_neg1_1",
+    "lr": 0.004986605544517985,
+    "batch_size": 32,
+    "weight_decay": 3.9395320896035135e-06,
+    "lr_scheduler": "onecycle",
+    "k_max": 3,
+    "p_max": 0.25,
+    "input_noise_sigma": 0.02
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "family": "cnn1d",
+  "trial": 9,
+  "mean_mae": 27.158961634337903,
+  "worst_mae": 36.28468523770571,
+  "per_holdout_mae": {
+    "A": 36.28468523770571,
+    "B": 26.140199108421804,
+    "C": 19.052000556886195
+  },
+  "params": {
+    "window": 50,
+    "hidden_dim": 64,
+    "num_layers": 2,
+    "dropout": 0.16784002497111597,
+    "kernel_size": 5,
+    "scaler": "minmax_0_1",
+    "lr": 0.0005558692452498921,
+    "batch_size": 64,
+    "weight_decay": 0.0001291140720054991,
+    "lr_scheduler": "onecycle",
+    "k_max": 1,
+    "p_max": 0.5,
+    "input_noise_sigma": 0.0
+  }
+}

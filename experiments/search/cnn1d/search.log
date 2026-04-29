@@ -1,0 +1,38 @@
+12:46:17 [INFO] family=cnn1d  n_trials=10  seed=42  epochs=60  device=cuda
+12:46:17 [INFO] storage=sqlite:///C:/Users/renat/OneDrive/Desktop/faks/Utrecht/Deep Learning/DeepLearningAssignment1/experiments/search/optuna.db  study=santa_fe_cnn1d  leaderboard=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\cnn1d\trials.csv
+12:46:25 [INFO] trial   0  family=cnn1d  mean_mae=13249.540  worst=39609.877  per_holdout=A=67.34, B=39609.88, C=71.41
+12:46:44 [INFO] trial   1  family=cnn1d  mean_mae= 32.039  worst= 42.416  per_holdout=A=42.42, B=25.15, C=28.55
+12:46:50 [INFO] trial   2  family=cnn1d  mean_mae= 27.351  worst= 37.743  per_holdout=A=37.74, B=25.99, C=18.32
+12:46:54 [INFO] trial   3  family=cnn1d  mean_mae= 31.588  worst= 36.493  per_holdout=A=36.49, B=25.64, C=32.62
+12:46:58 [INFO] trial   4  family=cnn1d  mean_mae= 34.950  worst= 39.782  per_holdout=A=35.05, B=30.02, C=39.78
+12:47:02 [INFO] trial   5  family=cnn1d  mean_mae= 34.730  worst= 43.027  per_holdout=A=43.03, B=31.15, C=30.01
+12:47:08 [INFO] trial   6  family=cnn1d  mean_mae= 29.372  worst= 36.409  per_holdout=A=36.41, B=25.86, C=25.85
+12:47:20 [INFO] trial   7  family=cnn1d  mean_mae= 28.571  worst= 37.265  per_holdout=A=37.26, B=27.07, C=21.38
+12:47:26 [INFO] trial   8  family=cnn1d  mean_mae= 34.733  worst= 47.323  per_holdout=A=40.14, B=47.32, C=16.74
+12:47:32 [INFO] trial   9  family=cnn1d  mean_mae= 27.159  worst= 36.285  per_holdout=A=36.28, B=26.14, C=19.05
+12:47:32 [INFO] 
+finished cnn1d: 10 trials
+12:47:32 [INFO] best trial #9  mean_mae=27.1590
+12:47:32 [INFO] best params:
+{
+  "window": 50,
+  "hidden_dim": 64,
+  "num_layers": 2,
+  "dropout": 0.16784002497111597,
+  "kernel_size": 5,
+  "scaler": "minmax_0_1",
+  "lr": 0.0005558692452498921,
+  "batch_size": 64,
+  "weight_decay": 0.0001291140720054991,
+  "lr_scheduler": "onecycle",
+  "k_max": 1,
+  "p_max": 0.5,
+  "input_noise_sigma": 0.0
+}
+12:47:32 [INFO] best per-holdout:
+{
+  "A": 36.28468523770571,
+  "B": 26.140199108421804,
+  "C": 19.052000556886195
+}
+12:47:32 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\cnn1d\best.json

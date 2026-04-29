@@ -1,0 +1,1253 @@
+12:49:05 [INFO] device=cuda  members=['gru_best', 'tcn_best', 'mlp_best', 'cnn1d_best', 'cnn_lstm_best', 'lstm_best']  seeds=[0, 1, 2]  out=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\baselines\milestone7_ensembles_top_per_family
+12:49:05 [INFO] 
+--- member=gru_best  seed=0  holdout=A  window=30  scaler=minmax_0_1 ---
+12:49:06 [INFO] epoch    5  train_loss=0.03713  val_mae= 19.583  val_mse=  491.61  best_mae= 19.583@e5  bad=0/30
+12:49:06 [INFO] epoch   10  train_loss=0.01439  val_mae= 20.457  val_mse=  547.13  best_mae= 19.583@e5  bad=1/30
+12:49:06 [INFO] epoch   15  train_loss=0.00635  val_mae= 29.362  val_mse= 1228.79  best_mae= 19.583@e5  bad=2/30
+12:49:06 [INFO] epoch   20  train_loss=0.00458  val_mae= 40.664  val_mse= 2700.53  best_mae= 19.583@e5  bad=3/30
+12:49:07 [INFO] epoch   25  train_loss=0.00536  val_mae= 25.638  val_mse=  990.62  best_mae= 19.583@e5  bad=4/30
+12:49:07 [INFO] epoch   30  train_loss=0.00405  val_mae= 40.647  val_mse= 2821.94  best_mae= 19.583@e5  bad=5/30
+12:49:07 [INFO] epoch   35  train_loss=0.00319  val_mae= 42.627  val_mse= 3053.08  best_mae= 19.583@e5  bad=6/30
+12:49:08 [INFO] epoch   40  train_loss=0.00386  val_mae= 35.620  val_mse= 2291.07  best_mae= 19.583@e5  bad=7/30
+12:49:08 [INFO] epoch   45  train_loss=0.00284  val_mae= 30.244  val_mse= 1459.68  best_mae= 19.583@e5  bad=8/30
+12:49:08 [INFO] epoch   50  train_loss=0.00282  val_mae=  9.913  val_mse=  182.32  best_mae=  9.913@e50  bad=0/30
+12:49:09 [INFO] epoch   55  train_loss=0.00252  val_mae= 16.919  val_mse=  483.18  best_mae=  9.913@e50  bad=1/30
+12:49:09 [INFO] epoch   60  train_loss=0.00325  val_mae=  9.317  val_mse=  134.21  best_mae=  9.317@e60  bad=0/30
+12:49:09 [INFO] epoch   65  train_loss=0.00219  val_mae=  9.204  val_mse=  154.36  best_mae=  9.204@e65  bad=0/30
+12:49:10 [INFO] epoch   70  train_loss=0.00191  val_mae=  7.230  val_mse=  116.40  best_mae=  7.230@e70  bad=0/30
+12:49:10 [INFO] epoch   75  train_loss=0.00168  val_mae= 14.555  val_mse=  361.12  best_mae=  7.230@e70  bad=1/30
+12:49:11 [INFO] epoch   80  train_loss=0.00185  val_mae= 14.499  val_mse=  366.44  best_mae=  7.230@e70  bad=2/30
+12:49:11 [INFO] epoch   85  train_loss=0.00168  val_mae= 14.025  val_mse=  347.26  best_mae=  7.230@e70  bad=3/30
+12:49:11 [INFO] epoch   90  train_loss=0.00169  val_mae= 13.403  val_mse=  314.98  best_mae=  7.230@e70  bad=4/30
+12:49:12 [INFO] epoch   95  train_loss=0.00186  val_mae= 13.588  val_mse=  323.45  best_mae=  7.230@e70  bad=5/30
+12:49:12 [INFO] epoch  100  train_loss=0.00153  val_mae= 13.398  val_mse=  314.00  best_mae=  7.230@e70  bad=6/30
+12:49:12 [INFO]   test MAE=35.501  inner-val MAE=7.230  best@e70
+12:49:12 [INFO] 
+--- member=gru_best  seed=0  holdout=B  window=30  scaler=minmax_0_1 ---
+12:49:12 [INFO] epoch    5  train_loss=0.04887  val_mae= 17.703  val_mse=  873.42  best_mae= 17.703@e5  bad=0/30
+12:49:13 [INFO] epoch   10  train_loss=0.01772  val_mae= 19.211  val_mse=  875.07  best_mae= 17.703@e5  bad=1/30
+12:49:13 [INFO] epoch   15  train_loss=0.00612  val_mae= 45.860  val_mse= 3131.09  best_mae= 17.703@e5  bad=2/30
+12:49:13 [INFO] epoch   20  train_loss=0.00463  val_mae= 50.173  val_mse= 3737.93  best_mae= 17.703@e5  bad=3/30
+12:49:13 [INFO] epoch   25  train_loss=0.00434  val_mae= 37.856  val_mse= 2137.41  best_mae= 17.703@e5  bad=4/30
+12:49:13 [INFO] epoch   30  train_loss=0.00435  val_mae= 49.928  val_mse= 4145.17  best_mae= 17.703@e5  bad=5/30
+12:49:14 [INFO] epoch   35  train_loss=0.00294  val_mae= 48.159  val_mse= 3740.36  best_mae= 17.703@e5  bad=6/30
+12:49:14 [INFO] epoch   40  train_loss=0.00253  val_mae= 44.689  val_mse= 3147.27  best_mae= 17.703@e5  bad=7/30
+12:49:14 [INFO] epoch   45  train_loss=0.00265  val_mae= 37.648  val_mse= 2179.78  best_mae= 17.703@e5  bad=8/30
+12:49:15 [INFO] epoch   50  train_loss=0.00208  val_mae= 50.722  val_mse= 4011.35  best_mae= 17.703@e5  bad=9/30
+12:49:15 [INFO] epoch   55  train_loss=0.00231  val_mae= 42.357  val_mse= 2928.00  best_mae= 17.703@e5  bad=10/30
+12:49:15 [INFO] epoch   60  train_loss=0.00224  val_mae= 22.345  val_mse= 1208.77  best_mae= 17.703@e5  bad=11/30
+12:49:15 [INFO] epoch   65  train_loss=0.00195  val_mae= 48.647  val_mse= 3947.51  best_mae= 17.703@e5  bad=12/30
+12:49:16 [INFO] epoch   70  train_loss=0.00165  val_mae= 54.459  val_mse= 4932.33  best_mae= 17.703@e5  bad=13/30
+12:49:16 [INFO] epoch   75  train_loss=0.00188  val_mae= 45.764  val_mse= 3446.39  best_mae= 17.703@e5  bad=14/30
+12:49:17 [INFO] epoch   80  train_loss=0.00175  val_mae= 51.551  val_mse= 4419.28  best_mae= 17.703@e5  bad=15/30
+12:49:17 [INFO] epoch   85  train_loss=0.00153  val_mae= 47.703  val_mse= 3725.74  best_mae= 17.703@e5  bad=16/30
+12:49:17 [INFO] epoch   90  train_loss=0.00146  val_mae= 47.109  val_mse= 3620.48  best_mae= 17.703@e5  bad=17/30
+12:49:18 [INFO] epoch   95  train_loss=0.00147  val_mae= 50.853  val_mse= 4312.97  best_mae= 17.703@e5  bad=18/30
+12:49:18 [INFO] epoch  100  train_loss=0.00156  val_mae= 50.683  val_mse= 4274.41  best_mae= 17.703@e5  bad=19/30
+12:49:18 [INFO]   test MAE=26.149  inner-val MAE=17.703  best@e5
+12:49:18 [INFO] 
+--- member=gru_best  seed=0  holdout=C  window=30  scaler=minmax_0_1 ---
+12:49:18 [INFO] epoch    5  train_loss=0.04389  val_mae= 52.361  val_mse= 3990.36  best_mae= 52.361@e5  bad=0/30
+12:49:18 [INFO] epoch   10  train_loss=0.02631  val_mae= 55.910  val_mse= 4214.84  best_mae= 52.361@e5  bad=1/30
+12:49:19 [INFO] epoch   15  train_loss=0.00807  val_mae= 62.259  val_mse= 5634.33  best_mae= 52.361@e5  bad=2/30
+12:49:19 [INFO] epoch   20  train_loss=0.00416  val_mae= 54.923  val_mse= 5803.40  best_mae= 52.361@e5  bad=3/30
+12:49:19 [INFO] epoch   25  train_loss=0.00336  val_mae= 59.714  val_mse= 7334.73  best_mae= 52.361@e5  bad=4/30
+12:49:19 [INFO] epoch   30  train_loss=0.00293  val_mae= 52.353  val_mse= 4431.46  best_mae= 52.353@e30  bad=0/30
+12:49:19 [INFO] epoch   35  train_loss=0.00246  val_mae= 22.812  val_mse= 1392.14  best_mae= 22.812@e35  bad=0/30
+12:49:20 [INFO] epoch   40  train_loss=0.00264  val_mae= 26.380  val_mse= 1399.61  best_mae= 22.812@e35  bad=1/30
+12:49:20 [INFO] epoch   45  train_loss=0.00400  val_mae= 61.093  val_mse= 7813.48  best_mae= 22.812@e35  bad=2/30
+12:49:20 [INFO] epoch   50  train_loss=0.00213  val_mae= 59.714  val_mse= 5626.02  best_mae= 22.812@e35  bad=3/30
+12:49:20 [INFO] epoch   55  train_loss=0.00214  val_mae= 44.013  val_mse= 3814.40  best_mae= 22.812@e35  bad=4/30
+12:49:21 [INFO] epoch   60  train_loss=0.00118  val_mae= 46.412  val_mse= 5504.92  best_mae= 22.812@e35  bad=5/30
+12:49:21 [INFO] epoch   65  train_loss=0.00143  val_mae= 42.821  val_mse= 3888.43  best_mae= 22.812@e35  bad=6/30
+12:49:21 [INFO] epoch   70  train_loss=0.00090  val_mae= 45.515  val_mse= 4994.68  best_mae= 22.812@e35  bad=7/30
+12:49:22 [INFO] epoch   75  train_loss=0.00099  val_mae= 50.626  val_mse= 5916.56  best_mae= 22.812@e35  bad=8/30
+12:49:22 [INFO] epoch   80  train_loss=0.00089  val_mae= 48.025  val_mse= 5541.76  best_mae= 22.812@e35  bad=9/30
+12:49:22 [INFO] epoch   85  train_loss=0.00069  val_mae= 43.700  val_mse= 4733.03  best_mae= 22.812@e35  bad=10/30
+12:49:22 [INFO] epoch   90  train_loss=0.00075  val_mae= 42.526  val_mse= 3745.86  best_mae= 22.812@e35  bad=11/30
+12:49:23 [INFO] epoch   95  train_loss=0.00067  val_mae= 24.641  val_mse= 1444.41  best_mae= 22.812@e35  bad=12/30
+12:49:23 [INFO] epoch  100  train_loss=0.00065  val_mae= 46.648  val_mse= 4992.16  best_mae= 22.812@e35  bad=13/30
+12:49:23 [INFO]   test MAE=52.887  inner-val MAE=22.812  best@e35
+12:49:23 [INFO] 
+--- member=gru_best  seed=1  holdout=A  window=30  scaler=minmax_0_1 ---
+12:49:23 [INFO] epoch    5  train_loss=0.03720  val_mae= 19.269  val_mse=  520.23  best_mae= 19.269@e5  bad=0/30
+12:49:24 [INFO] epoch   10  train_loss=0.01388  val_mae= 19.657  val_mse=  497.18  best_mae= 19.269@e5  bad=1/30
+12:49:24 [INFO] epoch   15  train_loss=0.00667  val_mae= 42.387  val_mse= 2568.32  best_mae= 19.269@e5  bad=2/30
+12:49:24 [INFO] epoch   20  train_loss=0.00498  val_mae= 16.108  val_mse=  384.39  best_mae= 16.108@e20  bad=0/30
+12:49:24 [INFO] epoch   25  train_loss=0.00471  val_mae= 33.454  val_mse= 2146.65  best_mae= 16.108@e20  bad=1/30
+12:49:25 [INFO] epoch   30  train_loss=0.00395  val_mae= 29.994  val_mse= 1407.15  best_mae= 16.108@e20  bad=2/30
+12:49:25 [INFO] epoch   35  train_loss=0.00371  val_mae= 30.220  val_mse= 1579.94  best_mae= 16.108@e20  bad=3/30
+12:49:25 [INFO] epoch   40  train_loss=0.00302  val_mae= 45.980  val_mse= 3747.53  best_mae= 16.108@e20  bad=4/30
+12:49:26 [INFO] epoch   45  train_loss=0.00283  val_mae= 32.092  val_mse= 1665.79  best_mae= 16.108@e20  bad=5/30
+12:49:26 [INFO] epoch   50  train_loss=0.00245  val_mae= 18.448  val_mse=  586.25  best_mae= 16.108@e20  bad=6/30
+12:49:26 [INFO] epoch   55  train_loss=0.00268  val_mae= 21.541  val_mse=  739.85  best_mae= 16.108@e20  bad=7/30
+12:49:27 [INFO] epoch   60  train_loss=0.00209  val_mae=  8.645  val_mse=  119.80  best_mae=  8.645@e60  bad=0/30
+12:49:27 [INFO] epoch   65  train_loss=0.00202  val_mae= 14.537  val_mse=  353.50  best_mae=  8.645@e60  bad=1/30
+12:49:27 [INFO] epoch   70  train_loss=0.00175  val_mae= 16.669  val_mse=  459.56  best_mae=  8.645@e60  bad=2/30
+12:49:28 [INFO] epoch   75  train_loss=0.00162  val_mae= 13.941  val_mse=  325.52  best_mae=  8.645@e60  bad=3/30
+12:49:28 [INFO] epoch   80  train_loss=0.00165  val_mae= 14.543  val_mse=  334.57  best_mae=  8.645@e60  bad=4/30
+12:49:29 [INFO] epoch   85  train_loss=0.00132  val_mae= 15.566  val_mse=  365.80  best_mae=  8.645@e60  bad=5/30
+12:49:29 [INFO] epoch   90  train_loss=0.00139  val_mae= 15.361  val_mse=  359.02  best_mae=  8.645@e60  bad=6/30
+12:49:29 [INFO] epoch   95  train_loss=0.00159  val_mae= 15.718  val_mse=  371.63  best_mae=  8.645@e60  bad=7/30
+12:49:30 [INFO] epoch  100  train_loss=0.00112  val_mae= 15.172  val_mse=  350.35  best_mae=  8.645@e60  bad=8/30
+12:49:30 [INFO]   test MAE=43.070  inner-val MAE=8.645  best@e60
+12:49:30 [INFO] 
+--- member=gru_best  seed=1  holdout=B  window=30  scaler=minmax_0_1 ---
+12:49:30 [INFO] epoch    5  train_loss=0.04879  val_mae= 17.009  val_mse=  836.89  best_mae= 17.009@e5  bad=0/30
+12:49:30 [INFO] epoch   10  train_loss=0.01757  val_mae= 36.353  val_mse= 1954.69  best_mae= 17.009@e5  bad=1/30
+12:49:30 [INFO] epoch   15  train_loss=0.00620  val_mae= 33.534  val_mse= 1851.06  best_mae= 17.009@e5  bad=2/30
+12:49:31 [INFO] epoch   20  train_loss=0.00421  val_mae= 35.044  val_mse= 1859.71  best_mae= 17.009@e5  bad=3/30
+12:49:31 [INFO] epoch   25  train_loss=0.00339  val_mae= 53.771  val_mse= 4713.19  best_mae= 17.009@e5  bad=4/30
+12:49:31 [INFO] epoch   30  train_loss=0.00332  val_mae= 40.265  val_mse= 2447.60  best_mae= 17.009@e5  bad=5/30
+12:49:31 [INFO] epoch   35  train_loss=0.00294  val_mae= 47.147  val_mse= 3488.35  best_mae= 17.009@e5  bad=6/30
+12:49:32 [INFO] epoch   40  train_loss=0.00279  val_mae= 49.968  val_mse= 4271.63  best_mae= 17.009@e5  bad=7/30
+12:49:32 [INFO] epoch   45  train_loss=0.00275  val_mae= 48.981  val_mse= 3675.97  best_mae= 17.009@e5  bad=8/30
+12:49:32 [INFO] epoch   50  train_loss=0.00245  val_mae= 45.784  val_mse= 3417.55  best_mae= 17.009@e5  bad=9/30
+12:49:32 [INFO] epoch   55  train_loss=0.00264  val_mae= 26.963  val_mse= 1339.76  best_mae= 17.009@e5  bad=10/30
+12:49:33 [INFO] epoch   60  train_loss=0.00210  val_mae= 48.276  val_mse= 3896.87  best_mae= 17.009@e5  bad=11/30
+12:49:33 [INFO] epoch   65  train_loss=0.00218  val_mae= 47.322  val_mse= 3814.98  best_mae= 17.009@e5  bad=12/30
+12:49:33 [INFO] epoch   70  train_loss=0.00233  val_mae= 53.261  val_mse= 4538.55  best_mae= 17.009@e5  bad=13/30
+12:49:34 [INFO] epoch   75  train_loss=0.00161  val_mae= 50.663  val_mse= 4300.99  best_mae= 17.009@e5  bad=14/30
+12:49:34 [INFO] epoch   80  train_loss=0.00162  val_mae= 46.750  val_mse= 3522.43  best_mae= 17.009@e5  bad=15/30
+12:49:34 [INFO] epoch   85  train_loss=0.00147  val_mae= 50.900  val_mse= 4214.35  best_mae= 17.009@e5  bad=16/30
+12:49:35 [INFO] epoch   90  train_loss=0.00150  val_mae= 52.348  val_mse= 4509.48  best_mae= 17.009@e5  bad=17/30
+12:49:35 [INFO] epoch   95  train_loss=0.00116  val_mae= 47.768  val_mse= 3827.67  best_mae= 17.009@e5  bad=18/30
+12:49:36 [INFO] epoch  100  train_loss=0.00125  val_mae= 50.643  val_mse= 4314.88  best_mae= 17.009@e5  bad=19/30
+12:49:36 [INFO]   test MAE=25.741  inner-val MAE=17.009  best@e5
+12:49:36 [INFO] 
+--- member=gru_best  seed=1  holdout=C  window=30  scaler=minmax_0_1 ---
+12:49:36 [INFO] epoch    5  train_loss=0.04405  val_mae= 53.875  val_mse= 4015.06  best_mae= 53.875@e5  bad=0/30
+12:49:36 [INFO] epoch   10  train_loss=0.02784  val_mae= 53.021  val_mse= 3980.15  best_mae= 53.021@e10  bad=0/30
+12:49:36 [INFO] epoch   15  train_loss=0.00749  val_mae= 65.547  val_mse= 6482.51  best_mae= 53.021@e10  bad=1/30
+12:49:36 [INFO] epoch   20  train_loss=0.00380  val_mae= 48.518  val_mse= 4530.18  best_mae= 48.518@e20  bad=0/30
+12:49:36 [INFO] epoch   25  train_loss=0.00367  val_mae= 50.680  val_mse= 4603.89  best_mae= 48.518@e20  bad=1/30
+12:49:37 [INFO] epoch   30  train_loss=0.00501  val_mae= 63.732  val_mse= 7957.60  best_mae= 48.518@e20  bad=2/30
+12:49:37 [INFO] epoch   35  train_loss=0.00187  val_mae= 42.531  val_mse= 4007.57  best_mae= 42.531@e35  bad=0/30
+12:49:37 [INFO] epoch   40  train_loss=0.00240  val_mae= 55.066  val_mse= 6135.62  best_mae= 42.531@e35  bad=1/30
+12:49:37 [INFO] epoch   45  train_loss=0.00181  val_mae= 54.413  val_mse= 6165.51  best_mae= 42.531@e35  bad=2/30
+12:49:38 [INFO] epoch   50  train_loss=0.00150  val_mae= 25.809  val_mse= 1482.52  best_mae= 25.809@e50  bad=0/30
+12:49:38 [INFO] epoch   55  train_loss=0.00118  val_mae= 51.042  val_mse= 5719.83  best_mae= 25.809@e50  bad=1/30
+12:49:38 [INFO] epoch   60  train_loss=0.00339  val_mae= 58.298  val_mse= 5230.86  best_mae= 25.809@e50  bad=2/30
+12:49:38 [INFO] epoch   65  train_loss=0.00121  val_mae= 50.871  val_mse= 5098.52  best_mae= 25.809@e50  bad=3/30
+12:49:39 [INFO] epoch   70  train_loss=0.00158  val_mae= 50.116  val_mse= 4024.74  best_mae= 25.809@e50  bad=4/30
+12:49:39 [INFO] epoch   75  train_loss=0.00086  val_mae= 14.260  val_mse=  661.21  best_mae= 14.260@e75  bad=0/30
+12:49:39 [INFO] epoch   80  train_loss=0.00085  val_mae= 50.928  val_mse= 6016.35  best_mae= 14.260@e75  bad=1/30
+12:49:40 [INFO] epoch   85  train_loss=0.00079  val_mae= 35.037  val_mse= 2785.85  best_mae= 14.260@e75  bad=2/30
+12:49:40 [INFO] epoch   90  train_loss=0.00068  val_mae= 47.076  val_mse= 5102.34  best_mae= 14.260@e75  bad=3/30
+12:49:40 [INFO] epoch   95  train_loss=0.00072  val_mae= 58.925  val_mse= 7319.61  best_mae= 14.260@e75  bad=4/30
+12:49:40 [INFO] epoch  100  train_loss=0.00069  val_mae= 59.308  val_mse= 7335.68  best_mae= 14.260@e75  bad=5/30
+12:49:40 [INFO]   test MAE=49.668  inner-val MAE=14.260  best@e75
+12:49:40 [INFO] 
+--- member=gru_best  seed=2  holdout=A  window=30  scaler=minmax_0_1 ---
+12:49:41 [INFO] epoch    5  train_loss=0.03823  val_mae= 19.258  val_mse=  523.58  best_mae= 19.258@e5  bad=0/30
+12:49:41 [INFO] epoch   10  train_loss=0.02118  val_mae= 18.937  val_mse=  493.18  best_mae= 18.937@e10  bad=0/30
+12:49:41 [INFO] epoch   15  train_loss=0.00769  val_mae= 44.520  val_mse= 3005.87  best_mae= 18.937@e10  bad=1/30
+12:49:41 [INFO] epoch   20  train_loss=0.00610  val_mae= 13.306  val_mse=  345.10  best_mae= 13.306@e20  bad=0/30
+12:49:42 [INFO] epoch   25  train_loss=0.00437  val_mae= 31.578  val_mse= 1578.18  best_mae= 13.306@e20  bad=1/30
+12:49:42 [INFO] epoch   30  train_loss=0.00319  val_mae= 25.498  val_mse= 1101.76  best_mae= 13.306@e20  bad=2/30
+12:49:42 [INFO] epoch   35  train_loss=0.00298  val_mae= 30.906  val_mse= 1589.15  best_mae= 13.306@e20  bad=3/30
+12:49:43 [INFO] epoch   40  train_loss=0.00304  val_mae= 38.395  val_mse= 3036.96  best_mae= 13.306@e20  bad=4/30
+12:49:43 [INFO] epoch   45  train_loss=0.00312  val_mae= 17.571  val_mse=  568.72  best_mae= 13.306@e20  bad=5/30
+12:49:43 [INFO] epoch   50  train_loss=0.00270  val_mae= 12.422  val_mse=  282.08  best_mae= 12.422@e50  bad=0/30
+12:49:43 [INFO] epoch   55  train_loss=0.00329  val_mae= 13.507  val_mse=  493.39  best_mae= 12.422@e50  bad=1/30
+12:49:44 [INFO] epoch   60  train_loss=0.00237  val_mae= 16.420  val_mse=  409.21  best_mae= 12.422@e50  bad=2/30
+12:49:44 [INFO] epoch   65  train_loss=0.00232  val_mae= 17.466  val_mse=  468.23  best_mae= 12.422@e50  bad=3/30
+12:49:45 [INFO] epoch   70  train_loss=0.00301  val_mae= 33.503  val_mse= 2447.45  best_mae= 12.422@e50  bad=4/30
+12:49:45 [INFO] epoch   75  train_loss=0.00152  val_mae= 12.672  val_mse=  277.95  best_mae= 12.422@e50  bad=5/30
+12:49:45 [INFO] epoch   80  train_loss=0.00179  val_mae= 14.512  val_mse=  342.38  best_mae= 12.422@e50  bad=6/30
+12:49:46 [INFO] epoch   85  train_loss=0.00152  val_mae= 15.031  val_mse=  361.89  best_mae= 12.422@e50  bad=7/30
+12:49:46 [INFO] epoch   90  train_loss=0.00132  val_mae= 14.343  val_mse=  333.91  best_mae= 12.422@e50  bad=8/30
+12:49:47 [INFO] epoch   95  train_loss=0.00131  val_mae= 13.754  val_mse=  311.55  best_mae= 12.422@e50  bad=9/30
+12:49:47 [INFO] epoch  100  train_loss=0.00158  val_mae= 13.580  val_mse=  304.56  best_mae= 12.422@e50  bad=10/30
+12:49:47 [INFO]   test MAE=40.822  inner-val MAE=12.422  best@e50
+12:49:47 [INFO] 
+--- member=gru_best  seed=2  holdout=B  window=30  scaler=minmax_0_1 ---
+12:49:47 [INFO] epoch    5  train_loss=0.05102  val_mae= 17.834  val_mse=  886.49  best_mae= 17.834@e5  bad=0/30
+12:49:47 [INFO] epoch   10  train_loss=0.03217  val_mae= 16.685  val_mse=  745.82  best_mae= 16.685@e10  bad=0/30
+12:49:48 [INFO] epoch   15  train_loss=0.00662  val_mae= 47.607  val_mse= 3397.95  best_mae= 16.685@e10  bad=1/30
+12:49:48 [INFO] epoch   20  train_loss=0.00409  val_mae= 49.812  val_mse= 3814.79  best_mae= 16.685@e10  bad=2/30
+12:49:48 [INFO] epoch   25  train_loss=0.00387  val_mae= 25.122  val_mse= 1267.20  best_mae= 16.685@e10  bad=3/30
+12:49:48 [INFO] epoch   30  train_loss=0.00446  val_mae= 49.717  val_mse= 4117.99  best_mae= 16.685@e10  bad=4/30
+12:49:49 [INFO] epoch   35  train_loss=0.00425  val_mae= 58.618  val_mse= 5160.05  best_mae= 16.685@e10  bad=5/30
+12:49:49 [INFO] epoch   40  train_loss=0.00254  val_mae= 47.313  val_mse= 3616.91  best_mae= 16.685@e10  bad=6/30
+12:49:49 [INFO] epoch   45  train_loss=0.00331  val_mae= 45.983  val_mse= 3484.06  best_mae= 16.685@e10  bad=7/30
+12:49:49 [INFO] epoch   50  train_loss=0.00231  val_mae= 16.706  val_mse=  899.10  best_mae= 16.685@e10  bad=8/30
+12:49:50 [INFO] epoch   55  train_loss=0.00229  val_mae= 49.088  val_mse= 3994.46  best_mae= 16.685@e10  bad=9/30
+12:49:50 [INFO] epoch   60  train_loss=0.00202  val_mae= 39.971  val_mse= 2603.67  best_mae= 16.685@e10  bad=10/30
+12:49:50 [INFO] epoch   65  train_loss=0.00205  val_mae= 52.813  val_mse= 4530.17  best_mae= 16.685@e10  bad=11/30
+12:49:51 [INFO] epoch   70  train_loss=0.00198  val_mae= 46.401  val_mse= 3463.85  best_mae= 16.685@e10  bad=12/30
+12:49:51 [INFO] epoch   75  train_loss=0.00186  val_mae= 52.315  val_mse= 4580.13  best_mae= 16.685@e10  bad=13/30
+12:49:51 [INFO] epoch   80  train_loss=0.00130  val_mae= 54.954  val_mse= 4871.97  best_mae= 16.685@e10  bad=14/30
+12:49:52 [INFO] epoch   85  train_loss=0.00150  val_mae= 52.687  val_mse= 4561.23  best_mae= 16.685@e10  bad=15/30
+12:49:52 [INFO] epoch   90  train_loss=0.00110  val_mae= 53.783  val_mse= 4732.56  best_mae= 16.685@e10  bad=16/30
+12:49:52 [INFO] epoch   95  train_loss=0.00127  val_mae= 45.657  val_mse= 3313.67  best_mae= 16.685@e10  bad=17/30
+12:49:53 [INFO] epoch  100  train_loss=0.00119  val_mae= 49.099  val_mse= 3880.79  best_mae= 16.685@e10  bad=18/30
+12:49:53 [INFO]   test MAE=25.848  inner-val MAE=16.685  best@e10
+12:49:53 [INFO] 
+--- member=gru_best  seed=2  holdout=C  window=30  scaler=minmax_0_1 ---
+12:49:53 [INFO] epoch    5  train_loss=0.04637  val_mae= 55.903  val_mse= 4103.16  best_mae= 55.903@e5  bad=0/30
+12:49:53 [INFO] epoch   10  train_loss=0.03636  val_mae= 52.851  val_mse= 3960.87  best_mae= 52.851@e10  bad=0/30
+12:49:53 [INFO] epoch   15  train_loss=0.00853  val_mae= 75.840  val_mse= 8744.25  best_mae= 52.851@e10  bad=1/30
+12:49:53 [INFO] epoch   20  train_loss=0.00370  val_mae= 60.771  val_mse= 6224.71  best_mae= 52.851@e10  bad=2/30
+12:49:54 [INFO] epoch   25  train_loss=0.00291  val_mae= 67.500  val_mse= 8550.57  best_mae= 52.851@e10  bad=3/30
+12:49:54 [INFO] epoch   30  train_loss=0.00335  val_mae= 57.027  val_mse= 5726.03  best_mae= 52.851@e10  bad=4/30
+12:49:54 [INFO] epoch   35  train_loss=0.00459  val_mae= 55.248  val_mse= 4645.91  best_mae= 52.851@e10  bad=5/30
+12:49:54 [INFO] epoch   40  train_loss=0.00222  val_mae= 44.005  val_mse= 3308.93  best_mae= 44.005@e40  bad=0/30
+12:49:55 [INFO] epoch   45  train_loss=0.00301  val_mae= 66.585  val_mse= 8384.28  best_mae= 44.005@e40  bad=1/30
+12:49:55 [INFO] epoch   50  train_loss=0.00233  val_mae= 55.461  val_mse= 4859.22  best_mae= 44.005@e40  bad=2/30
+12:49:55 [INFO] epoch   55  train_loss=0.00165  val_mae= 54.991  val_mse= 4682.48  best_mae= 44.005@e40  bad=3/30
+12:49:55 [INFO] epoch   60  train_loss=0.00137  val_mae= 23.344  val_mse= 1416.81  best_mae= 23.344@e60  bad=0/30
+12:49:56 [INFO] epoch   65  train_loss=0.00091  val_mae= 45.693  val_mse= 4938.97  best_mae= 23.344@e60  bad=1/30
+12:49:56 [INFO] epoch   70  train_loss=0.00098  val_mae= 51.664  val_mse= 5705.39  best_mae= 23.344@e60  bad=2/30
+12:49:56 [INFO] epoch   75  train_loss=0.00085  val_mae= 29.058  val_mse= 2172.66  best_mae= 23.344@e60  bad=3/30
+12:49:56 [INFO] epoch   80  train_loss=0.00094  val_mae= 55.499  val_mse= 5098.45  best_mae= 23.344@e60  bad=4/30
+12:49:57 [INFO] epoch   85  train_loss=0.00082  val_mae= 63.961  val_mse= 7191.58  best_mae= 23.344@e60  bad=5/30
+12:49:57 [INFO] epoch   90  train_loss=0.00065  val_mae= 56.738  val_mse= 5357.25  best_mae= 23.344@e60  bad=6/30
+12:49:57 [INFO] epoch   95  train_loss=0.00067  val_mae= 52.428  val_mse= 5300.31  best_mae= 23.344@e60  bad=7/30
+12:49:58 [INFO] epoch  100  train_loss=0.00059  val_mae= 63.191  val_mse= 7261.63  best_mae= 23.344@e60  bad=8/30
+12:49:58 [INFO]   test MAE=49.837  inner-val MAE=23.344  best@e60
+12:49:58 [INFO] 
+--- member=tcn_best  seed=0  holdout=A  window=30  scaler=minmax_0_1 ---
+12:49:58 [INFO] epoch    5  train_loss=0.00883  val_mae= 29.914  val_mse= 1449.98  best_mae= 29.914@e5  bad=0/30
+12:49:59 [INFO] epoch   10  train_loss=0.00643  val_mae= 30.175  val_mse= 1410.43  best_mae= 29.914@e5  bad=1/30
+12:49:59 [INFO] epoch   15  train_loss=0.00455  val_mae= 23.404  val_mse= 1203.48  best_mae= 23.404@e15  bad=0/30
+12:50:00 [INFO] epoch   20  train_loss=0.00439  val_mae= 19.228  val_mse=  509.82  best_mae= 19.228@e20  bad=0/30
+12:50:01 [INFO] epoch   25  train_loss=0.00428  val_mae= 17.050  val_mse=  436.06  best_mae= 17.050@e25  bad=0/30
+12:50:01 [INFO] epoch   30  train_loss=0.00462  val_mae= 16.981  val_mse=  463.51  best_mae= 16.981@e30  bad=0/30
+12:50:02 [INFO] epoch   35  train_loss=0.00319  val_mae= 18.085  val_mse=  467.21  best_mae= 16.981@e30  bad=1/30
+12:50:03 [INFO] epoch   40  train_loss=0.00509  val_mae= 20.815  val_mse=  598.69  best_mae= 16.981@e30  bad=2/30
+12:50:04 [INFO] epoch   45  train_loss=0.00393  val_mae= 17.995  val_mse=  524.90  best_mae= 16.981@e30  bad=3/30
+12:50:05 [INFO] epoch   50  train_loss=0.00508  val_mae= 17.356  val_mse=  523.38  best_mae= 16.981@e30  bad=4/30
+12:50:07 [INFO] epoch   55  train_loss=0.00372  val_mae= 15.152  val_mse=  368.82  best_mae= 15.152@e55  bad=0/30
+12:50:08 [INFO] epoch   60  train_loss=0.00456  val_mae= 16.648  val_mse=  486.08  best_mae= 15.152@e55  bad=1/30
+12:50:09 [INFO] epoch   65  train_loss=0.00355  val_mae= 11.085  val_mse=  224.58  best_mae= 11.085@e65  bad=0/30
+12:50:10 [INFO] epoch   70  train_loss=0.00351  val_mae= 16.213  val_mse=  418.33  best_mae= 11.085@e65  bad=1/30
+12:50:12 [INFO] epoch   75  train_loss=0.00416  val_mae= 18.740  val_mse=  549.58  best_mae= 11.085@e65  bad=2/30
+12:50:13 [INFO] epoch   80  train_loss=0.00390  val_mae= 15.269  val_mse=  359.48  best_mae= 11.085@e65  bad=3/30
+12:50:15 [INFO] epoch   85  train_loss=0.00309  val_mae= 11.240  val_mse=  226.19  best_mae= 11.085@e65  bad=4/30
+12:50:16 [INFO] epoch   90  train_loss=0.00372  val_mae=  9.506  val_mse=  153.63  best_mae=  9.506@e90  bad=0/30
+12:50:17 [INFO] epoch   95  train_loss=0.00336  val_mae= 18.314  val_mse=  473.44  best_mae=  9.506@e90  bad=1/30
+12:50:19 [INFO] epoch  100  train_loss=0.00342  val_mae= 14.394  val_mse=  350.97  best_mae=  9.506@e90  bad=2/30
+12:50:19 [INFO]   test MAE=33.742  inner-val MAE=9.506  best@e90
+12:50:19 [INFO] 
+--- member=tcn_best  seed=0  holdout=B  window=30  scaler=minmax_0_1 ---
+12:50:19 [INFO] epoch    5  train_loss=0.01272  val_mae= 17.262  val_mse=  965.92  best_mae= 17.262@e5  bad=0/30
+12:50:20 [INFO] epoch   10  train_loss=0.00879  val_mae= 42.664  val_mse= 2797.64  best_mae= 17.262@e5  bad=1/30
+12:50:20 [INFO] epoch   15  train_loss=0.00438  val_mae= 41.299  val_mse= 2766.62  best_mae= 17.262@e5  bad=2/30
+12:50:21 [INFO] epoch   20  train_loss=0.00475  val_mae= 30.981  val_mse= 1656.70  best_mae= 17.262@e5  bad=3/30
+12:50:22 [INFO] epoch   25  train_loss=0.00444  val_mae= 47.387  val_mse= 3884.40  best_mae= 17.262@e5  bad=4/30
+12:50:22 [INFO] epoch   30  train_loss=0.00458  val_mae= 25.378  val_mse= 1501.81  best_mae= 17.262@e5  bad=5/30
+12:50:23 [INFO] epoch   35  train_loss=0.00462  val_mae= 34.491  val_mse= 1827.91  best_mae= 17.262@e5  bad=6/30
+12:50:24 [INFO] epoch   40  train_loss=0.00378  val_mae= 45.222  val_mse= 3286.79  best_mae= 17.262@e5  bad=7/30
+12:50:25 [INFO] epoch   45  train_loss=0.00418  val_mae= 43.721  val_mse= 2937.03  best_mae= 17.262@e5  bad=8/30
+12:50:26 [INFO] epoch   50  train_loss=0.00411  val_mae= 38.704  val_mse= 2336.12  best_mae= 17.262@e5  bad=9/30
+12:50:27 [INFO] epoch   55  train_loss=0.00455  val_mae= 38.852  val_mse= 2263.25  best_mae= 17.262@e5  bad=10/30
+12:50:28 [INFO] epoch   60  train_loss=0.00327  val_mae= 43.470  val_mse= 3049.68  best_mae= 17.262@e5  bad=11/30
+12:50:29 [INFO] epoch   65  train_loss=0.00357  val_mae= 39.614  val_mse= 2437.61  best_mae= 17.262@e5  bad=12/30
+12:50:30 [INFO] epoch   70  train_loss=0.00370  val_mae= 32.214  val_mse= 1692.30  best_mae= 17.262@e5  bad=13/30
+12:50:31 [INFO] epoch   75  train_loss=0.00362  val_mae= 42.920  val_mse= 2928.11  best_mae= 17.262@e5  bad=14/30
+12:50:33 [INFO] epoch   80  train_loss=0.00351  val_mae= 42.158  val_mse= 2763.17  best_mae= 17.262@e5  bad=15/30
+12:50:34 [INFO] epoch   85  train_loss=0.00336  val_mae= 44.346  val_mse= 3083.75  best_mae= 17.262@e5  bad=16/30
+12:50:35 [INFO] epoch   90  train_loss=0.00413  val_mae= 33.808  val_mse= 1870.69  best_mae= 17.262@e5  bad=17/30
+12:50:37 [INFO] epoch   95  train_loss=0.00285  val_mae= 43.041  val_mse= 2786.09  best_mae= 17.262@e5  bad=18/30
+12:50:38 [INFO] epoch  100  train_loss=0.00354  val_mae= 41.794  val_mse= 2665.53  best_mae= 17.262@e5  bad=19/30
+12:50:39 [INFO]   test MAE=25.111  inner-val MAE=17.262  best@e5
+12:50:39 [INFO] 
+--- member=tcn_best  seed=0  holdout=C  window=30  scaler=minmax_0_1 ---
+12:50:39 [INFO] epoch    5  train_loss=0.01098  val_mae= 57.763  val_mse= 5075.02  best_mae= 57.763@e5  bad=0/30
+12:50:39 [INFO] epoch   10  train_loss=0.00598  val_mae= 62.799  val_mse= 6008.61  best_mae= 57.763@e5  bad=1/30
+12:50:40 [INFO] epoch   15  train_loss=0.00377  val_mae= 74.310  val_mse= 8577.56  best_mae= 57.763@e5  bad=2/30
+12:50:41 [INFO] epoch   20  train_loss=0.00520  val_mae= 68.903  val_mse= 7397.01  best_mae= 57.763@e5  bad=3/30
+12:50:41 [INFO] epoch   25  train_loss=0.00383  val_mae= 65.663  val_mse= 6864.19  best_mae= 57.763@e5  bad=4/30
+12:50:42 [INFO] epoch   30  train_loss=0.00410  val_mae= 32.504  val_mse= 2538.85  best_mae= 32.504@e30  bad=0/30
+12:50:42 [INFO] epoch   35  train_loss=0.00332  val_mae= 38.481  val_mse= 3772.89  best_mae= 32.504@e30  bad=1/30
+12:50:43 [INFO] epoch   40  train_loss=0.00289  val_mae= 54.872  val_mse= 5406.05  best_mae= 32.504@e30  bad=2/30
+12:50:44 [INFO] epoch   45  train_loss=0.00460  val_mae= 72.949  val_mse= 8212.12  best_mae= 32.504@e30  bad=3/30
+12:50:45 [INFO] epoch   50  train_loss=0.00328  val_mae= 33.403  val_mse= 2551.70  best_mae= 32.504@e30  bad=4/30
+12:50:46 [INFO] epoch   55  train_loss=0.00267  val_mae= 44.605  val_mse= 4597.72  best_mae= 32.504@e30  bad=5/30
+12:50:46 [INFO] epoch   60  train_loss=0.00284  val_mae= 67.173  val_mse= 7227.06  best_mae= 32.504@e30  bad=6/30
+12:50:47 [INFO] epoch   65  train_loss=0.00239  val_mae= 70.198  val_mse= 7840.90  best_mae= 32.504@e30  bad=7/30
+12:50:48 [INFO] epoch   70  train_loss=0.00203  val_mae= 68.721  val_mse= 7643.27  best_mae= 32.504@e30  bad=8/30
+12:50:50 [INFO] epoch   75  train_loss=0.00239  val_mae= 68.262  val_mse= 7521.57  best_mae= 32.504@e30  bad=9/30
+12:50:51 [INFO] epoch   80  train_loss=0.00249  val_mae= 68.016  val_mse= 7595.23  best_mae= 32.504@e30  bad=10/30
+12:50:52 [INFO] epoch   85  train_loss=0.00245  val_mae= 67.775  val_mse= 7519.53  best_mae= 32.504@e30  bad=11/30
+12:50:53 [INFO] epoch   90  train_loss=0.00189  val_mae= 64.847  val_mse= 6860.39  best_mae= 32.504@e30  bad=12/30
+12:50:54 [INFO] epoch   95  train_loss=0.00204  val_mae= 67.048  val_mse= 7309.91  best_mae= 32.504@e30  bad=13/30
+12:50:55 [INFO] epoch  100  train_loss=0.00196  val_mae= 65.163  val_mse= 6946.92  best_mae= 32.504@e30  bad=14/30
+12:50:56 [INFO]   test MAE=40.788  inner-val MAE=32.504  best@e30
+12:50:56 [INFO] 
+--- member=tcn_best  seed=1  holdout=A  window=30  scaler=minmax_0_1 ---
+12:50:56 [INFO] epoch    5  train_loss=0.00864  val_mae=  7.935  val_mse=  105.68  best_mae=  7.935@e5  bad=0/30
+12:50:56 [INFO] epoch   10  train_loss=0.00544  val_mae= 17.287  val_mse=  454.57  best_mae=  7.935@e5  bad=1/30
+12:50:57 [INFO] epoch   15  train_loss=0.00453  val_mae= 15.636  val_mse=  401.54  best_mae=  7.935@e5  bad=2/30
+12:50:58 [INFO] epoch   20  train_loss=0.00368  val_mae= 34.550  val_mse= 1924.83  best_mae=  7.935@e5  bad=3/30
+12:50:59 [INFO] epoch   25  train_loss=0.00391  val_mae=  6.700  val_mse=   82.72  best_mae=  6.700@e25  bad=0/30
+12:50:59 [INFO] epoch   30  train_loss=0.00340  val_mae= 13.115  val_mse=  298.96  best_mae=  6.700@e25  bad=1/30
+12:51:00 [INFO] epoch   35  train_loss=0.00302  val_mae= 14.689  val_mse=  333.67  best_mae=  6.700@e25  bad=2/30
+12:51:01 [INFO] epoch   40  train_loss=0.00280  val_mae=  5.577  val_mse=   59.72  best_mae=  5.577@e40  bad=0/30
+12:51:02 [INFO] epoch   45  train_loss=0.00394  val_mae= 17.204  val_mse=  503.38  best_mae=  5.577@e40  bad=1/30
+12:51:04 [INFO] epoch   50  train_loss=0.00448  val_mae= 12.306  val_mse=  259.77  best_mae=  5.577@e40  bad=2/30
+12:51:05 [INFO] epoch   55  train_loss=0.00325  val_mae= 16.983  val_mse=  437.38  best_mae=  5.577@e40  bad=3/30
+12:51:06 [INFO] epoch   60  train_loss=0.00370  val_mae= 13.724  val_mse=  327.96  best_mae=  5.577@e40  bad=4/30
+12:51:07 [INFO] epoch   65  train_loss=0.00432  val_mae= 16.821  val_mse=  448.11  best_mae=  5.577@e40  bad=5/30
+12:51:09 [INFO] epoch   70  train_loss=0.00386  val_mae= 17.489  val_mse=  477.30  best_mae=  5.577@e40  bad=6/30
+12:51:10 [INFO] epoch   75  train_loss=0.00323  val_mae= 16.389  val_mse=  453.22  best_mae=  5.577@e40  bad=7/30
+12:51:12 [INFO] epoch   80  train_loss=0.00317  val_mae=  9.504  val_mse=  172.61  best_mae=  5.577@e40  bad=8/30
+12:51:13 [INFO] epoch   85  train_loss=0.00393  val_mae= 13.032  val_mse=  291.21  best_mae=  5.577@e40  bad=9/30
+12:51:15 [INFO] epoch   90  train_loss=0.00378  val_mae= 15.314  val_mse=  388.33  best_mae=  5.577@e40  bad=10/30
+12:51:16 [INFO] epoch   95  train_loss=0.00332  val_mae=  3.755  val_mse=   23.33  best_mae=  3.755@e95  bad=0/30
+12:51:18 [INFO] epoch  100  train_loss=0.00263  val_mae= 21.763  val_mse=  795.74  best_mae=  3.755@e95  bad=1/30
+12:51:18 [INFO]   test MAE=28.924  inner-val MAE=3.755  best@e95
+12:51:18 [INFO] 
+--- member=tcn_best  seed=1  holdout=B  window=30  scaler=minmax_0_1 ---
+12:51:19 [INFO] epoch    5  train_loss=0.01207  val_mae= 15.924  val_mse=  661.41  best_mae= 15.924@e5  bad=0/30
+12:51:19 [INFO] epoch   10  train_loss=0.00659  val_mae= 40.939  val_mse= 2483.03  best_mae= 15.924@e5  bad=1/30
+12:51:20 [INFO] epoch   15  train_loss=0.00477  val_mae= 42.189  val_mse= 2784.64  best_mae= 15.924@e5  bad=2/30
+12:51:20 [INFO] epoch   20  train_loss=0.00467  val_mae= 44.226  val_mse= 3045.21  best_mae= 15.924@e5  bad=3/30
+12:51:21 [INFO] epoch   25  train_loss=0.00349  val_mae= 37.853  val_mse= 2131.52  best_mae= 15.924@e5  bad=4/30
+12:51:22 [INFO] epoch   30  train_loss=0.00355  val_mae= 42.007  val_mse= 2863.29  best_mae= 15.924@e5  bad=5/30
+12:51:22 [INFO] epoch   35  train_loss=0.00466  val_mae= 41.934  val_mse= 2699.67  best_mae= 15.924@e5  bad=6/30
+12:51:23 [INFO] epoch   40  train_loss=0.00325  val_mae= 42.882  val_mse= 2879.73  best_mae= 15.924@e5  bad=7/30
+12:51:24 [INFO] epoch   45  train_loss=0.00340  val_mae= 39.616  val_mse= 2383.35  best_mae= 15.924@e5  bad=8/30
+12:51:25 [INFO] epoch   50  train_loss=0.00343  val_mae= 36.860  val_mse= 2012.45  best_mae= 15.924@e5  bad=9/30
+12:51:26 [INFO] epoch   55  train_loss=0.00458  val_mae= 24.228  val_mse= 1344.07  best_mae= 15.924@e5  bad=10/30
+12:51:27 [INFO] epoch   60  train_loss=0.00357  val_mae= 43.322  val_mse= 2876.55  best_mae= 15.924@e5  bad=11/30
+12:51:29 [INFO] epoch   65  train_loss=0.00313  val_mae= 49.867  val_mse= 4110.39  best_mae= 15.924@e5  bad=12/30
+12:51:30 [INFO] epoch   70  train_loss=0.00331  val_mae= 45.179  val_mse= 3173.56  best_mae= 15.924@e5  bad=13/30
+12:51:31 [INFO] epoch   75  train_loss=0.00319  val_mae= 35.764  val_mse= 2020.08  best_mae= 15.924@e5  bad=14/30
+12:51:33 [INFO] epoch   80  train_loss=0.00309  val_mae= 39.891  val_mse= 2464.35  best_mae= 15.924@e5  bad=15/30
+12:51:34 [INFO] epoch   85  train_loss=0.00328  val_mae= 40.005  val_mse= 2407.27  best_mae= 15.924@e5  bad=16/30
+12:51:35 [INFO] epoch   90  train_loss=0.00341  val_mae= 36.935  val_mse= 2130.38  best_mae= 15.924@e5  bad=17/30
+12:51:37 [INFO] epoch   95  train_loss=0.00268  val_mae= 44.107  val_mse= 2983.25  best_mae= 15.924@e5  bad=18/30
+12:51:38 [INFO] epoch  100  train_loss=0.00280  val_mae= 42.784  val_mse= 2830.85  best_mae= 15.924@e5  bad=19/30
+12:51:38 [INFO]   test MAE=25.468  inner-val MAE=15.924  best@e5
+12:51:38 [INFO] 
+--- member=tcn_best  seed=1  holdout=C  window=30  scaler=minmax_0_1 ---
+12:51:39 [INFO] epoch    5  train_loss=0.01071  val_mae= 62.757  val_mse= 6020.91  best_mae= 62.757@e5  bad=0/30
+12:51:39 [INFO] epoch   10  train_loss=0.00698  val_mae= 66.011  val_mse= 7551.07  best_mae= 62.757@e5  bad=1/30
+12:51:40 [INFO] epoch   15  train_loss=0.00518  val_mae= 67.426  val_mse= 7303.97  best_mae= 62.757@e5  bad=2/30
+12:51:40 [INFO] epoch   20  train_loss=0.00429  val_mae= 73.481  val_mse= 8589.47  best_mae= 62.757@e5  bad=3/30
+12:51:41 [INFO] epoch   25  train_loss=0.00340  val_mae= 69.344  val_mse= 8094.26  best_mae= 62.757@e5  bad=4/30
+12:51:41 [INFO] epoch   30  train_loss=0.00280  val_mae= 63.718  val_mse= 6816.04  best_mae= 62.757@e5  bad=5/30
+12:51:42 [INFO] epoch   35  train_loss=0.00311  val_mae= 65.390  val_mse= 6836.03  best_mae= 62.757@e5  bad=6/30
+12:51:43 [INFO] epoch   40  train_loss=0.00264  val_mae= 62.906  val_mse= 6283.96  best_mae= 62.757@e5  bad=7/30
+12:51:44 [INFO] epoch   45  train_loss=0.00274  val_mae= 66.963  val_mse= 7120.32  best_mae= 62.757@e5  bad=8/30
+12:51:44 [INFO] epoch   50  train_loss=0.00296  val_mae= 64.746  val_mse= 6827.94  best_mae= 62.757@e5  bad=9/30
+12:51:45 [INFO] epoch   55  train_loss=0.00277  val_mae= 59.779  val_mse= 6324.91  best_mae= 59.779@e55  bad=0/30
+12:51:46 [INFO] epoch   60  train_loss=0.00414  val_mae= 67.454  val_mse= 7451.53  best_mae= 59.779@e55  bad=1/30
+12:51:47 [INFO] epoch   65  train_loss=0.00287  val_mae= 59.826  val_mse= 6336.92  best_mae= 59.779@e55  bad=2/30
+12:51:48 [INFO] epoch   70  train_loss=0.00284  val_mae= 62.891  val_mse= 6441.43  best_mae= 59.779@e55  bad=3/30
+12:51:49 [INFO] epoch   75  train_loss=0.00336  val_mae= 62.420  val_mse= 6509.97  best_mae= 59.779@e55  bad=4/30
+12:51:50 [INFO] epoch   80  train_loss=0.00299  val_mae= 74.493  val_mse= 8737.50  best_mae= 59.779@e55  bad=5/30
+12:51:51 [INFO] epoch   85  train_loss=0.00214  val_mae= 67.452  val_mse= 7552.33  best_mae= 59.779@e55  bad=6/30
+12:51:52 [INFO] epoch   90  train_loss=0.00289  val_mae= 70.023  val_mse= 7948.27  best_mae= 59.779@e55  bad=7/30
+12:51:53 [INFO] epoch   95  train_loss=0.00223  val_mae= 58.763  val_mse= 5759.86  best_mae= 58.763@e95  bad=0/30
+12:51:55 [INFO] epoch  100  train_loss=0.00211  val_mae= 59.067  val_mse= 5713.78  best_mae= 58.763@e95  bad=1/30
+12:51:55 [INFO]   test MAE=41.015  inner-val MAE=58.763  best@e95
+12:51:55 [INFO] 
+--- member=tcn_best  seed=2  holdout=A  window=30  scaler=minmax_0_1 ---
+12:51:55 [INFO] epoch    5  train_loss=0.00789  val_mae= 18.316  val_mse=  514.78  best_mae= 18.316@e5  bad=0/30
+12:51:55 [INFO] epoch   10  train_loss=0.00602  val_mae= 27.927  val_mse= 1427.54  best_mae= 18.316@e5  bad=1/30
+12:51:56 [INFO] epoch   15  train_loss=0.00490  val_mae=  5.954  val_mse=   62.49  best_mae=  5.954@e15  bad=0/30
+12:51:57 [INFO] epoch   20  train_loss=0.00400  val_mae= 12.876  val_mse=  261.27  best_mae=  5.954@e15  bad=1/30
+12:51:58 [INFO] epoch   25  train_loss=0.00389  val_mae= 35.817  val_mse= 2239.62  best_mae=  5.954@e15  bad=2/30
+12:51:58 [INFO] epoch   30  train_loss=0.00337  val_mae= 15.852  val_mse=  392.84  best_mae=  5.954@e15  bad=3/30
+12:51:59 [INFO] epoch   35  train_loss=0.00377  val_mae= 36.162  val_mse= 2269.12  best_mae=  5.954@e15  bad=4/30
+12:52:00 [INFO] epoch   40  train_loss=0.00421  val_mae= 12.228  val_mse=  335.75  best_mae=  5.954@e15  bad=5/30
+12:52:01 [INFO] epoch   45  train_loss=0.00390  val_mae= 17.426  val_mse=  583.74  best_mae=  5.954@e15  bad=6/30
+12:52:02 [INFO] epoch   50  train_loss=0.00400  val_mae= 14.390  val_mse=  356.25  best_mae=  5.954@e15  bad=7/30
+12:52:03 [INFO] epoch   55  train_loss=0.00279  val_mae= 15.059  val_mse=  608.03  best_mae=  5.954@e15  bad=8/30
+12:52:05 [INFO] epoch   60  train_loss=0.00332  val_mae= 12.327  val_mse=  251.52  best_mae=  5.954@e15  bad=9/30
+12:52:06 [INFO] epoch   65  train_loss=0.00407  val_mae=  8.624  val_mse=  133.43  best_mae=  5.954@e15  bad=10/30
+12:52:08 [INFO] epoch   70  train_loss=0.00317  val_mae=  3.236  val_mse=   19.57  best_mae=  3.236@e70  bad=0/30
+12:52:09 [INFO] epoch   75  train_loss=0.00332  val_mae= 15.067  val_mse=  588.68  best_mae=  3.236@e70  bad=1/30
+12:52:11 [INFO] epoch   80  train_loss=0.00354  val_mae= 14.203  val_mse=  362.80  best_mae=  3.236@e70  bad=2/30
+12:52:12 [INFO] epoch   85  train_loss=0.00388  val_mae=  9.450  val_mse=  161.33  best_mae=  3.236@e70  bad=3/30
+12:52:13 [INFO] epoch   90  train_loss=0.00350  val_mae=  4.832  val_mse=   36.92  best_mae=  3.236@e70  bad=4/30
+12:52:15 [INFO] epoch   95  train_loss=0.00343  val_mae=  7.270  val_mse=  105.59  best_mae=  3.236@e70  bad=5/30
+12:52:16 [INFO] epoch  100  train_loss=0.00394  val_mae= 16.604  val_mse=  555.26  best_mae=  3.236@e70  bad=6/30
+12:52:16 [INFO]   test MAE=34.109  inner-val MAE=3.236  best@e70
+12:52:16 [INFO] 
+--- member=tcn_best  seed=2  holdout=B  window=30  scaler=minmax_0_1 ---
+12:52:17 [INFO] epoch    5  train_loss=0.00826  val_mae= 32.127  val_mse= 1543.89  best_mae= 32.127@e5  bad=0/30
+12:52:17 [INFO] epoch   10  train_loss=0.00514  val_mae= 38.254  val_mse= 2149.39  best_mae= 32.127@e5  bad=1/30
+12:52:18 [INFO] epoch   15  train_loss=0.00469  val_mae= 42.803  val_mse= 2936.01  best_mae= 32.127@e5  bad=2/30
+12:52:18 [INFO] epoch   20  train_loss=0.00440  val_mae= 40.720  val_mse= 2560.26  best_mae= 32.127@e5  bad=3/30
+12:52:19 [INFO] epoch   25  train_loss=0.00435  val_mae= 42.276  val_mse= 2765.64  best_mae= 32.127@e5  bad=4/30
+12:52:20 [INFO] epoch   30  train_loss=0.00404  val_mae= 42.601  val_mse= 2802.47  best_mae= 32.127@e5  bad=5/30
+12:52:21 [INFO] epoch   35  train_loss=0.00360  val_mae= 26.174  val_mse= 1398.45  best_mae= 26.174@e35  bad=0/30
+12:52:21 [INFO] epoch   40  train_loss=0.00362  val_mae= 17.788  val_mse=  936.98  best_mae= 17.788@e40  bad=0/30
+12:52:22 [INFO] epoch   45  train_loss=0.00406  val_mae= 40.550  val_mse= 2578.44  best_mae= 17.788@e40  bad=1/30
+12:52:23 [INFO] epoch   50  train_loss=0.00417  val_mae= 42.342  val_mse= 3118.36  best_mae= 17.788@e40  bad=2/30
+12:52:24 [INFO] epoch   55  train_loss=0.00419  val_mae= 42.102  val_mse= 2713.11  best_mae= 17.788@e40  bad=3/30
+12:52:25 [INFO] epoch   60  train_loss=0.00338  val_mae= 39.100  val_mse= 2327.10  best_mae= 17.788@e40  bad=4/30
+12:52:26 [INFO] epoch   65  train_loss=0.00406  val_mae= 45.389  val_mse= 3368.14  best_mae= 17.788@e40  bad=5/30
+12:52:27 [INFO] epoch   70  train_loss=0.00376  val_mae= 40.269  val_mse= 2717.82  best_mae= 17.788@e40  bad=6/30
+12:52:29 [INFO] epoch   75  train_loss=0.00380  val_mae= 21.583  val_mse= 1106.92  best_mae= 17.788@e40  bad=7/30
+12:52:30 [INFO] epoch   80  train_loss=0.00315  val_mae= 42.994  val_mse= 3008.19  best_mae= 17.788@e40  bad=8/30
+12:52:31 [INFO] epoch   85  train_loss=0.00400  val_mae= 50.174  val_mse= 4128.33  best_mae= 17.788@e40  bad=9/30
+12:52:33 [INFO] epoch   90  train_loss=0.00489  val_mae= 45.358  val_mse= 3145.28  best_mae= 17.788@e40  bad=10/30
+12:52:34 [INFO] epoch   95  train_loss=0.00285  val_mae= 44.307  val_mse= 3118.32  best_mae= 17.788@e40  bad=11/30
+12:52:35 [INFO] epoch  100  train_loss=0.00356  val_mae= 41.398  val_mse= 2661.25  best_mae= 17.788@e40  bad=12/30
+12:52:35 [INFO]   test MAE=25.111  inner-val MAE=17.788  best@e40
+12:52:35 [INFO] 
+--- member=tcn_best  seed=2  holdout=C  window=30  scaler=minmax_0_1 ---
+12:52:35 [INFO] epoch    5  train_loss=0.00769  val_mae= 65.284  val_mse= 6652.28  best_mae= 65.284@e5  bad=0/30
+12:52:36 [INFO] epoch   10  train_loss=0.00521  val_mae= 69.329  val_mse= 7360.31  best_mae= 65.284@e5  bad=1/30
+12:52:36 [INFO] epoch   15  train_loss=0.00411  val_mae= 68.709  val_mse= 7323.75  best_mae= 65.284@e5  bad=2/30
+12:52:37 [INFO] epoch   20  train_loss=0.00386  val_mae= 69.298  val_mse= 7584.59  best_mae= 65.284@e5  bad=3/30
+12:52:37 [INFO] epoch   25  train_loss=0.00362  val_mae= 65.650  val_mse= 6902.23  best_mae= 65.284@e5  bad=4/30
+12:52:38 [INFO] epoch   30  train_loss=0.00345  val_mae= 65.676  val_mse= 7079.14  best_mae= 65.284@e5  bad=5/30
+12:52:38 [INFO] epoch   35  train_loss=0.00400  val_mae= 69.629  val_mse= 7323.19  best_mae= 65.284@e5  bad=6/30
+12:52:39 [INFO] epoch   40  train_loss=0.00279  val_mae= 62.643  val_mse= 6275.66  best_mae= 62.643@e40  bad=0/30
+12:52:40 [INFO] epoch   45  train_loss=0.00310  val_mae= 72.610  val_mse= 8400.78  best_mae= 62.643@e40  bad=1/30
+12:52:40 [INFO] epoch   50  train_loss=0.00353  val_mae= 63.862  val_mse= 6404.74  best_mae= 62.643@e40  bad=2/30
+12:52:41 [INFO] epoch   55  train_loss=0.00277  val_mae= 66.352  val_mse= 6984.26  best_mae= 62.643@e40  bad=3/30
+12:52:42 [INFO] epoch   60  train_loss=0.00291  val_mae= 74.619  val_mse= 8935.93  best_mae= 62.643@e40  bad=4/30
+12:52:43 [INFO] epoch   65  train_loss=0.00338  val_mae= 69.077  val_mse= 7737.34  best_mae= 62.643@e40  bad=5/30
+12:52:44 [INFO] epoch   70  train_loss=0.00267  val_mae= 52.044  val_mse= 5079.96  best_mae= 52.044@e70  bad=0/30
+12:52:45 [INFO] epoch   75  train_loss=0.00338  val_mae= 64.039  val_mse= 6832.85  best_mae= 52.044@e70  bad=1/30
+12:52:46 [INFO] epoch   80  train_loss=0.00342  val_mae= 64.824  val_mse= 6921.94  best_mae= 52.044@e70  bad=2/30
+12:52:47 [INFO] epoch   85  train_loss=0.00434  val_mae= 55.070  val_mse= 4964.69  best_mae= 52.044@e70  bad=3/30
+12:52:48 [INFO] epoch   90  train_loss=0.00227  val_mae= 54.702  val_mse= 5497.48  best_mae= 52.044@e70  bad=4/30
+12:52:49 [INFO] epoch   95  train_loss=0.00229  val_mae= 34.286  val_mse= 2706.33  best_mae= 34.286@e95  bad=0/30
+12:52:50 [INFO] epoch  100  train_loss=0.00318  val_mae= 68.453  val_mse= 7598.31  best_mae= 34.286@e95  bad=1/30
+12:52:50 [INFO]   test MAE=55.266  inner-val MAE=34.286  best@e95
+12:52:50 [INFO] 
+--- member=mlp_best  seed=0  holdout=A  window=30  scaler=minmax_0_1 ---
+12:52:50 [INFO] epoch    5  train_loss=0.01270  val_mae= 21.585  val_mse=  687.88  best_mae= 21.585@e5  bad=0/30
+12:52:50 [INFO] epoch   10  train_loss=0.00697  val_mae= 30.914  val_mse= 1519.86  best_mae= 21.585@e5  bad=1/30
+12:52:51 [INFO] epoch   15  train_loss=0.00523  val_mae= 18.759  val_mse=  587.95  best_mae= 18.759@e15  bad=0/30
+12:52:51 [INFO] epoch   20  train_loss=0.00395  val_mae= 13.523  val_mse=  326.73  best_mae= 13.523@e20  bad=0/30
+12:52:51 [INFO] epoch   25  train_loss=0.00295  val_mae=  8.100  val_mse=  120.96  best_mae=  8.100@e25  bad=0/30
+12:52:51 [INFO] epoch   30  train_loss=0.00237  val_mae= 12.506  val_mse=  266.96  best_mae=  8.100@e25  bad=1/30
+12:52:51 [INFO] epoch   35  train_loss=0.00189  val_mae= 12.471  val_mse=  263.90  best_mae=  8.100@e25  bad=2/30
+12:52:51 [INFO] epoch   40  train_loss=0.00155  val_mae= 12.280  val_mse=  251.91  best_mae=  8.100@e25  bad=3/30
+12:52:52 [INFO] epoch   45  train_loss=0.00147  val_mae=  9.252  val_mse=  151.99  best_mae=  8.100@e25  bad=4/30
+12:52:52 [INFO] epoch   50  train_loss=0.00112  val_mae= 12.620  val_mse=  263.79  best_mae=  8.100@e25  bad=5/30
+12:52:52 [INFO] epoch   55  train_loss=0.00165  val_mae= 11.663  val_mse=  231.49  best_mae=  8.100@e25  bad=6/30
+12:52:52 [INFO] epoch   60  train_loss=0.00082  val_mae= 10.534  val_mse=  194.35  best_mae=  8.100@e25  bad=7/30
+12:52:52 [INFO] epoch   65  train_loss=0.00098  val_mae= 11.083  val_mse=  222.17  best_mae=  8.100@e25  bad=8/30
+12:52:53 [INFO] epoch   70  train_loss=0.00085  val_mae=  6.933  val_mse=   87.34  best_mae=  6.933@e70  bad=0/30
+12:52:53 [INFO] epoch   75  train_loss=0.00111  val_mae=  8.245  val_mse=  121.01  best_mae=  6.933@e70  bad=1/30
+12:52:54 [INFO] epoch   80  train_loss=0.00083  val_mae=  7.718  val_mse=  108.68  best_mae=  6.933@e70  bad=2/30
+12:52:54 [INFO] epoch   85  train_loss=0.00075  val_mae=  7.594  val_mse=  106.64  best_mae=  6.933@e70  bad=3/30
+12:52:54 [INFO] epoch   90  train_loss=0.00074  val_mae=  6.371  val_mse=   67.54  best_mae=  6.371@e90  bad=0/30
+12:52:55 [INFO] epoch   95  train_loss=0.00074  val_mae=  5.269  val_mse=   46.97  best_mae=  5.269@e95  bad=0/30
+12:52:55 [INFO] epoch  100  train_loss=0.00067  val_mae=  5.015  val_mse=   44.41  best_mae=  5.015@e100  bad=0/30
+12:52:55 [INFO]   test MAE=11.934  inner-val MAE=5.015  best@e100
+12:52:55 [INFO] 
+--- member=mlp_best  seed=0  holdout=B  window=30  scaler=minmax_0_1 ---
+12:52:55 [INFO] epoch    5  train_loss=0.01622  val_mae= 41.186  val_mse= 2492.54  best_mae= 41.186@e5  bad=0/30
+12:52:55 [INFO] epoch   10  train_loss=0.00804  val_mae= 37.368  val_mse= 2105.53  best_mae= 37.368@e10  bad=0/30
+12:52:55 [INFO] epoch   15  train_loss=0.00565  val_mae= 34.272  val_mse= 1814.21  best_mae= 34.272@e15  bad=0/30
+12:52:55 [INFO] epoch   20  train_loss=0.00399  val_mae= 24.786  val_mse= 1043.81  best_mae= 24.786@e20  bad=0/30
+12:52:55 [INFO] epoch   25  train_loss=0.00359  val_mae= 29.160  val_mse= 1323.58  best_mae= 24.786@e20  bad=1/30
+12:52:56 [INFO] epoch   30  train_loss=0.00288  val_mae= 28.561  val_mse= 1226.40  best_mae= 24.786@e20  bad=2/30
+12:52:56 [INFO] epoch   35  train_loss=0.00252  val_mae= 24.816  val_mse= 1000.01  best_mae= 24.786@e20  bad=3/30
+12:52:56 [INFO] epoch   40  train_loss=0.00190  val_mae= 24.043  val_mse=  941.29  best_mae= 24.043@e40  bad=0/30
+12:52:56 [INFO] epoch   45  train_loss=0.00168  val_mae= 24.490  val_mse=  940.64  best_mae= 24.043@e40  bad=1/30
+12:52:56 [INFO] epoch   50  train_loss=0.00142  val_mae= 24.735  val_mse=  952.48  best_mae= 24.043@e40  bad=2/30
+12:52:56 [INFO] epoch   55  train_loss=0.00123  val_mae= 26.875  val_mse= 1108.98  best_mae= 24.043@e40  bad=3/30
+12:52:57 [INFO] epoch   60  train_loss=0.00107  val_mae= 25.627  val_mse=  994.58  best_mae= 24.043@e40  bad=4/30
+12:52:57 [INFO] epoch   65  train_loss=0.00096  val_mae= 29.119  val_mse= 1332.39  best_mae= 24.043@e40  bad=5/30
+12:52:57 [INFO] epoch   70  train_loss=0.00087  val_mae= 27.189  val_mse= 1189.76  best_mae= 24.043@e40  bad=6/30
+12:52:57 [INFO] epoch   75  train_loss=0.00093  val_mae= 30.029  val_mse= 1421.52  best_mae= 24.043@e40  bad=7/30
+12:52:57 [INFO] epoch   80  train_loss=0.00081  val_mae= 26.360  val_mse= 1087.19  best_mae= 24.043@e40  bad=8/30
+12:52:58 [INFO] epoch   85  train_loss=0.00079  val_mae= 19.301  val_mse=  624.24  best_mae= 19.301@e85  bad=0/30
+12:52:58 [INFO] epoch   90  train_loss=0.00085  val_mae= 20.221  val_mse=  678.76  best_mae= 19.301@e85  bad=1/30
+12:52:58 [INFO] epoch   95  train_loss=0.00074  val_mae= 23.199  val_mse=  841.51  best_mae= 19.301@e85  bad=2/30
+12:52:58 [INFO] epoch  100  train_loss=0.00067  val_mae= 26.777  val_mse= 1122.36  best_mae= 19.301@e85  bad=3/30
+12:52:58 [INFO]   test MAE=18.000  inner-val MAE=19.301  best@e85
+12:52:58 [INFO] 
+--- member=mlp_best  seed=0  holdout=C  window=30  scaler=minmax_0_1 ---
+12:52:58 [INFO] epoch    5  train_loss=0.01551  val_mae= 86.371  val_mse=10278.00  best_mae= 86.371@e5  bad=0/30
+12:52:59 [INFO] epoch   10  train_loss=0.00783  val_mae= 66.871  val_mse= 6938.32  best_mae= 66.871@e10  bad=0/30
+12:52:59 [INFO] epoch   15  train_loss=0.00504  val_mae= 43.479  val_mse= 3860.98  best_mae= 43.479@e15  bad=0/30
+12:52:59 [INFO] epoch   20  train_loss=0.00363  val_mae= 55.827  val_mse= 5512.60  best_mae= 43.479@e15  bad=1/30
+12:52:59 [INFO] epoch   25  train_loss=0.00298  val_mae= 54.660  val_mse= 5126.51  best_mae= 43.479@e15  bad=2/30
+12:52:59 [INFO] epoch   30  train_loss=0.00243  val_mae= 51.530  val_mse= 4320.00  best_mae= 43.479@e15  bad=3/30
+12:52:59 [INFO] epoch   35  train_loss=0.00202  val_mae= 50.168  val_mse= 4023.64  best_mae= 43.479@e15  bad=4/30
+12:52:59 [INFO] epoch   40  train_loss=0.00146  val_mae= 48.856  val_mse= 3842.90  best_mae= 43.479@e15  bad=5/30
+12:52:59 [INFO] epoch   45  train_loss=0.00124  val_mae= 46.666  val_mse= 3595.76  best_mae= 43.479@e15  bad=6/30
+12:53:00 [INFO] epoch   50  train_loss=0.00103  val_mae= 47.543  val_mse= 3641.20  best_mae= 43.479@e15  bad=7/30
+12:53:00 [INFO] epoch   55  train_loss=0.00111  val_mae= 47.710  val_mse= 3590.19  best_mae= 43.479@e15  bad=8/30
+12:53:00 [INFO] epoch   60  train_loss=0.00103  val_mae= 47.123  val_mse= 3572.58  best_mae= 43.479@e15  bad=9/30
+12:53:00 [INFO] epoch   65  train_loss=0.00097  val_mae= 47.352  val_mse= 3565.61  best_mae= 43.479@e15  bad=10/30
+12:53:00 [INFO] epoch   70  train_loss=0.00085  val_mae= 46.519  val_mse= 3556.23  best_mae= 43.479@e15  bad=11/30
+12:53:01 [INFO] epoch   75  train_loss=0.00066  val_mae= 46.635  val_mse= 3539.48  best_mae= 43.479@e15  bad=12/30
+12:53:01 [INFO] epoch   80  train_loss=0.00075  val_mae= 47.125  val_mse= 3610.17  best_mae= 43.479@e15  bad=13/30
+12:53:01 [INFO] epoch   85  train_loss=0.00072  val_mae= 46.698  val_mse= 3555.54  best_mae= 43.479@e15  bad=14/30
+12:53:01 [INFO] epoch   90  train_loss=0.00063  val_mae= 46.135  val_mse= 3508.99  best_mae= 43.479@e15  bad=15/30
+12:53:01 [INFO] epoch   95  train_loss=0.00069  val_mae= 46.394  val_mse= 3500.44  best_mae= 43.479@e15  bad=16/30
+12:53:02 [INFO] epoch  100  train_loss=0.00068  val_mae= 46.367  val_mse= 3522.85  best_mae= 43.479@e15  bad=17/30
+12:53:02 [INFO]   test MAE=38.999  inner-val MAE=43.479  best@e15
+12:53:02 [INFO] 
+--- member=mlp_best  seed=1  holdout=A  window=30  scaler=minmax_0_1 ---
+12:53:02 [INFO] epoch    5  train_loss=0.01641  val_mae= 20.596  val_mse=  620.62  best_mae= 20.596@e5  bad=0/30
+12:53:02 [INFO] epoch   10  train_loss=0.00935  val_mae= 35.264  val_mse= 1851.43  best_mae= 20.596@e5  bad=1/30
+12:53:02 [INFO] epoch   15  train_loss=0.00657  val_mae= 25.971  val_mse= 1173.61  best_mae= 20.596@e5  bad=2/30
+12:53:02 [INFO] epoch   20  train_loss=0.00516  val_mae= 18.918  val_mse=  738.12  best_mae= 18.918@e20  bad=0/30
+12:53:02 [INFO] epoch   25  train_loss=0.00398  val_mae=  5.644  val_mse=   59.95  best_mae=  5.644@e25  bad=0/30
+12:53:02 [INFO] epoch   30  train_loss=0.00313  val_mae=  7.533  val_mse=   98.59  best_mae=  5.644@e25  bad=1/30
+12:53:03 [INFO] epoch   35  train_loss=0.00282  val_mae= 13.049  val_mse=  340.96  best_mae=  5.644@e25  bad=2/30
+12:53:03 [INFO] epoch   40  train_loss=0.00230  val_mae=  9.273  val_mse=  165.60  best_mae=  5.644@e25  bad=3/30
+12:53:03 [INFO] epoch   45  train_loss=0.00157  val_mae= 10.083  val_mse=  188.32  best_mae=  5.644@e25  bad=4/30
+12:53:03 [INFO] epoch   50  train_loss=0.00161  val_mae=  8.379  val_mse=  147.56  best_mae=  5.644@e25  bad=5/30
+12:53:03 [INFO] epoch   55  train_loss=0.00149  val_mae=  3.144  val_mse=   17.75  best_mae=  3.144@e55  bad=0/30
+12:53:04 [INFO] epoch   60  train_loss=0.00126  val_mae=  6.270  val_mse=   81.93  best_mae=  3.144@e55  bad=1/30
+12:53:04 [INFO] epoch   65  train_loss=0.00099  val_mae=  8.756  val_mse=  153.37  best_mae=  3.144@e55  bad=2/30
+12:53:04 [INFO] epoch   70  train_loss=0.00102  val_mae=  8.094  val_mse=  123.20  best_mae=  3.144@e55  bad=3/30
+12:53:04 [INFO] epoch   75  train_loss=0.00084  val_mae=  6.694  val_mse=   81.90  best_mae=  3.144@e55  bad=4/30
+12:53:05 [INFO] epoch   80  train_loss=0.00093  val_mae=  8.105  val_mse=  126.75  best_mae=  3.144@e55  bad=5/30
+12:53:05 [INFO] epoch   85  train_loss=0.00087  val_mae=  5.771  val_mse=   61.53  best_mae=  3.144@e55  bad=6/30
+12:53:05 [INFO] epoch   90  train_loss=0.00074  val_mae=  4.026  val_mse=   35.33  best_mae=  3.144@e55  bad=7/30
+12:53:06 [INFO] epoch   95  train_loss=0.00075  val_mae=  4.639  val_mse=   42.75  best_mae=  3.144@e55  bad=8/30
+12:53:06 [INFO] epoch  100  train_loss=0.00063  val_mae=  5.180  val_mse=   46.13  best_mae=  3.144@e55  bad=9/30
+12:53:06 [INFO]   test MAE=41.729  inner-val MAE=3.144  best@e55
+12:53:06 [INFO] 
+--- member=mlp_best  seed=1  holdout=B  window=30  scaler=minmax_0_1 ---
+12:53:06 [INFO] epoch    5  train_loss=0.02238  val_mae= 38.251  val_mse= 2132.69  best_mae= 38.251@e5  bad=0/30
+12:53:06 [INFO] epoch   10  train_loss=0.01058  val_mae= 28.871  val_mse= 1427.17  best_mae= 28.871@e10  bad=0/30
+12:53:06 [INFO] epoch   15  train_loss=0.00752  val_mae= 28.109  val_mse= 1366.26  best_mae= 28.109@e15  bad=0/30
+12:53:06 [INFO] epoch   20  train_loss=0.00548  val_mae= 26.129  val_mse= 1172.57  best_mae= 26.129@e20  bad=0/30
+12:53:06 [INFO] epoch   25  train_loss=0.00440  val_mae= 28.995  val_mse= 1264.11  best_mae= 26.129@e20  bad=1/30
+12:53:07 [INFO] epoch   30  train_loss=0.00358  val_mae= 18.503  val_mse=  666.24  best_mae= 18.503@e30  bad=0/30
+12:53:07 [INFO] epoch   35  train_loss=0.00290  val_mae= 26.955  val_mse= 1134.13  best_mae= 18.503@e30  bad=1/30
+12:53:07 [INFO] epoch   40  train_loss=0.00240  val_mae= 20.977  val_mse=  760.13  best_mae= 18.503@e30  bad=2/30
+12:53:07 [INFO] epoch   45  train_loss=0.00191  val_mae= 15.835  val_mse=  513.47  best_mae= 15.835@e45  bad=0/30
+12:53:07 [INFO] epoch   50  train_loss=0.00171  val_mae= 19.910  val_mse=  673.61  best_mae= 15.835@e45  bad=1/30
+12:53:07 [INFO] epoch   55  train_loss=0.00167  val_mae= 18.327  val_mse=  627.89  best_mae= 15.835@e45  bad=2/30
+12:53:08 [INFO] epoch   60  train_loss=0.00132  val_mae= 21.650  val_mse=  753.11  best_mae= 15.835@e45  bad=3/30
+12:53:08 [INFO] epoch   65  train_loss=0.00117  val_mae= 19.683  val_mse=  652.55  best_mae= 15.835@e45  bad=4/30
+12:53:08 [INFO] epoch   70  train_loss=0.00115  val_mae= 21.393  val_mse=  790.84  best_mae= 15.835@e45  bad=5/30
+12:53:08 [INFO] epoch   75  train_loss=0.00108  val_mae= 18.483  val_mse=  612.24  best_mae= 15.835@e45  bad=6/30
+12:53:08 [INFO] epoch   80  train_loss=0.00091  val_mae= 23.528  val_mse=  911.36  best_mae= 15.835@e45  bad=7/30
+12:53:09 [INFO] epoch   85  train_loss=0.00097  val_mae= 15.438  val_mse=  439.07  best_mae= 15.438@e85  bad=0/30
+12:53:09 [INFO] epoch   90  train_loss=0.00083  val_mae= 18.102  val_mse=  594.99  best_mae= 15.438@e85  bad=1/30
+12:53:09 [INFO] epoch   95  train_loss=0.00087  val_mae= 16.146  val_mse=  471.74  best_mae= 15.438@e85  bad=2/30
+12:53:09 [INFO] epoch  100  train_loss=0.00076  val_mae= 17.595  val_mse=  566.63  best_mae= 15.438@e85  bad=3/30
+12:53:09 [INFO]   test MAE=11.381  inner-val MAE=15.438  best@e85
+12:53:09 [INFO] 
+--- member=mlp_best  seed=1  holdout=C  window=30  scaler=minmax_0_1 ---
+12:53:09 [INFO] epoch    5  train_loss=0.02005  val_mae= 68.124  val_mse= 6920.95  best_mae= 68.124@e5  bad=0/30
+12:53:10 [INFO] epoch   10  train_loss=0.00968  val_mae= 66.114  val_mse= 6556.02  best_mae= 66.114@e10  bad=0/30
+12:53:10 [INFO] epoch   15  train_loss=0.00636  val_mae= 57.236  val_mse= 5419.18  best_mae= 57.236@e15  bad=0/30
+12:53:10 [INFO] epoch   20  train_loss=0.00482  val_mae= 43.619  val_mse= 3874.44  best_mae= 43.619@e20  bad=0/30
+12:53:10 [INFO] epoch   25  train_loss=0.00376  val_mae= 45.548  val_mse= 4079.39  best_mae= 43.619@e20  bad=1/30
+12:53:10 [INFO] epoch   30  train_loss=0.00279  val_mae= 45.824  val_mse= 3827.84  best_mae= 43.619@e20  bad=2/30
+12:53:10 [INFO] epoch   35  train_loss=0.00219  val_mae= 45.265  val_mse= 3707.37  best_mae= 43.619@e20  bad=3/30
+12:53:10 [INFO] epoch   40  train_loss=0.00190  val_mae= 43.322  val_mse= 3423.21  best_mae= 43.322@e40  bad=0/30
+12:53:10 [INFO] epoch   45  train_loss=0.00150  val_mae= 44.719  val_mse= 3574.01  best_mae= 43.322@e40  bad=1/30
+12:53:11 [INFO] epoch   50  train_loss=0.00132  val_mae= 44.436  val_mse= 3545.10  best_mae= 43.322@e40  bad=2/30
+12:53:11 [INFO] epoch   55  train_loss=0.00110  val_mae= 45.203  val_mse= 3542.29  best_mae= 43.322@e40  bad=3/30
+12:53:11 [INFO] epoch   60  train_loss=0.00090  val_mae= 45.985  val_mse= 3647.64  best_mae= 43.322@e40  bad=4/30
+12:53:11 [INFO] epoch   65  train_loss=0.00102  val_mae= 45.101  val_mse= 3536.68  best_mae= 43.322@e40  bad=5/30
+12:53:11 [INFO] epoch   70  train_loss=0.00092  val_mae= 45.935  val_mse= 3618.22  best_mae= 43.322@e40  bad=6/30
+12:53:11 [INFO] epoch   75  train_loss=0.00080  val_mae= 45.951  val_mse= 3646.45  best_mae= 43.322@e40  bad=7/30
+12:53:12 [INFO] epoch   80  train_loss=0.00072  val_mae= 45.617  val_mse= 3611.19  best_mae= 43.322@e40  bad=8/30
+12:53:12 [INFO] epoch   85  train_loss=0.00067  val_mae= 45.325  val_mse= 3573.71  best_mae= 43.322@e40  bad=9/30
+12:53:12 [INFO] epoch   90  train_loss=0.00067  val_mae= 45.004  val_mse= 3511.59  best_mae= 43.322@e40  bad=10/30
+12:53:12 [INFO] epoch   95  train_loss=0.00071  val_mae= 45.476  val_mse= 3577.61  best_mae= 43.322@e40  bad=11/30
+12:53:12 [INFO] epoch  100  train_loss=0.00067  val_mae= 45.629  val_mse= 3584.66  best_mae= 43.322@e40  bad=12/30
+12:53:12 [INFO]   test MAE=36.044  inner-val MAE=43.322  best@e40
+12:53:12 [INFO] 
+--- member=mlp_best  seed=2  holdout=A  window=30  scaler=minmax_0_1 ---
+12:53:13 [INFO] epoch    5  train_loss=0.01533  val_mae= 25.933  val_mse=  984.87  best_mae= 25.933@e5  bad=0/30
+12:53:13 [INFO] epoch   10  train_loss=0.00837  val_mae= 41.049  val_mse= 2648.00  best_mae= 25.933@e5  bad=1/30
+12:53:13 [INFO] epoch   15  train_loss=0.00584  val_mae= 21.375  val_mse=  826.04  best_mae= 21.375@e15  bad=0/30
+12:53:13 [INFO] epoch   20  train_loss=0.00449  val_mae=  3.690  val_mse=   33.96  best_mae=  3.690@e20  bad=0/30
+12:53:13 [INFO] epoch   25  train_loss=0.00340  val_mae=  9.685  val_mse=  186.43  best_mae=  3.690@e20  bad=1/30
+12:53:13 [INFO] epoch   30  train_loss=0.00273  val_mae=  6.092  val_mse=   65.75  best_mae=  3.690@e20  bad=2/30
+12:53:13 [INFO] epoch   35  train_loss=0.00234  val_mae=  6.664  val_mse=   75.72  best_mae=  3.690@e20  bad=3/30
+12:53:14 [INFO] epoch   40  train_loss=0.00188  val_mae=  5.699  val_mse=   54.82  best_mae=  3.690@e20  bad=4/30
+12:53:14 [INFO] epoch   45  train_loss=0.00177  val_mae=  5.754  val_mse=   49.98  best_mae=  3.690@e20  bad=5/30
+12:53:14 [INFO] epoch   50  train_loss=0.00147  val_mae=  2.897  val_mse=   12.05  best_mae=  2.897@e50  bad=0/30
+12:53:14 [INFO] epoch   55  train_loss=0.00137  val_mae=  6.149  val_mse=   63.26  best_mae=  2.897@e50  bad=1/30
+12:53:15 [INFO] epoch   60  train_loss=0.00130  val_mae=  6.790  val_mse=   72.18  best_mae=  2.897@e50  bad=2/30
+12:53:15 [INFO] epoch   65  train_loss=0.00113  val_mae=  4.849  val_mse=   32.53  best_mae=  2.897@e50  bad=3/30
+12:53:15 [INFO] epoch   70  train_loss=0.00110  val_mae=  4.245  val_mse=   27.45  best_mae=  2.897@e50  bad=4/30
+12:53:15 [INFO] epoch   75  train_loss=0.00094  val_mae=  6.043  val_mse=   63.48  best_mae=  2.897@e50  bad=5/30
+12:53:16 [INFO] epoch   80  train_loss=0.00132  val_mae=  6.979  val_mse=   82.75  best_mae=  2.897@e50  bad=6/30
+12:53:16 [INFO] epoch   85  train_loss=0.00083  val_mae=  3.945  val_mse=   25.22  best_mae=  2.897@e50  bad=7/30
+12:53:16 [INFO] epoch   90  train_loss=0.00081  val_mae=  4.045  val_mse=   24.05  best_mae=  2.897@e50  bad=8/30
+12:53:16 [INFO] epoch   95  train_loss=0.00068  val_mae=  3.199  val_mse=   16.42  best_mae=  2.897@e50  bad=9/30
+12:53:17 [INFO] epoch  100  train_loss=0.00069  val_mae=  3.297  val_mse=   16.81  best_mae=  2.897@e50  bad=10/30
+12:53:17 [INFO]   test MAE=34.262  inner-val MAE=2.897  best@e50
+12:53:17 [INFO] 
+--- member=mlp_best  seed=2  holdout=B  window=30  scaler=minmax_0_1 ---
+12:53:17 [INFO] epoch    5  train_loss=0.01910  val_mae= 44.200  val_mse= 2708.72  best_mae= 44.200@e5  bad=0/30
+12:53:17 [INFO] epoch   10  train_loss=0.00922  val_mae= 38.809  val_mse= 2443.45  best_mae= 38.809@e10  bad=0/30
+12:53:17 [INFO] epoch   15  train_loss=0.00613  val_mae= 33.040  val_mse= 1702.48  best_mae= 33.040@e15  bad=0/30
+12:53:17 [INFO] epoch   20  train_loss=0.00452  val_mae= 38.931  val_mse= 2200.96  best_mae= 33.040@e15  bad=1/30
+12:53:17 [INFO] epoch   25  train_loss=0.00304  val_mae= 35.762  val_mse= 1900.80  best_mae= 33.040@e15  bad=2/30
+12:53:17 [INFO] epoch   30  train_loss=0.00306  val_mae= 33.799  val_mse= 1749.08  best_mae= 33.040@e15  bad=3/30
+12:53:18 [INFO] epoch   35  train_loss=0.00221  val_mae= 31.891  val_mse= 1531.37  best_mae= 31.891@e35  bad=0/30
+12:53:18 [INFO] epoch   40  train_loss=0.00218  val_mae= 33.166  val_mse= 1727.33  best_mae= 31.891@e35  bad=1/30
+12:53:18 [INFO] epoch   45  train_loss=0.00181  val_mae= 33.919  val_mse= 1757.75  best_mae= 31.891@e35  bad=2/30
+12:53:18 [INFO] epoch   50  train_loss=0.00144  val_mae= 28.121  val_mse= 1220.04  best_mae= 28.121@e50  bad=0/30
+12:53:19 [INFO] epoch   55  train_loss=0.00135  val_mae= 33.442  val_mse= 1728.83  best_mae= 28.121@e50  bad=1/30
+12:53:19 [INFO] epoch   60  train_loss=0.00108  val_mae= 33.899  val_mse= 1766.19  best_mae= 28.121@e50  bad=2/30
+12:53:19 [INFO] epoch   65  train_loss=0.00099  val_mae= 32.559  val_mse= 1616.41  best_mae= 28.121@e50  bad=3/30
+12:53:19 [INFO] epoch   70  train_loss=0.00105  val_mae= 27.138  val_mse= 1108.52  best_mae= 27.138@e70  bad=0/30
+12:53:19 [INFO] epoch   75  train_loss=0.00110  val_mae= 30.043  val_mse= 1397.92  best_mae= 27.138@e70  bad=1/30
+12:53:20 [INFO] epoch   80  train_loss=0.00088  val_mae= 31.615  val_mse= 1531.95  best_mae= 27.138@e70  bad=2/30
+12:53:20 [INFO] epoch   85  train_loss=0.00088  val_mae= 30.892  val_mse= 1425.17  best_mae= 27.138@e70  bad=3/30
+12:53:20 [INFO] epoch   90  train_loss=0.00084  val_mae= 32.278  val_mse= 1599.57  best_mae= 27.138@e70  bad=4/30
+12:53:20 [INFO] epoch   95  train_loss=0.00078  val_mae= 30.971  val_mse= 1498.34  best_mae= 27.138@e70  bad=5/30
+12:53:21 [INFO] epoch  100  train_loss=0.00060  val_mae= 29.852  val_mse= 1461.21  best_mae= 27.138@e70  bad=6/30
+12:53:21 [INFO]   test MAE=19.342  inner-val MAE=27.138  best@e70
+12:53:21 [INFO] 
+--- member=mlp_best  seed=2  holdout=C  window=30  scaler=minmax_0_1 ---
+12:53:21 [INFO] epoch    5  train_loss=0.01707  val_mae= 76.937  val_mse= 8414.03  best_mae= 76.937@e5  bad=0/30
+12:53:21 [INFO] epoch   10  train_loss=0.00859  val_mae= 65.916  val_mse= 6725.71  best_mae= 65.916@e10  bad=0/30
+12:53:21 [INFO] epoch   15  train_loss=0.00598  val_mae= 64.717  val_mse= 6693.30  best_mae= 64.717@e15  bad=0/30
+12:53:21 [INFO] epoch   20  train_loss=0.00436  val_mae= 32.396  val_mse= 2577.57  best_mae= 32.396@e20  bad=0/30
+12:53:21 [INFO] epoch   25  train_loss=0.00325  val_mae= 41.898  val_mse= 3789.21  best_mae= 32.396@e20  bad=1/30
+12:53:21 [INFO] epoch   30  train_loss=0.00302  val_mae= 52.740  val_mse= 4827.93  best_mae= 32.396@e20  bad=2/30
+12:53:21 [INFO] epoch   35  train_loss=0.00203  val_mae= 46.096  val_mse= 3700.10  best_mae= 32.396@e20  bad=3/30
+12:53:21 [INFO] epoch   40  train_loss=0.00182  val_mae= 45.744  val_mse= 3617.68  best_mae= 32.396@e20  bad=4/30
+12:53:22 [INFO] epoch   45  train_loss=0.00143  val_mae= 45.727  val_mse= 3572.20  best_mae= 32.396@e20  bad=5/30
+12:53:22 [INFO] epoch   50  train_loss=0.00118  val_mae= 45.045  val_mse= 3508.78  best_mae= 32.396@e20  bad=6/30
+12:53:22 [INFO] epoch   55  train_loss=0.00113  val_mae= 47.820  val_mse= 3767.03  best_mae= 32.396@e20  bad=7/30
+12:53:22 [INFO] epoch   60  train_loss=0.00103  val_mae= 46.437  val_mse= 3650.72  best_mae= 32.396@e20  bad=8/30
+12:53:22 [INFO] epoch   65  train_loss=0.00091  val_mae= 47.485  val_mse= 3746.98  best_mae= 32.396@e20  bad=9/30
+12:53:22 [INFO] epoch   70  train_loss=0.00099  val_mae= 47.397  val_mse= 3717.16  best_mae= 32.396@e20  bad=10/30
+12:53:23 [INFO] epoch   75  train_loss=0.00097  val_mae= 47.521  val_mse= 3705.32  best_mae= 32.396@e20  bad=11/30
+12:53:23 [INFO] epoch   80  train_loss=0.00086  val_mae= 47.505  val_mse= 3745.72  best_mae= 32.396@e20  bad=12/30
+12:53:23 [INFO] epoch   85  train_loss=0.00077  val_mae= 46.702  val_mse= 3624.64  best_mae= 32.396@e20  bad=13/30
+12:53:23 [INFO] epoch   90  train_loss=0.00075  val_mae= 47.411  val_mse= 3719.47  best_mae= 32.396@e20  bad=14/30
+12:53:23 [INFO] epoch   95  train_loss=0.00076  val_mae= 47.664  val_mse= 3727.01  best_mae= 32.396@e20  bad=15/30
+12:53:24 [INFO] epoch  100  train_loss=0.00078  val_mae= 48.243  val_mse= 3796.74  best_mae= 32.396@e20  bad=16/30
+12:53:24 [INFO]   test MAE=41.781  inner-val MAE=32.396  best@e20
+12:53:24 [INFO] 
+--- member=cnn1d_best  seed=0  holdout=A  window=30  scaler=minmax_0_1 ---
+12:53:24 [INFO] epoch    5  train_loss=0.04046  val_mae= 19.966  val_mse=  503.82  best_mae= 19.966@e5  bad=0/30
+12:53:24 [INFO] epoch   10  train_loss=0.03177  val_mae= 20.258  val_mse=  545.23  best_mae= 19.966@e5  bad=1/30
+12:53:24 [INFO] epoch   15  train_loss=0.02458  val_mae= 20.884  val_mse=  547.76  best_mae= 19.966@e5  bad=2/30
+12:53:24 [INFO] epoch   20  train_loss=0.02128  val_mae= 20.991  val_mse=  562.94  best_mae= 19.966@e5  bad=3/30
+12:53:25 [INFO] epoch   25  train_loss=0.01940  val_mae= 21.488  val_mse=  566.45  best_mae= 19.966@e5  bad=4/30
+12:53:25 [INFO] epoch   30  train_loss=0.01874  val_mae= 21.750  val_mse=  604.26  best_mae= 19.966@e5  bad=5/30
+12:53:25 [INFO] epoch   35  train_loss=0.01750  val_mae= 22.187  val_mse=  652.58  best_mae= 19.966@e5  bad=6/30
+12:53:25 [INFO] epoch   40  train_loss=0.01610  val_mae= 22.735  val_mse=  678.65  best_mae= 19.966@e5  bad=7/30
+12:53:25 [INFO] epoch   45  train_loss=0.01667  val_mae= 22.664  val_mse=  655.51  best_mae= 19.966@e5  bad=8/30
+12:53:25 [INFO] epoch   50  train_loss=0.01643  val_mae= 21.801  val_mse=  624.60  best_mae= 19.966@e5  bad=9/30
+12:53:25 [INFO] epoch   55  train_loss=0.01529  val_mae= 22.243  val_mse=  644.18  best_mae= 19.966@e5  bad=10/30
+12:53:26 [INFO] epoch   60  train_loss=0.01414  val_mae= 21.940  val_mse=  641.85  best_mae= 19.966@e5  bad=11/30
+12:53:26 [INFO] epoch   65  train_loss=0.01394  val_mae= 21.903  val_mse=  637.10  best_mae= 19.966@e5  bad=12/30
+12:53:26 [INFO] epoch   70  train_loss=0.01400  val_mae= 21.433  val_mse=  622.69  best_mae= 19.966@e5  bad=13/30
+12:53:26 [INFO] epoch   75  train_loss=0.01394  val_mae= 22.005  val_mse=  662.46  best_mae= 19.966@e5  bad=14/30
+12:53:26 [INFO] epoch   80  train_loss=0.01286  val_mae= 21.684  val_mse=  642.95  best_mae= 19.966@e5  bad=15/30
+12:53:26 [INFO] epoch   85  train_loss=0.01432  val_mae= 21.831  val_mse=  654.07  best_mae= 19.966@e5  bad=16/30
+12:53:27 [INFO] epoch   90  train_loss=0.01313  val_mae= 21.606  val_mse=  644.27  best_mae= 19.966@e5  bad=17/30
+12:53:27 [INFO] epoch   95  train_loss=0.01411  val_mae= 21.731  val_mse=  654.76  best_mae= 19.966@e5  bad=18/30
+12:53:27 [INFO] epoch  100  train_loss=0.01357  val_mae= 21.545  val_mse=  641.07  best_mae= 19.966@e5  bad=19/30
+12:53:27 [INFO]   test MAE=38.149  inner-val MAE=19.966  best@e5
+12:53:27 [INFO] 
+--- member=cnn1d_best  seed=0  holdout=B  window=30  scaler=minmax_0_1 ---
+12:53:27 [INFO] epoch    5  train_loss=0.04890  val_mae=107.738  val_mse=13911.15  best_mae=107.738@e5  bad=0/30
+12:53:27 [INFO] epoch   10  train_loss=0.03742  val_mae= 45.423  val_mse= 2563.24  best_mae= 45.423@e10  bad=0/30
+12:53:27 [INFO] epoch   15  train_loss=0.02940  val_mae= 20.530  val_mse= 1132.47  best_mae= 20.530@e15  bad=0/30
+12:53:27 [INFO] epoch   20  train_loss=0.02587  val_mae= 25.120  val_mse= 1278.71  best_mae= 20.530@e15  bad=1/30
+12:53:28 [INFO] epoch   25  train_loss=0.02338  val_mae= 24.087  val_mse= 1238.48  best_mae= 20.530@e15  bad=2/30
+12:53:28 [INFO] epoch   30  train_loss=0.02242  val_mae= 22.000  val_mse= 1163.34  best_mae= 20.530@e15  bad=3/30
+12:53:28 [INFO] epoch   35  train_loss=0.02089  val_mae= 23.203  val_mse= 1145.92  best_mae= 20.530@e15  bad=4/30
+12:53:28 [INFO] epoch   40  train_loss=0.01926  val_mae= 22.629  val_mse= 1104.99  best_mae= 20.530@e15  bad=5/30
+12:53:28 [INFO] epoch   45  train_loss=0.01792  val_mae= 22.792  val_mse= 1105.11  best_mae= 20.530@e15  bad=6/30
+12:53:28 [INFO] epoch   50  train_loss=0.01691  val_mae= 21.279  val_mse= 1074.63  best_mae= 20.530@e15  bad=7/30
+12:53:28 [INFO] epoch   55  train_loss=0.01849  val_mae= 22.210  val_mse= 1089.15  best_mae= 20.530@e15  bad=8/30
+12:53:29 [INFO] epoch   60  train_loss=0.01671  val_mae= 21.546  val_mse= 1048.31  best_mae= 20.530@e15  bad=9/30
+12:53:29 [INFO] epoch   65  train_loss=0.01659  val_mae= 21.885  val_mse= 1057.72  best_mae= 20.530@e15  bad=10/30
+12:53:29 [INFO] epoch   70  train_loss=0.01524  val_mae= 22.452  val_mse= 1084.01  best_mae= 20.530@e15  bad=11/30
+12:53:29 [INFO] epoch   75  train_loss=0.01487  val_mae= 21.394  val_mse= 1036.28  best_mae= 20.530@e15  bad=12/30
+12:53:29 [INFO] epoch   80  train_loss=0.01541  val_mae= 21.864  val_mse= 1055.33  best_mae= 20.530@e15  bad=13/30
+12:53:29 [INFO] epoch   85  train_loss=0.01588  val_mae= 21.666  val_mse= 1053.19  best_mae= 20.530@e15  bad=14/30
+12:53:29 [INFO] epoch   90  train_loss=0.01505  val_mae= 21.553  val_mse= 1052.36  best_mae= 20.530@e15  bad=15/30
+12:53:30 [INFO] epoch   95  train_loss=0.01543  val_mae= 21.890  val_mse= 1064.44  best_mae= 20.530@e15  bad=16/30
+12:53:30 [INFO] epoch  100  train_loss=0.01422  val_mae= 21.969  val_mse= 1069.39  best_mae= 20.530@e15  bad=17/30
+12:53:30 [INFO]   test MAE=28.455  inner-val MAE=20.530  best@e15
+12:53:30 [INFO] 
+--- member=cnn1d_best  seed=0  holdout=C  window=30  scaler=minmax_0_1 ---
+12:53:30 [INFO] epoch    5  train_loss=0.04547  val_mae=120.362  val_mse=20454.05  best_mae=120.362@e5  bad=0/30
+12:53:30 [INFO] epoch   10  train_loss=0.03436  val_mae= 72.818  val_mse= 9008.52  best_mae= 72.818@e10  bad=0/30
+12:53:30 [INFO] epoch   15  train_loss=0.02755  val_mae= 57.709  val_mse= 6678.34  best_mae= 57.709@e15  bad=0/30
+12:53:30 [INFO] epoch   20  train_loss=0.02303  val_mae= 53.594  val_mse= 5403.31  best_mae= 53.594@e20  bad=0/30
+12:53:30 [INFO] epoch   25  train_loss=0.02161  val_mae= 53.662  val_mse= 5538.93  best_mae= 53.594@e20  bad=1/30
+12:53:31 [INFO] epoch   30  train_loss=0.01954  val_mae= 54.349  val_mse= 5264.04  best_mae= 53.594@e20  bad=2/30
+12:53:31 [INFO] epoch   35  train_loss=0.01847  val_mae= 53.347  val_mse= 4630.33  best_mae= 53.347@e35  bad=0/30
+12:53:31 [INFO] epoch   40  train_loss=0.01752  val_mae= 52.719  val_mse= 4388.21  best_mae= 52.719@e40  bad=0/30
+12:53:31 [INFO] epoch   45  train_loss=0.01581  val_mae= 53.668  val_mse= 4954.03  best_mae= 52.719@e40  bad=1/30
+12:53:31 [INFO] epoch   50  train_loss=0.01510  val_mae= 53.827  val_mse= 4827.52  best_mae= 52.719@e40  bad=2/30
+12:53:31 [INFO] epoch   55  train_loss=0.01499  val_mae= 51.775  val_mse= 4533.94  best_mae= 51.775@e55  bad=0/30
+12:53:31 [INFO] epoch   60  train_loss=0.01454  val_mae= 53.513  val_mse= 4388.75  best_mae= 51.775@e55  bad=1/30
+12:53:31 [INFO] epoch   65  train_loss=0.01417  val_mae= 53.328  val_mse= 4467.77  best_mae= 51.775@e55  bad=2/30
+12:53:32 [INFO] epoch   70  train_loss=0.01493  val_mae= 53.381  val_mse= 4442.33  best_mae= 51.775@e55  bad=3/30
+12:53:32 [INFO] epoch   75  train_loss=0.01411  val_mae= 53.135  val_mse= 4452.83  best_mae= 51.775@e55  bad=4/30
+12:53:32 [INFO] epoch   80  train_loss=0.01441  val_mae= 53.351  val_mse= 4458.53  best_mae= 51.775@e55  bad=5/30
+12:53:32 [INFO] epoch   85  train_loss=0.01380  val_mae= 53.839  val_mse= 4438.38  best_mae= 51.775@e55  bad=6/30
+12:53:32 [INFO] epoch   90  train_loss=0.01347  val_mae= 53.941  val_mse= 4444.78  best_mae= 51.775@e55  bad=7/30
+12:53:32 [INFO] epoch   95  train_loss=0.01318  val_mae= 53.545  val_mse= 4440.62  best_mae= 51.775@e55  bad=8/30
+12:53:32 [INFO] epoch  100  train_loss=0.01300  val_mae= 53.601  val_mse= 4424.15  best_mae= 51.775@e55  bad=9/30
+12:53:32 [INFO]   test MAE=23.666  inner-val MAE=51.775  best@e55
+12:53:32 [INFO] 
+--- member=cnn1d_best  seed=1  holdout=A  window=30  scaler=minmax_0_1 ---
+12:53:32 [INFO] epoch    5  train_loss=0.06422  val_mae= 41.578  val_mse= 2220.42  best_mae= 41.578@e5  bad=0/30
+12:53:33 [INFO] epoch   10  train_loss=0.03218  val_mae= 20.286  val_mse=  510.03  best_mae= 20.286@e10  bad=0/30
+12:53:33 [INFO] epoch   15  train_loss=0.02389  val_mae= 20.342  val_mse=  529.12  best_mae= 20.286@e10  bad=1/30
+12:53:33 [INFO] epoch   20  train_loss=0.01963  val_mae= 20.427  val_mse=  537.77  best_mae= 20.286@e10  bad=2/30
+12:53:33 [INFO] epoch   25  train_loss=0.01853  val_mae= 21.409  val_mse=  562.58  best_mae= 20.286@e10  bad=3/30
+12:53:33 [INFO] epoch   30  train_loss=0.01798  val_mae= 21.011  val_mse=  569.68  best_mae= 20.286@e10  bad=4/30
+12:53:33 [INFO] epoch   35  train_loss=0.01561  val_mae= 21.628  val_mse=  580.64  best_mae= 20.286@e10  bad=5/30
+12:53:34 [INFO] epoch   40  train_loss=0.01554  val_mae= 21.548  val_mse=  596.85  best_mae= 20.286@e10  bad=6/30
+12:53:34 [INFO] epoch   45  train_loss=0.01536  val_mae= 21.541  val_mse=  595.42  best_mae= 20.286@e10  bad=7/30
+12:53:34 [INFO] epoch   50  train_loss=0.01514  val_mae= 21.901  val_mse=  618.83  best_mae= 20.286@e10  bad=8/30
+12:53:34 [INFO] epoch   55  train_loss=0.01408  val_mae= 21.688  val_mse=  624.38  best_mae= 20.286@e10  bad=9/30
+12:53:34 [INFO] epoch   60  train_loss=0.01357  val_mae= 21.429  val_mse=  617.85  best_mae= 20.286@e10  bad=10/30
+12:53:34 [INFO] epoch   65  train_loss=0.01412  val_mae= 21.923  val_mse=  646.09  best_mae= 20.286@e10  bad=11/30
+12:53:34 [INFO] epoch   70  train_loss=0.01321  val_mae= 21.787  val_mse=  646.57  best_mae= 20.286@e10  bad=12/30
+12:53:35 [INFO] epoch   75  train_loss=0.01463  val_mae= 22.070  val_mse=  664.32  best_mae= 20.286@e10  bad=13/30
+12:53:35 [INFO] epoch   80  train_loss=0.01300  val_mae= 21.714  val_mse=  651.42  best_mae= 20.286@e10  bad=14/30
+12:53:35 [INFO] epoch   85  train_loss=0.01336  val_mae= 21.877  val_mse=  664.93  best_mae= 20.286@e10  bad=15/30
+12:53:35 [INFO] epoch   90  train_loss=0.01360  val_mae= 21.762  val_mse=  660.58  best_mae= 20.286@e10  bad=16/30
+12:53:35 [INFO] epoch   95  train_loss=0.01336  val_mae= 21.680  val_mse=  657.80  best_mae= 20.286@e10  bad=17/30
+12:53:35 [INFO] epoch  100  train_loss=0.01349  val_mae= 21.651  val_mse=  655.80  best_mae= 20.286@e10  bad=18/30
+12:53:35 [INFO]   test MAE=38.691  inner-val MAE=20.286  best@e10
+12:53:35 [INFO] 
+--- member=cnn1d_best  seed=1  holdout=B  window=30  scaler=minmax_0_1 ---
+12:53:36 [INFO] epoch    5  train_loss=0.08683  val_mae= 69.534  val_mse= 5904.47  best_mae= 69.534@e5  bad=0/30
+12:53:36 [INFO] epoch   10  train_loss=0.04203  val_mae= 90.573  val_mse= 9999.38  best_mae= 69.534@e5  bad=1/30
+12:53:36 [INFO] epoch   15  train_loss=0.02994  val_mae= 19.592  val_mse= 1064.68  best_mae= 19.592@e15  bad=0/30
+12:53:36 [INFO] epoch   20  train_loss=0.02454  val_mae= 22.980  val_mse= 1277.51  best_mae= 19.592@e15  bad=1/30
+12:53:36 [INFO] epoch   25  train_loss=0.02304  val_mae= 23.673  val_mse= 1231.57  best_mae= 19.592@e15  bad=2/30
+12:53:36 [INFO] epoch   30  train_loss=0.02197  val_mae= 22.592  val_mse= 1116.56  best_mae= 19.592@e15  bad=3/30
+12:53:36 [INFO] epoch   35  train_loss=0.02044  val_mae= 22.179  val_mse= 1163.07  best_mae= 19.592@e15  bad=4/30
+12:53:37 [INFO] epoch   40  train_loss=0.01904  val_mae= 21.333  val_mse= 1062.08  best_mae= 19.592@e15  bad=5/30
+12:53:37 [INFO] epoch   45  train_loss=0.01832  val_mae= 20.674  val_mse= 1024.24  best_mae= 19.592@e15  bad=6/30
+12:53:37 [INFO] epoch   50  train_loss=0.01818  val_mae= 21.036  val_mse= 1040.04  best_mae= 19.592@e15  bad=7/30
+12:53:37 [INFO] epoch   55  train_loss=0.01808  val_mae= 22.084  val_mse= 1095.01  best_mae= 19.592@e15  bad=8/30
+12:53:37 [INFO] epoch   60  train_loss=0.01779  val_mae= 20.852  val_mse= 1016.35  best_mae= 19.592@e15  bad=9/30
+12:53:37 [INFO] epoch   65  train_loss=0.01686  val_mae= 20.383  val_mse=  988.35  best_mae= 19.592@e15  bad=10/30
+12:53:37 [INFO] epoch   70  train_loss=0.01670  val_mae= 20.688  val_mse= 1008.97  best_mae= 19.592@e15  bad=11/30
+12:53:38 [INFO] epoch   75  train_loss=0.01603  val_mae= 21.422  val_mse= 1037.14  best_mae= 19.592@e15  bad=12/30
+12:53:38 [INFO] epoch   80  train_loss=0.01527  val_mae= 21.834  val_mse= 1058.04  best_mae= 19.592@e15  bad=13/30
+12:53:38 [INFO] epoch   85  train_loss=0.01455  val_mae= 21.526  val_mse= 1045.19  best_mae= 19.592@e15  bad=14/30
+12:53:38 [INFO] epoch   90  train_loss=0.01758  val_mae= 21.636  val_mse= 1046.06  best_mae= 19.592@e15  bad=15/30
+12:53:38 [INFO] epoch   95  train_loss=0.01527  val_mae= 21.583  val_mse= 1043.33  best_mae= 19.592@e15  bad=16/30
+12:53:38 [INFO] epoch  100  train_loss=0.01568  val_mae= 21.466  val_mse= 1039.36  best_mae= 19.592@e15  bad=17/30
+12:53:38 [INFO]   test MAE=26.694  inner-val MAE=19.592  best@e15
+12:53:38 [INFO] 
+--- member=cnn1d_best  seed=1  holdout=C  window=30  scaler=minmax_0_1 ---
+12:53:38 [INFO] epoch    5  train_loss=0.08542  val_mae=139.585  val_mse=28541.79  best_mae=139.585@e5  bad=0/30
+12:53:39 [INFO] epoch   10  train_loss=0.03884  val_mae=573.973  val_mse=747526.96  best_mae=139.585@e5  bad=1/30
+12:53:39 [INFO] epoch   15  train_loss=0.02767  val_mae= 66.643  val_mse= 7235.13  best_mae= 66.643@e15  bad=0/30
+12:53:39 [INFO] epoch   20  train_loss=0.02429  val_mae= 53.156  val_mse= 5611.99  best_mae= 53.156@e20  bad=0/30
+12:53:39 [INFO] epoch   25  train_loss=0.01965  val_mae= 56.198  val_mse= 4706.01  best_mae= 53.156@e20  bad=1/30
+12:53:39 [INFO] epoch   30  train_loss=0.01870  val_mae= 53.474  val_mse= 4883.26  best_mae= 53.156@e20  bad=2/30
+12:53:39 [INFO] epoch   35  train_loss=0.01790  val_mae= 53.343  val_mse= 4914.63  best_mae= 53.156@e20  bad=3/30
+12:53:39 [INFO] epoch   40  train_loss=0.01709  val_mae= 54.390  val_mse= 4487.11  best_mae= 53.156@e20  bad=4/30
+12:53:39 [INFO] epoch   45  train_loss=0.01585  val_mae= 52.572  val_mse= 4678.44  best_mae= 52.572@e45  bad=0/30
+12:53:40 [INFO] epoch   50  train_loss=0.01532  val_mae= 52.193  val_mse= 4688.72  best_mae= 52.193@e50  bad=0/30
+12:53:40 [INFO] epoch   55  train_loss=0.01330  val_mae= 52.368  val_mse= 4557.71  best_mae= 52.193@e50  bad=1/30
+12:53:40 [INFO] epoch   60  train_loss=0.01460  val_mae= 52.676  val_mse= 4447.94  best_mae= 52.193@e50  bad=2/30
+12:53:40 [INFO] epoch   65  train_loss=0.01539  val_mae= 52.930  val_mse= 4390.71  best_mae= 52.193@e50  bad=3/30
+12:53:40 [INFO] epoch   70  train_loss=0.01560  val_mae= 52.049  val_mse= 4467.93  best_mae= 52.049@e70  bad=0/30
+12:53:40 [INFO] epoch   75  train_loss=0.01503  val_mae= 52.219  val_mse= 4450.95  best_mae= 52.049@e70  bad=1/30
+12:53:40 [INFO] epoch   80  train_loss=0.01342  val_mae= 53.199  val_mse= 4378.88  best_mae= 52.049@e70  bad=2/30
+12:53:40 [INFO] epoch   85  train_loss=0.01422  val_mae= 52.571  val_mse= 4400.42  best_mae= 52.049@e70  bad=3/30
+12:53:41 [INFO] epoch   90  train_loss=0.01378  val_mae= 52.441  val_mse= 4397.29  best_mae= 52.049@e70  bad=4/30
+12:53:41 [INFO] epoch   95  train_loss=0.01329  val_mae= 52.348  val_mse= 4410.81  best_mae= 52.049@e70  bad=5/30
+12:53:41 [INFO] epoch  100  train_loss=0.01373  val_mae= 52.618  val_mse= 4395.35  best_mae= 52.049@e70  bad=6/30
+12:53:41 [INFO]   test MAE=22.042  inner-val MAE=52.049  best@e70
+12:53:41 [INFO] 
+--- member=cnn1d_best  seed=2  holdout=A  window=30  scaler=minmax_0_1 ---
+12:53:41 [INFO] epoch    5  train_loss=0.05915  val_mae= 92.762  val_mse=10381.44  best_mae= 92.762@e5  bad=0/30
+12:53:41 [INFO] epoch   10  train_loss=0.02931  val_mae= 20.390  val_mse=  507.94  best_mae= 20.390@e10  bad=0/30
+12:53:42 [INFO] epoch   15  train_loss=0.02239  val_mae= 21.003  val_mse=  721.35  best_mae= 20.390@e10  bad=1/30
+12:53:42 [INFO] epoch   20  train_loss=0.01975  val_mae= 21.219  val_mse=  576.18  best_mae= 20.390@e10  bad=2/30
+12:53:42 [INFO] epoch   25  train_loss=0.01988  val_mae= 21.289  val_mse=  591.95  best_mae= 20.390@e10  bad=3/30
+12:53:42 [INFO] epoch   30  train_loss=0.01644  val_mae= 21.521  val_mse=  595.97  best_mae= 20.390@e10  bad=4/30
+12:53:42 [INFO] epoch   35  train_loss=0.01662  val_mae= 21.507  val_mse=  593.31  best_mae= 20.390@e10  bad=5/30
+12:53:42 [INFO] epoch   40  train_loss=0.01627  val_mae= 21.425  val_mse=  600.16  best_mae= 20.390@e10  bad=6/30
+12:53:43 [INFO] epoch   45  train_loss=0.01529  val_mae= 21.507  val_mse=  620.82  best_mae= 20.390@e10  bad=7/30
+12:53:43 [INFO] epoch   50  train_loss=0.01546  val_mae= 20.878  val_mse=  576.70  best_mae= 20.390@e10  bad=8/30
+12:53:43 [INFO] epoch   55  train_loss=0.01492  val_mae= 20.377  val_mse=  558.77  best_mae= 20.377@e55  bad=0/30
+12:53:43 [INFO] epoch   60  train_loss=0.01477  val_mae= 20.747  val_mse=  590.29  best_mae= 20.377@e55  bad=1/30
+12:53:43 [INFO] epoch   65  train_loss=0.01386  val_mae= 20.214  val_mse=  567.68  best_mae= 20.214@e65  bad=0/30
+12:53:43 [INFO] epoch   70  train_loss=0.01390  val_mae= 20.118  val_mse=  572.03  best_mae= 20.118@e70  bad=0/30
+12:53:44 [INFO] epoch   75  train_loss=0.01432  val_mae= 19.195  val_mse=  521.94  best_mae= 19.195@e75  bad=0/30
+12:53:44 [INFO] epoch   80  train_loss=0.01365  val_mae= 19.439  val_mse=  541.71  best_mae= 19.195@e75  bad=1/30
+12:53:44 [INFO] epoch   85  train_loss=0.01426  val_mae= 18.902  val_mse=  511.30  best_mae= 18.902@e85  bad=0/30
+12:53:44 [INFO] epoch   90  train_loss=0.01342  val_mae= 19.132  val_mse=  528.45  best_mae= 18.902@e85  bad=1/30
+12:53:44 [INFO] epoch   95  train_loss=0.01294  val_mae= 18.966  val_mse=  517.77  best_mae= 18.902@e85  bad=2/30
+12:53:44 [INFO] epoch  100  train_loss=0.01336  val_mae= 18.993  val_mse=  519.39  best_mae= 18.902@e85  bad=3/30
+12:53:44 [INFO]   test MAE=34.354  inner-val MAE=18.902  best@e85
+12:53:44 [INFO] 
+--- member=cnn1d_best  seed=2  holdout=B  window=30  scaler=minmax_0_1 ---
+12:53:45 [INFO] epoch    5  train_loss=0.07791  val_mae= 85.610  val_mse= 8782.59  best_mae= 85.610@e5  bad=0/30
+12:53:45 [INFO] epoch   10  train_loss=0.03967  val_mae= 18.727  val_mse=  943.03  best_mae= 18.727@e10  bad=0/30
+12:53:45 [INFO] epoch   15  train_loss=0.03074  val_mae= 20.656  val_mse= 1121.53  best_mae= 18.727@e10  bad=1/30
+12:53:45 [INFO] epoch   20  train_loss=0.02542  val_mae= 20.265  val_mse= 1090.97  best_mae= 18.727@e10  bad=2/30
+12:53:45 [INFO] epoch   25  train_loss=0.02205  val_mae= 18.771  val_mse=  994.19  best_mae= 18.727@e10  bad=3/30
+12:53:45 [INFO] epoch   30  train_loss=0.02141  val_mae= 20.034  val_mse= 1007.12  best_mae= 18.727@e10  bad=4/30
+12:53:45 [INFO] epoch   35  train_loss=0.01957  val_mae= 20.461  val_mse= 1079.20  best_mae= 18.727@e10  bad=5/30
+12:53:45 [INFO] epoch   40  train_loss=0.01885  val_mae= 19.850  val_mse= 1000.25  best_mae= 18.727@e10  bad=6/30
+12:53:46 [INFO] epoch   45  train_loss=0.02154  val_mae= 19.005  val_mse=  951.46  best_mae= 18.727@e10  bad=7/30
+12:53:46 [INFO] epoch   50  train_loss=0.01953  val_mae= 18.993  val_mse=  979.55  best_mae= 18.727@e10  bad=8/30
+12:53:46 [INFO] epoch   55  train_loss=0.01661  val_mae= 19.917  val_mse= 1009.96  best_mae= 18.727@e10  bad=9/30
+12:53:46 [INFO] epoch   60  train_loss=0.01756  val_mae= 19.432  val_mse=  983.59  best_mae= 18.727@e10  bad=10/30
+12:53:46 [INFO] epoch   65  train_loss=0.01634  val_mae= 18.505  val_mse=  948.15  best_mae= 18.505@e65  bad=0/30
+12:53:46 [INFO] epoch   70  train_loss=0.01660  val_mae= 18.679  val_mse=  968.17  best_mae= 18.505@e65  bad=1/30
+12:53:46 [INFO] epoch   75  train_loss=0.01655  val_mae= 19.727  val_mse= 1007.53  best_mae= 18.505@e65  bad=2/30
+12:53:47 [INFO] epoch   80  train_loss=0.01529  val_mae= 18.971  val_mse=  977.00  best_mae= 18.505@e65  bad=3/30
+12:53:47 [INFO] epoch   85  train_loss=0.01437  val_mae= 19.714  val_mse=  993.84  best_mae= 18.505@e65  bad=4/30
+12:53:47 [INFO] epoch   90  train_loss=0.01584  val_mae= 19.084  val_mse=  976.48  best_mae= 18.505@e65  bad=5/30
+12:53:47 [INFO] epoch   95  train_loss=0.01654  val_mae= 19.345  val_mse=  985.05  best_mae= 18.505@e65  bad=6/30
+12:53:47 [INFO] epoch  100  train_loss=0.01562  val_mae= 19.340  val_mse=  982.97  best_mae= 18.505@e65  bad=7/30
+12:53:47 [INFO]   test MAE=27.172  inner-val MAE=18.505  best@e65
+12:53:47 [INFO] 
+--- member=cnn1d_best  seed=2  holdout=C  window=30  scaler=minmax_0_1 ---
+12:53:47 [INFO] epoch    5  train_loss=0.07476  val_mae=126.746  val_mse=22565.16  best_mae=126.746@e5  bad=0/30
+12:53:47 [INFO] epoch   10  train_loss=0.03632  val_mae=126.747  val_mse=30843.86  best_mae=126.746@e5  bad=1/30
+12:53:48 [INFO] epoch   15  train_loss=0.02687  val_mae= 59.483  val_mse= 4796.17  best_mae= 59.483@e15  bad=0/30
+12:53:48 [INFO] epoch   20  train_loss=0.02202  val_mae= 58.275  val_mse= 4705.36  best_mae= 58.275@e20  bad=0/30
+12:53:48 [INFO] epoch   25  train_loss=0.02006  val_mae= 55.598  val_mse= 4529.58  best_mae= 55.598@e25  bad=0/30
+12:53:48 [INFO] epoch   30  train_loss=0.01844  val_mae= 53.063  val_mse= 4377.53  best_mae= 53.063@e30  bad=0/30
+12:53:48 [INFO] epoch   35  train_loss=0.01767  val_mae= 52.802  val_mse= 4391.31  best_mae= 52.802@e35  bad=0/30
+12:53:48 [INFO] epoch   40  train_loss=0.01816  val_mae= 52.901  val_mse= 4362.52  best_mae= 52.802@e35  bad=1/30
+12:53:48 [INFO] epoch   45  train_loss=0.01611  val_mae= 53.298  val_mse= 4450.19  best_mae= 52.802@e35  bad=2/30
+12:53:48 [INFO] epoch   50  train_loss=0.01493  val_mae= 54.143  val_mse= 4435.20  best_mae= 52.802@e35  bad=3/30
+12:53:49 [INFO] epoch   55  train_loss=0.01389  val_mae= 52.952  val_mse= 4365.10  best_mae= 52.802@e35  bad=4/30
+12:53:49 [INFO] epoch   60  train_loss=0.01447  val_mae= 53.685  val_mse= 4423.32  best_mae= 52.802@e35  bad=5/30
+12:53:49 [INFO] epoch   65  train_loss=0.01320  val_mae= 52.781  val_mse= 4464.75  best_mae= 52.781@e65  bad=0/30
+12:53:49 [INFO] epoch   70  train_loss=0.01389  val_mae= 54.257  val_mse= 4387.36  best_mae= 52.781@e65  bad=1/30
+12:53:49 [INFO] epoch   75  train_loss=0.01419  val_mae= 53.996  val_mse= 4375.86  best_mae= 52.781@e65  bad=2/30
+12:53:49 [INFO] epoch   80  train_loss=0.01634  val_mae= 54.130  val_mse= 4376.66  best_mae= 52.781@e65  bad=3/30
+12:53:49 [INFO] epoch   85  train_loss=0.01415  val_mae= 53.085  val_mse= 4422.93  best_mae= 52.781@e65  bad=4/30
+12:53:49 [INFO] epoch   90  train_loss=0.01309  val_mae= 54.066  val_mse= 4399.32  best_mae= 52.781@e65  bad=5/30
+12:53:50 [INFO] epoch   95  train_loss=0.01457  val_mae= 53.933  val_mse= 4409.17  best_mae= 52.781@e65  bad=6/30
+12:53:50 [INFO] epoch  100  train_loss=0.01314  val_mae= 53.671  val_mse= 4409.16  best_mae= 52.781@e65  bad=7/30
+12:53:50 [INFO]   test MAE=22.683  inner-val MAE=52.781  best@e65
+12:53:50 [INFO] 
+--- member=cnn_lstm_best  seed=0  holdout=A  window=30  scaler=minmax_0_1 ---
+12:53:50 [INFO] epoch    5  train_loss=0.00195  val_mae= 20.117  val_mse=  587.81  best_mae= 20.117@e5  bad=0/30
+12:53:50 [INFO] epoch   10  train_loss=0.00111  val_mae= 34.830  val_mse= 2552.54  best_mae= 20.117@e5  bad=1/30
+12:53:50 [INFO] epoch   15  train_loss=0.00090  val_mae= 16.818  val_mse=  453.28  best_mae= 16.818@e15  bad=0/30
+12:53:51 [INFO] epoch   20  train_loss=0.00076  val_mae= 19.022  val_mse=  576.34  best_mae= 16.818@e15  bad=1/30
+12:53:51 [INFO] epoch   25  train_loss=0.00101  val_mae= 11.901  val_mse=  234.89  best_mae= 11.901@e25  bad=0/30
+12:53:51 [INFO] epoch   30  train_loss=0.00142  val_mae= 20.083  val_mse=  621.01  best_mae= 11.901@e25  bad=1/30
+12:53:51 [INFO] epoch   35  train_loss=0.00130  val_mae= 25.420  val_mse= 1100.03  best_mae= 11.901@e25  bad=2/30
+12:53:52 [INFO] epoch   40  train_loss=0.00121  val_mae= 15.553  val_mse=  441.23  best_mae= 11.901@e25  bad=3/30
+12:53:52 [INFO] epoch   45  train_loss=0.00096  val_mae= 35.946  val_mse= 2769.44  best_mae= 11.901@e25  bad=4/30
+12:53:52 [INFO] epoch   50  train_loss=0.00046  val_mae= 21.729  val_mse=  786.01  best_mae= 11.901@e25  bad=5/30
+12:53:52 [INFO] epoch   55  train_loss=0.00118  val_mae= 20.986  val_mse=  732.97  best_mae= 11.901@e25  bad=6/30
+12:53:53 [INFO] epoch   60  train_loss=0.00057  val_mae= 10.917  val_mse=  233.81  best_mae= 10.917@e60  bad=0/30
+12:53:53 [INFO] epoch   65  train_loss=0.00087  val_mae= 19.300  val_mse=  975.23  best_mae= 10.917@e60  bad=1/30
+12:53:53 [INFO] epoch   70  train_loss=0.00485  val_mae= 22.862  val_mse=  797.77  best_mae= 10.917@e60  bad=2/30
+12:53:54 [INFO] epoch   75  train_loss=0.00097  val_mae= 23.246  val_mse=  870.37  best_mae= 10.917@e60  bad=3/30
+12:53:54 [INFO] epoch   80  train_loss=0.00054  val_mae= 25.393  val_mse= 1019.31  best_mae= 10.917@e60  bad=4/30
+12:53:54 [INFO] epoch   85  train_loss=0.00062  val_mae= 18.367  val_mse=  550.98  best_mae= 10.917@e60  bad=5/30
+12:53:55 [INFO] epoch   90  train_loss=0.00071  val_mae= 20.443  val_mse= 1321.39  best_mae= 10.917@e60  bad=6/30
+12:53:55 [INFO] epoch   95  train_loss=0.00043  val_mae= 19.488  val_mse=  669.89  best_mae= 10.917@e60  bad=7/30
+12:53:55 [INFO] epoch  100  train_loss=0.00068  val_mae= 19.755  val_mse=  668.11  best_mae= 10.917@e60  bad=8/30
+12:53:55 [INFO]   test MAE=46.395  inner-val MAE=10.917  best@e60
+12:53:55 [INFO] 
+--- member=cnn_lstm_best  seed=0  holdout=B  window=30  scaler=minmax_0_1 ---
+12:53:56 [INFO] epoch    5  train_loss=0.00234  val_mae= 21.804  val_mse=  982.92  best_mae= 21.804@e5  bad=0/30
+12:53:56 [INFO] epoch   10  train_loss=0.00147  val_mae= 47.689  val_mse= 3739.96  best_mae= 21.804@e5  bad=1/30
+12:53:56 [INFO] epoch   15  train_loss=0.00111  val_mae= 54.721  val_mse= 4985.27  best_mae= 21.804@e5  bad=2/30
+12:53:56 [INFO] epoch   20  train_loss=0.00087  val_mae= 52.456  val_mse= 4763.45  best_mae= 21.804@e5  bad=3/30
+12:53:56 [INFO] epoch   25  train_loss=0.00086  val_mae= 55.173  val_mse= 5139.05  best_mae= 21.804@e5  bad=4/30
+12:53:57 [INFO] epoch   30  train_loss=0.00113  val_mae= 19.485  val_mse= 1073.71  best_mae= 19.485@e30  bad=0/30
+12:53:57 [INFO] epoch   35  train_loss=0.00066  val_mae= 56.692  val_mse= 5343.51  best_mae= 19.485@e30  bad=1/30
+12:53:57 [INFO] epoch   40  train_loss=0.00085  val_mae= 85.811  val_mse=12801.60  best_mae= 19.485@e30  bad=2/30
+12:53:57 [INFO] epoch   45  train_loss=0.00065  val_mae= 50.060  val_mse= 4240.12  best_mae= 19.485@e30  bad=3/30
+12:53:57 [INFO] epoch   50  train_loss=0.00052  val_mae= 51.733  val_mse= 4784.54  best_mae= 19.485@e30  bad=4/30
+12:53:58 [INFO] epoch   55  train_loss=0.00044  val_mae= 54.030  val_mse= 5225.86  best_mae= 19.485@e30  bad=5/30
+12:53:58 [INFO] epoch   60  train_loss=0.00165  val_mae= 57.067  val_mse= 5124.46  best_mae= 19.485@e30  bad=6/30
+12:53:58 [INFO] epoch   65  train_loss=0.00033  val_mae= 53.753  val_mse= 5022.28  best_mae= 19.485@e30  bad=7/30
+12:53:59 [INFO] epoch   70  train_loss=0.00259  val_mae= 45.596  val_mse= 3358.02  best_mae= 19.485@e30  bad=8/30
+12:53:59 [INFO] epoch   75  train_loss=0.00070  val_mae= 30.336  val_mse= 1733.67  best_mae= 19.485@e30  bad=9/30
+12:53:59 [INFO] epoch   80  train_loss=0.00075  val_mae= 51.336  val_mse= 4335.16  best_mae= 19.485@e30  bad=10/30
+12:54:00 [INFO] epoch   85  train_loss=0.00066  val_mae= 41.258  val_mse= 2751.83  best_mae= 19.485@e30  bad=11/30
+12:54:00 [INFO] epoch   90  train_loss=0.00074  val_mae= 50.844  val_mse= 4213.43  best_mae= 19.485@e30  bad=12/30
+12:54:00 [INFO] epoch   95  train_loss=0.00022  val_mae= 52.647  val_mse= 4883.46  best_mae= 19.485@e30  bad=13/30
+12:54:01 [INFO] epoch  100  train_loss=0.00094  val_mae= 41.616  val_mse= 2913.30  best_mae= 19.485@e30  bad=14/30
+12:54:01 [INFO]   test MAE=28.217  inner-val MAE=19.485  best@e30
+12:54:01 [INFO] 
+--- member=cnn_lstm_best  seed=0  holdout=C  window=30  scaler=minmax_0_1 ---
+12:54:01 [INFO] epoch    5  train_loss=0.00240  val_mae= 51.850  val_mse= 4254.14  best_mae= 51.850@e5  bad=0/30
+12:54:01 [INFO] epoch   10  train_loss=0.00136  val_mae= 56.463  val_mse= 5889.28  best_mae= 51.850@e5  bad=1/30
+12:54:01 [INFO] epoch   15  train_loss=0.00089  val_mae= 63.461  val_mse= 6669.94  best_mae= 51.850@e5  bad=2/30
+12:54:01 [INFO] epoch   20  train_loss=0.00076  val_mae= 69.147  val_mse= 8906.86  best_mae= 51.850@e5  bad=3/30
+12:54:02 [INFO] epoch   25  train_loss=0.00066  val_mae= 49.669  val_mse= 4709.61  best_mae= 49.669@e25  bad=0/30
+12:54:02 [INFO] epoch   30  train_loss=0.00060  val_mae= 66.350  val_mse= 8822.85  best_mae= 49.669@e25  bad=1/30
+12:54:02 [INFO] epoch   35  train_loss=0.00041  val_mae= 55.814  val_mse= 6483.73  best_mae= 49.669@e25  bad=2/30
+12:54:02 [INFO] epoch   40  train_loss=0.00059  val_mae= 55.524  val_mse= 6377.66  best_mae= 49.669@e25  bad=3/30
+12:54:02 [INFO] epoch   45  train_loss=0.00037  val_mae= 70.076  val_mse= 8405.34  best_mae= 49.669@e25  bad=4/30
+12:54:03 [INFO] epoch   50  train_loss=0.00047  val_mae= 50.843  val_mse= 4927.15  best_mae= 49.669@e25  bad=5/30
+12:54:03 [INFO] epoch   55  train_loss=0.00033  val_mae= 54.796  val_mse= 5608.77  best_mae= 49.669@e25  bad=6/30
+12:54:03 [INFO] epoch   60  train_loss=0.00029  val_mae= 45.177  val_mse= 5196.67  best_mae= 45.177@e60  bad=0/30
+12:54:03 [INFO] epoch   65  train_loss=0.00059  val_mae= 49.763  val_mse= 5453.19  best_mae= 45.177@e60  bad=1/30
+12:54:04 [INFO] epoch   70  train_loss=0.00054  val_mae= 52.444  val_mse= 4258.75  best_mae= 45.177@e60  bad=2/30
+12:54:04 [INFO] epoch   75  train_loss=0.00059  val_mae= 53.674  val_mse= 5468.07  best_mae= 45.177@e60  bad=3/30
+12:54:04 [INFO] epoch   80  train_loss=0.00038  val_mae= 56.848  val_mse= 5989.39  best_mae= 45.177@e60  bad=4/30
+12:54:05 [INFO] epoch   85  train_loss=0.00023  val_mae= 62.805  val_mse= 8358.93  best_mae= 45.177@e60  bad=5/30
+12:54:05 [INFO] epoch   90  train_loss=0.00099  val_mae= 64.734  val_mse= 6873.63  best_mae= 45.177@e60  bad=6/30
+12:54:05 [INFO] epoch   95  train_loss=0.00017  val_mae= 67.410  val_mse= 8436.09  best_mae= 45.177@e60  bad=7/30
+12:54:05 [INFO] epoch  100  train_loss=0.00022  val_mae= 60.743  val_mse= 7762.21  best_mae= 45.177@e60  bad=8/30
+12:54:05 [INFO]   test MAE=56.086  inner-val MAE=45.177  best@e60
+12:54:05 [INFO] 
+--- member=cnn_lstm_best  seed=1  holdout=A  window=30  scaler=minmax_0_1 ---
+12:54:06 [INFO] epoch    5  train_loss=0.00205  val_mae=  7.035  val_mse=   79.67  best_mae=  7.035@e5  bad=0/30
+12:54:06 [INFO] epoch   10  train_loss=0.00137  val_mae=104.749  val_mse=29733.33  best_mae=  7.035@e5  bad=1/30
+12:54:06 [INFO] epoch   15  train_loss=0.00116  val_mae=  8.372  val_mse=  240.17  best_mae=  7.035@e5  bad=2/30
+12:54:06 [INFO] epoch   20  train_loss=0.00071  val_mae= 16.661  val_mse=  437.35  best_mae=  7.035@e5  bad=3/30
+12:54:07 [INFO] epoch   25  train_loss=0.00102  val_mae= 17.134  val_mse=  448.69  best_mae=  7.035@e5  bad=4/30
+12:54:07 [INFO] epoch   30  train_loss=0.00056  val_mae= 12.584  val_mse=  266.65  best_mae=  7.035@e5  bad=5/30
+12:54:07 [INFO] epoch   35  train_loss=0.00147  val_mae= 33.622  val_mse= 2183.64  best_mae=  7.035@e5  bad=6/30
+12:54:07 [INFO] epoch   40  train_loss=0.00084  val_mae= 14.269  val_mse=  334.94  best_mae=  7.035@e5  bad=7/30
+12:54:08 [INFO] epoch   45  train_loss=0.00092  val_mae= 11.238  val_mse=  305.05  best_mae=  7.035@e5  bad=8/30
+12:54:08 [INFO] epoch   50  train_loss=0.00120  val_mae= 12.478  val_mse=  283.95  best_mae=  7.035@e5  bad=9/30
+12:54:08 [INFO] epoch   55  train_loss=0.00185  val_mae= 17.080  val_mse=  420.20  best_mae=  7.035@e5  bad=10/30
+12:54:09 [INFO] epoch   60  train_loss=0.00074  val_mae= 11.266  val_mse=  219.41  best_mae=  7.035@e5  bad=11/30
+12:54:09 [INFO] epoch   65  train_loss=0.00081  val_mae= 17.197  val_mse=  428.25  best_mae=  7.035@e5  bad=12/30
+12:54:09 [INFO] epoch   70  train_loss=0.00039  val_mae= 13.965  val_mse=  497.09  best_mae=  7.035@e5  bad=13/30
+12:54:10 [INFO] epoch   75  train_loss=0.00051  val_mae= 13.838  val_mse=  337.47  best_mae=  7.035@e5  bad=14/30
+12:54:10 [INFO] epoch   80  train_loss=0.00056  val_mae=  7.180  val_mse=   93.71  best_mae=  7.035@e5  bad=15/30
+12:54:10 [INFO] epoch   85  train_loss=0.00068  val_mae= 19.294  val_mse=  976.43  best_mae=  7.035@e5  bad=16/30
+12:54:11 [INFO] epoch   90  train_loss=0.00036  val_mae=  5.529  val_mse=   54.37  best_mae=  5.529@e90  bad=0/30
+12:54:11 [INFO] epoch   95  train_loss=0.00033  val_mae=  7.729  val_mse=  119.03  best_mae=  5.529@e90  bad=1/30
+12:54:12 [INFO] epoch  100  train_loss=0.00091  val_mae= 13.858  val_mse=  368.97  best_mae=  5.529@e90  bad=2/30
+12:54:12 [INFO]   test MAE=28.181  inner-val MAE=5.529  best@e90
+12:54:12 [INFO] 
+--- member=cnn_lstm_best  seed=1  holdout=B  window=30  scaler=minmax_0_1 ---
+12:54:12 [INFO] epoch    5  train_loss=0.00221  val_mae= 23.725  val_mse= 1096.39  best_mae= 23.725@e5  bad=0/30
+12:54:12 [INFO] epoch   10  train_loss=0.00136  val_mae=105.809  val_mse=17702.59  best_mae= 23.725@e5  bad=1/30
+12:54:12 [INFO] epoch   15  train_loss=0.00095  val_mae= 50.964  val_mse= 4436.96  best_mae= 23.725@e5  bad=2/30
+12:54:12 [INFO] epoch   20  train_loss=0.00080  val_mae= 45.973  val_mse= 3543.41  best_mae= 23.725@e5  bad=3/30
+12:54:12 [INFO] epoch   25  train_loss=0.00161  val_mae= 55.203  val_mse= 4807.85  best_mae= 23.725@e5  bad=4/30
+12:54:13 [INFO] epoch   30  train_loss=0.00080  val_mae= 29.761  val_mse= 1694.27  best_mae= 23.725@e5  bad=5/30
+12:54:13 [INFO] epoch   35  train_loss=0.00059  val_mae= 53.575  val_mse= 5116.33  best_mae= 23.725@e5  bad=6/30
+12:54:13 [INFO] epoch   40  train_loss=0.00052  val_mae= 31.029  val_mse= 1878.71  best_mae= 23.725@e5  bad=7/30
+12:54:13 [INFO] epoch   45  train_loss=0.00050  val_mae= 66.822  val_mse=11523.45  best_mae= 23.725@e5  bad=8/30
+12:54:13 [INFO] epoch   50  train_loss=0.00037  val_mae= 56.629  val_mse= 5430.47  best_mae= 23.725@e5  bad=9/30
+12:54:14 [INFO] epoch   55  train_loss=0.00032  val_mae= 43.803  val_mse= 3344.78  best_mae= 23.725@e5  bad=10/30
+12:54:14 [INFO] epoch   60  train_loss=0.00115  val_mae= 52.853  val_mse= 4768.08  best_mae= 23.725@e5  bad=11/30
+12:54:14 [INFO] epoch   65  train_loss=0.00031  val_mae= 44.547  val_mse= 3435.22  best_mae= 23.725@e5  bad=12/30
+12:54:15 [INFO] epoch   70  train_loss=0.00058  val_mae= 48.814  val_mse= 4085.85  best_mae= 23.725@e5  bad=13/30
+12:54:15 [INFO] epoch   75  train_loss=0.00154  val_mae= 57.712  val_mse= 5392.29  best_mae= 23.725@e5  bad=14/30
+12:54:15 [INFO] epoch   80  train_loss=0.00065  val_mae= 50.248  val_mse= 4387.74  best_mae= 23.725@e5  bad=15/30
+12:54:15 [INFO] epoch   85  train_loss=0.00047  val_mae= 50.955  val_mse= 4433.15  best_mae= 23.725@e5  bad=16/30
+12:54:16 [INFO] epoch   90  train_loss=0.00044  val_mae= 43.397  val_mse= 3123.43  best_mae= 23.725@e5  bad=17/30
+12:54:16 [INFO] epoch   95  train_loss=0.00191  val_mae= 50.879  val_mse= 4253.87  best_mae= 23.725@e5  bad=18/30
+12:54:16 [INFO] epoch  100  train_loss=0.00035  val_mae= 53.147  val_mse= 4939.65  best_mae= 23.725@e5  bad=19/30
+12:54:16 [INFO]   test MAE=13.653  inner-val MAE=23.725  best@e5
+12:54:16 [INFO] 
+--- member=cnn_lstm_best  seed=1  holdout=C  window=30  scaler=minmax_0_1 ---
+12:54:16 [INFO] epoch    5  train_loss=0.00213  val_mae= 53.335  val_mse= 4739.05  best_mae= 53.335@e5  bad=0/30
+12:54:17 [INFO] epoch   10  train_loss=0.00118  val_mae= 74.740  val_mse= 9258.90  best_mae= 53.335@e5  bad=1/30
+12:54:17 [INFO] epoch   15  train_loss=0.00087  val_mae= 57.303  val_mse= 6848.07  best_mae= 53.335@e5  bad=2/30
+12:54:17 [INFO] epoch   20  train_loss=0.00089  val_mae= 58.039  val_mse= 5575.13  best_mae= 53.335@e5  bad=3/30
+12:54:17 [INFO] epoch   25  train_loss=0.00059  val_mae= 73.648  val_mse= 8797.38  best_mae= 53.335@e5  bad=4/30
+12:54:17 [INFO] epoch   30  train_loss=0.00092  val_mae= 71.765  val_mse= 9519.81  best_mae= 53.335@e5  bad=5/30
+12:54:17 [INFO] epoch   35  train_loss=0.00038  val_mae= 39.566  val_mse= 3558.45  best_mae= 39.566@e35  bad=0/30
+12:54:18 [INFO] epoch   40  train_loss=0.00052  val_mae= 57.229  val_mse= 7046.45  best_mae= 39.566@e35  bad=1/30
+12:54:18 [INFO] epoch   45  train_loss=0.00051  val_mae= 47.866  val_mse= 5115.06  best_mae= 39.566@e35  bad=2/30
+12:54:18 [INFO] epoch   50  train_loss=0.00054  val_mae= 58.817  val_mse= 5469.54  best_mae= 39.566@e35  bad=3/30
+12:54:18 [INFO] epoch   55  train_loss=0.00053  val_mae= 46.158  val_mse= 5346.29  best_mae= 39.566@e35  bad=4/30
+12:54:19 [INFO] epoch   60  train_loss=0.00035  val_mae= 55.963  val_mse= 6868.42  best_mae= 39.566@e35  bad=5/30
+12:54:19 [INFO] epoch   65  train_loss=0.00047  val_mae= 70.871  val_mse= 8319.13  best_mae= 39.566@e35  bad=6/30
+12:54:19 [INFO] epoch   70  train_loss=0.00023  val_mae= 69.304  val_mse= 8762.29  best_mae= 39.566@e35  bad=7/30
+12:54:19 [INFO] epoch   75  train_loss=0.00047  val_mae= 51.084  val_mse= 5692.80  best_mae= 39.566@e35  bad=8/30
+12:54:20 [INFO] epoch   80  train_loss=0.00027  val_mae= 73.679  val_mse= 9969.13  best_mae= 39.566@e35  bad=9/30
+12:54:20 [INFO] epoch   85  train_loss=0.00021  val_mae= 73.378  val_mse= 9991.74  best_mae= 39.566@e35  bad=10/30
+12:54:20 [INFO] epoch   90  train_loss=0.00053  val_mae= 64.282  val_mse= 7444.32  best_mae= 39.566@e35  bad=11/30
+12:54:20 [INFO] epoch   95  train_loss=0.00057  val_mae= 26.568  val_mse= 1846.59  best_mae= 26.568@e95  bad=0/30
+12:54:21 [INFO] epoch  100  train_loss=0.00079  val_mae= 60.200  val_mse= 7522.89  best_mae= 26.568@e95  bad=1/30
+12:54:21 [INFO]   test MAE=35.416  inner-val MAE=26.568  best@e95
+12:54:21 [INFO] 
+--- member=cnn_lstm_best  seed=2  holdout=A  window=30  scaler=minmax_0_1 ---
+12:54:21 [INFO] epoch    5  train_loss=0.00209  val_mae= 21.711  val_mse=  886.38  best_mae= 21.711@e5  bad=0/30
+12:54:21 [INFO] epoch   10  train_loss=0.00114  val_mae= 31.282  val_mse= 2311.57  best_mae= 21.711@e5  bad=1/30
+12:54:21 [INFO] epoch   15  train_loss=0.00081  val_mae= 28.063  val_mse= 2115.27  best_mae= 21.711@e5  bad=2/30
+12:54:21 [INFO] epoch   20  train_loss=0.00050  val_mae= 11.838  val_mse=  252.75  best_mae= 11.838@e20  bad=0/30
+12:54:22 [INFO] epoch   25  train_loss=0.00081  val_mae= 19.825  val_mse=  773.55  best_mae= 11.838@e20  bad=1/30
+12:54:22 [INFO] epoch   30  train_loss=0.00077  val_mae= 32.470  val_mse= 2010.18  best_mae= 11.838@e20  bad=2/30
+12:54:22 [INFO] epoch   35  train_loss=0.00069  val_mae= 20.950  val_mse=  716.35  best_mae= 11.838@e20  bad=3/30
+12:54:23 [INFO] epoch   40  train_loss=0.00048  val_mae= 23.902  val_mse=  911.16  best_mae= 11.838@e20  bad=4/30
+12:54:23 [INFO] epoch   45  train_loss=0.00052  val_mae= 16.391  val_mse=  680.04  best_mae= 11.838@e20  bad=5/30
+12:54:23 [INFO] epoch   50  train_loss=0.00059  val_mae= 15.396  val_mse=  577.43  best_mae= 11.838@e20  bad=6/30
+12:54:23 [INFO] epoch   55  train_loss=0.00030  val_mae=  9.976  val_mse=  155.95  best_mae=  9.976@e55  bad=0/30
+12:54:24 [INFO] epoch   60  train_loss=0.00045  val_mae=  5.522  val_mse=   54.77  best_mae=  5.522@e60  bad=0/30
+12:54:24 [INFO] epoch   65  train_loss=0.00430  val_mae= 13.289  val_mse=  283.14  best_mae=  5.522@e60  bad=1/30
+12:54:24 [INFO] epoch   70  train_loss=0.00095  val_mae= 13.806  val_mse=  265.49  best_mae=  5.522@e60  bad=2/30
+12:54:25 [INFO] epoch   75  train_loss=0.00073  val_mae= 29.836  val_mse= 2062.34  best_mae=  5.522@e60  bad=3/30
+12:54:25 [INFO] epoch   80  train_loss=0.00040  val_mae=  6.727  val_mse=   70.73  best_mae=  5.522@e60  bad=4/30
+12:54:25 [INFO] epoch   85  train_loss=0.00043  val_mae= 11.404  val_mse=  230.43  best_mae=  5.522@e60  bad=5/30
+12:54:26 [INFO] epoch   90  train_loss=0.00092  val_mae= 17.320  val_mse=  536.12  best_mae=  5.522@e60  bad=6/30
+12:54:26 [INFO] epoch   95  train_loss=0.00029  val_mae= 11.769  val_mse=  271.44  best_mae=  5.522@e60  bad=7/30
+12:54:26 [INFO] epoch  100  train_loss=0.00030  val_mae=  9.363  val_mse=  139.37  best_mae=  5.522@e60  bad=8/30
+12:54:26 [INFO]   test MAE=32.524  inner-val MAE=5.522  best@e60
+12:54:26 [INFO] 
+--- member=cnn_lstm_best  seed=2  holdout=B  window=30  scaler=minmax_0_1 ---
+12:54:27 [INFO] epoch    5  train_loss=0.00298  val_mae= 18.141  val_mse=  869.60  best_mae= 18.141@e5  bad=0/30
+12:54:27 [INFO] epoch   10  train_loss=0.00161  val_mae= 40.994  val_mse= 2730.33  best_mae= 18.141@e5  bad=1/30
+12:54:27 [INFO] epoch   15  train_loss=0.00110  val_mae= 42.091  val_mse= 2834.78  best_mae= 18.141@e5  bad=2/30
+12:54:27 [INFO] epoch   20  train_loss=0.00080  val_mae= 56.806  val_mse= 5048.59  best_mae= 18.141@e5  bad=3/30
+12:54:27 [INFO] epoch   25  train_loss=0.00085  val_mae= 52.375  val_mse= 4588.78  best_mae= 18.141@e5  bad=4/30
+12:54:27 [INFO] epoch   30  train_loss=0.00078  val_mae=112.857  val_mse=17479.89  best_mae= 18.141@e5  bad=5/30
+12:54:28 [INFO] epoch   35  train_loss=0.00040  val_mae= 45.070  val_mse= 3479.83  best_mae= 18.141@e5  bad=6/30
+12:54:28 [INFO] epoch   40  train_loss=0.00062  val_mae= 48.130  val_mse= 3607.01  best_mae= 18.141@e5  bad=7/30
+12:54:28 [INFO] epoch   45  train_loss=0.00032  val_mae= 52.587  val_mse= 4861.54  best_mae= 18.141@e5  bad=8/30
+12:54:28 [INFO] epoch   50  train_loss=0.00036  val_mae= 50.796  val_mse= 4174.61  best_mae= 18.141@e5  bad=9/30
+12:54:29 [INFO] epoch   55  train_loss=0.00041  val_mae= 48.037  val_mse= 3994.19  best_mae= 18.141@e5  bad=10/30
+12:54:29 [INFO] epoch   60  train_loss=0.00143  val_mae= 67.243  val_mse= 8061.03  best_mae= 18.141@e5  bad=11/30
+12:54:29 [INFO] epoch   65  train_loss=0.00029  val_mae= 55.130  val_mse= 4992.77  best_mae= 18.141@e5  bad=12/30
+12:54:29 [INFO] epoch   70  train_loss=0.00038  val_mae= 45.252  val_mse= 3501.91  best_mae= 18.141@e5  bad=13/30
+12:54:30 [INFO] epoch   75  train_loss=0.00122  val_mae= 51.267  val_mse= 4312.88  best_mae= 18.141@e5  bad=14/30
+12:54:30 [INFO] epoch   80  train_loss=0.00023  val_mae= 51.627  val_mse= 4485.48  best_mae= 18.141@e5  bad=15/30
+12:54:30 [INFO] epoch   85  train_loss=0.00032  val_mae= 51.492  val_mse= 4431.96  best_mae= 18.141@e5  bad=16/30
+12:54:31 [INFO] epoch   90  train_loss=0.00043  val_mae= 47.732  val_mse= 3583.89  best_mae= 18.141@e5  bad=17/30
+12:54:31 [INFO] epoch   95  train_loss=0.00038  val_mae= 53.291  val_mse= 4786.10  best_mae= 18.141@e5  bad=18/30
+12:54:31 [INFO] epoch  100  train_loss=0.00034  val_mae= 46.390  val_mse= 3839.51  best_mae= 18.141@e5  bad=19/30
+12:54:31 [INFO]   test MAE=29.158  inner-val MAE=18.141  best@e5
+12:54:31 [INFO] 
+--- member=cnn_lstm_best  seed=2  holdout=C  window=30  scaler=minmax_0_1 ---
+12:54:31 [INFO] epoch    5  train_loss=0.00259  val_mae= 55.176  val_mse= 4743.74  best_mae= 55.176@e5  bad=0/30
+12:54:32 [INFO] epoch   10  train_loss=0.00135  val_mae= 73.247  val_mse= 8861.01  best_mae= 55.176@e5  bad=1/30
+12:54:32 [INFO] epoch   15  train_loss=0.00097  val_mae= 61.605  val_mse= 7653.04  best_mae= 55.176@e5  bad=2/30
+12:54:32 [INFO] epoch   20  train_loss=0.00064  val_mae= 51.139  val_mse= 5753.48  best_mae= 51.139@e20  bad=0/30
+12:54:32 [INFO] epoch   25  train_loss=0.00101  val_mae= 60.509  val_mse= 7650.56  best_mae= 51.139@e20  bad=1/30
+12:54:32 [INFO] epoch   30  train_loss=0.00047  val_mae= 59.738  val_mse= 7800.13  best_mae= 51.139@e20  bad=2/30
+12:54:33 [INFO] epoch   35  train_loss=0.00031  val_mae= 45.686  val_mse= 4106.31  best_mae= 45.686@e35  bad=0/30
+12:54:33 [INFO] epoch   40  train_loss=0.00032  val_mae= 32.176  val_mse= 2363.40  best_mae= 32.176@e40  bad=0/30
+12:54:33 [INFO] epoch   45  train_loss=0.00039  val_mae= 45.611  val_mse= 4014.82  best_mae= 32.176@e40  bad=1/30
+12:54:33 [INFO] epoch   50  train_loss=0.00024  val_mae= 22.535  val_mse= 1502.26  best_mae= 22.535@e50  bad=0/30
+12:54:33 [INFO] epoch   55  train_loss=0.00028  val_mae= 32.757  val_mse= 2475.75  best_mae= 22.535@e50  bad=1/30
+12:54:34 [INFO] epoch   60  train_loss=0.00041  val_mae= 68.590  val_mse= 8718.58  best_mae= 22.535@e50  bad=2/30
+12:54:34 [INFO] epoch   65  train_loss=0.00032  val_mae= 57.472  val_mse= 6882.12  best_mae= 22.535@e50  bad=3/30
+12:54:34 [INFO] epoch   70  train_loss=0.00020  val_mae= 73.689  val_mse= 9378.63  best_mae= 22.535@e50  bad=4/30
+12:54:34 [INFO] epoch   75  train_loss=0.00055  val_mae= 63.670  val_mse= 6621.57  best_mae= 22.535@e50  bad=5/30
+12:54:35 [INFO] epoch   80  train_loss=0.00030  val_mae= 49.471  val_mse= 5064.60  best_mae= 22.535@e50  bad=6/30
+12:54:35 [INFO] epoch   85  train_loss=0.00022  val_mae= 48.869  val_mse= 5445.15  best_mae= 22.535@e50  bad=7/30
+12:54:35 [INFO] epoch   90  train_loss=0.00083  val_mae= 40.360  val_mse= 3772.29  best_mae= 22.535@e50  bad=8/30
+12:54:35 [INFO] epoch   95  train_loss=0.00036  val_mae= 70.138  val_mse= 9329.80  best_mae= 22.535@e50  bad=9/30
+12:54:36 [INFO] epoch  100  train_loss=0.00015  val_mae= 76.330  val_mse=10068.57  best_mae= 22.535@e50  bad=10/30
+12:54:36 [INFO]   test MAE=48.237  inner-val MAE=22.535  best@e50
+12:54:36 [INFO] 
+--- member=lstm_best  seed=0  holdout=A  window=30  scaler=minmax_0_1 ---
+12:54:36 [INFO] epoch    5  train_loss=0.03821  val_mae= 19.506  val_mse=  494.15  best_mae= 19.506@e5  bad=0/30
+12:54:36 [INFO] epoch   10  train_loss=0.01543  val_mae= 19.610  val_mse=  525.91  best_mae= 19.506@e5  bad=1/30
+12:54:36 [INFO] epoch   15  train_loss=0.00779  val_mae= 44.053  val_mse= 2756.29  best_mae= 19.506@e5  bad=2/30
+12:54:37 [INFO] epoch   20  train_loss=0.00559  val_mae= 20.442  val_mse=  574.43  best_mae= 19.506@e5  bad=3/30
+12:54:37 [INFO] epoch   25  train_loss=0.00432  val_mae= 41.433  val_mse= 3074.32  best_mae= 19.506@e5  bad=4/30
+12:54:37 [INFO] epoch   30  train_loss=0.00258  val_mae= 20.643  val_mse=  576.62  best_mae= 19.506@e5  bad=5/30
+12:54:38 [INFO] epoch   35  train_loss=0.00223  val_mae= 32.329  val_mse= 1695.80  best_mae= 19.506@e5  bad=6/30
+12:54:38 [INFO] epoch   40  train_loss=0.00178  val_mae= 35.599  val_mse= 1938.64  best_mae= 19.506@e5  bad=7/30
+12:54:38 [INFO] epoch   45  train_loss=0.00163  val_mae= 19.296  val_mse=  596.57  best_mae= 19.296@e45  bad=0/30
+12:54:39 [INFO] epoch   50  train_loss=0.00136  val_mae= 13.479  val_mse=  303.24  best_mae= 13.479@e50  bad=0/30
+12:54:40 [INFO] epoch   55  train_loss=0.00069  val_mae= 12.026  val_mse=  248.72  best_mae= 12.026@e55  bad=0/30
+12:54:40 [INFO] epoch   60  train_loss=0.00051  val_mae= 10.866  val_mse=  210.05  best_mae= 10.866@e60  bad=0/30
+12:54:41 [INFO] epoch   65  train_loss=0.00059  val_mae= 12.892  val_mse=  287.39  best_mae= 10.866@e60  bad=1/30
+12:54:41 [INFO] epoch   70  train_loss=0.00036  val_mae= 13.632  val_mse=  292.18  best_mae= 10.866@e60  bad=2/30
+12:54:42 [INFO] epoch   75  train_loss=0.00035  val_mae=  7.484  val_mse=  111.60  best_mae=  7.484@e75  bad=0/30
+12:54:42 [INFO] epoch   80  train_loss=0.00022  val_mae=  7.993  val_mse=  126.42  best_mae=  7.484@e75  bad=1/30
+12:54:43 [INFO] epoch   85  train_loss=0.00017  val_mae=  6.400  val_mse=   90.06  best_mae=  6.400@e85  bad=0/30
+12:54:43 [INFO] epoch   90  train_loss=0.00017  val_mae=  7.602  val_mse=  111.98  best_mae=  6.400@e85  bad=1/30
+12:54:44 [INFO] epoch   95  train_loss=0.00016  val_mae=  7.886  val_mse=  118.08  best_mae=  6.400@e85  bad=2/30
+12:54:44 [INFO] epoch  100  train_loss=0.00015  val_mae=  8.437  val_mse=  131.29  best_mae=  6.400@e85  bad=3/30
+12:54:45 [INFO]   test MAE=37.493  inner-val MAE=6.400  best@e85
+12:54:45 [INFO] 
+--- member=lstm_best  seed=0  holdout=B  window=30  scaler=minmax_0_1 ---
+12:54:45 [INFO] epoch    5  train_loss=0.04966  val_mae= 16.956  val_mse=  836.46  best_mae= 16.956@e5  bad=0/30
+12:54:45 [INFO] epoch   10  train_loss=0.01557  val_mae= 54.840  val_mse= 3918.75  best_mae= 16.956@e5  bad=1/30
+12:54:45 [INFO] epoch   15  train_loss=0.00787  val_mae= 42.723  val_mse= 2574.21  best_mae= 16.956@e5  bad=2/30
+12:54:45 [INFO] epoch   20  train_loss=0.00410  val_mae= 41.490  val_mse= 2446.41  best_mae= 16.956@e5  bad=3/30
+12:54:46 [INFO] epoch   25  train_loss=0.00354  val_mae= 48.885  val_mse= 3779.14  best_mae= 16.956@e5  bad=4/30
+12:54:46 [INFO] epoch   30  train_loss=0.00327  val_mae= 49.926  val_mse= 3947.35  best_mae= 16.956@e5  bad=5/30
+12:54:46 [INFO] epoch   35  train_loss=0.00226  val_mae= 47.724  val_mse= 3741.34  best_mae= 16.956@e5  bad=6/30
+12:54:47 [INFO] epoch   40  train_loss=0.00236  val_mae= 55.469  val_mse= 5398.43  best_mae= 16.956@e5  bad=7/30
+12:54:47 [INFO] epoch   45  train_loss=0.00184  val_mae= 55.877  val_mse= 5549.43  best_mae= 16.956@e5  bad=8/30
+12:54:47 [INFO] epoch   50  train_loss=0.00234  val_mae= 52.093  val_mse= 4390.10  best_mae= 16.956@e5  bad=9/30
+12:54:48 [INFO] epoch   55  train_loss=0.00083  val_mae= 35.086  val_mse= 2906.63  best_mae= 16.956@e5  bad=10/30
+12:54:48 [INFO] epoch   60  train_loss=0.00057  val_mae= 53.290  val_mse= 4837.43  best_mae= 16.956@e5  bad=11/30
+12:54:49 [INFO] epoch   65  train_loss=0.00054  val_mae= 51.886  val_mse= 4583.92  best_mae= 16.956@e5  bad=12/30
+12:54:49 [INFO] epoch   70  train_loss=0.00067  val_mae= 53.964  val_mse= 4835.52  best_mae= 16.956@e5  bad=13/30
+12:54:49 [INFO] epoch   75  train_loss=0.00053  val_mae= 53.559  val_mse= 4774.63  best_mae= 16.956@e5  bad=14/30
+12:54:50 [INFO] epoch   80  train_loss=0.00023  val_mae= 51.653  val_mse= 4674.88  best_mae= 16.956@e5  bad=15/30
+12:54:50 [INFO] epoch   85  train_loss=0.00024  val_mae= 53.749  val_mse= 4927.54  best_mae= 16.956@e5  bad=16/30
+12:54:51 [INFO] epoch   90  train_loss=0.00016  val_mae= 30.169  val_mse= 1971.81  best_mae= 16.956@e5  bad=17/30
+12:54:51 [INFO] epoch   95  train_loss=0.00015  val_mae= 51.002  val_mse= 4537.28  best_mae= 16.956@e5  bad=18/30
+12:54:52 [INFO] epoch  100  train_loss=0.00014  val_mae= 51.251  val_mse= 4461.48  best_mae= 16.956@e5  bad=19/30
+12:54:52 [INFO]   test MAE=25.667  inner-val MAE=16.956  best@e5
+12:54:52 [INFO] 
+--- member=lstm_best  seed=0  holdout=C  window=30  scaler=minmax_0_1 ---
+12:54:52 [INFO] epoch    5  train_loss=0.04521  val_mae= 51.739  val_mse= 3995.05  best_mae= 51.739@e5  bad=0/30
+12:54:52 [INFO] epoch   10  train_loss=0.02219  val_mae=113.368  val_mse=17172.44  best_mae= 51.739@e5  bad=1/30
+12:54:53 [INFO] epoch   15  train_loss=0.00745  val_mae= 58.970  val_mse= 5117.54  best_mae= 51.739@e5  bad=2/30
+12:54:53 [INFO] epoch   20  train_loss=0.00350  val_mae= 64.364  val_mse= 8461.92  best_mae= 51.739@e5  bad=3/30
+12:54:53 [INFO] epoch   25  train_loss=0.00347  val_mae= 62.239  val_mse= 7950.45  best_mae= 51.739@e5  bad=4/30
+12:54:53 [INFO] epoch   30  train_loss=0.00869  val_mae= 78.181  val_mse= 9653.66  best_mae= 51.739@e5  bad=5/30
+12:54:53 [INFO] epoch   35  train_loss=0.00240  val_mae= 78.771  val_mse= 9933.16  best_mae= 51.739@e5  bad=6/30
+12:54:54 [INFO] epoch   40  train_loss=0.00188  val_mae= 59.699  val_mse= 5808.09  best_mae= 51.739@e5  bad=7/30
+12:54:54 [INFO] epoch   45  train_loss=0.00144  val_mae= 63.319  val_mse= 6573.52  best_mae= 51.739@e5  bad=8/30
+12:54:54 [INFO] epoch   50  train_loss=0.00106  val_mae= 21.435  val_mse= 1124.13  best_mae= 21.435@e50  bad=0/30
+12:54:55 [INFO] epoch   55  train_loss=0.00087  val_mae= 59.829  val_mse= 5965.24  best_mae= 21.435@e50  bad=1/30
+12:54:55 [INFO] epoch   60  train_loss=0.00120  val_mae= 64.393  val_mse= 8012.89  best_mae= 21.435@e50  bad=2/30
+12:54:55 [INFO] epoch   65  train_loss=0.00070  val_mae= 55.241  val_mse= 6696.33  best_mae= 21.435@e50  bad=3/30
+12:54:56 [INFO] epoch   70  train_loss=0.00054  val_mae= 16.945  val_mse=  626.55  best_mae= 16.945@e70  bad=0/30
+12:54:56 [INFO] epoch   75  train_loss=0.00042  val_mae= 48.016  val_mse= 4674.54  best_mae= 16.945@e70  bad=1/30
+12:54:57 [INFO] epoch   80  train_loss=0.00037  val_mae= 52.442  val_mse= 6267.21  best_mae= 16.945@e70  bad=2/30
+12:54:57 [INFO] epoch   85  train_loss=0.00025  val_mae= 39.787  val_mse= 4153.88  best_mae= 16.945@e70  bad=3/30
+12:54:57 [INFO] epoch   90  train_loss=0.00025  val_mae= 31.168  val_mse= 2636.40  best_mae= 16.945@e70  bad=4/30
+12:54:58 [INFO] epoch   95  train_loss=0.00023  val_mae= 27.392  val_mse= 2059.81  best_mae= 16.945@e70  bad=5/30
+12:54:58 [INFO] epoch  100  train_loss=0.00026  val_mae= 31.920  val_mse= 3072.33  best_mae= 16.945@e70  bad=6/30
+12:54:58 [INFO]   test MAE=48.412  inner-val MAE=16.945  best@e70
+12:54:58 [INFO] 
+--- member=lstm_best  seed=1  holdout=A  window=30  scaler=minmax_0_1 ---
+12:54:59 [INFO] epoch    5  train_loss=0.03877  val_mae= 19.481  val_mse=  495.34  best_mae= 19.481@e5  bad=0/30
+12:54:59 [INFO] epoch   10  train_loss=0.01350  val_mae= 24.403  val_mse=  833.10  best_mae= 19.481@e5  bad=1/30
+12:54:59 [INFO] epoch   15  train_loss=0.00802  val_mae= 58.512  val_mse= 5480.24  best_mae= 19.481@e5  bad=2/30
+12:54:59 [INFO] epoch   20  train_loss=0.00399  val_mae= 42.261  val_mse= 3025.25  best_mae= 19.481@e5  bad=3/30
+12:55:00 [INFO] epoch   25  train_loss=0.00371  val_mae= 16.931  val_mse=  449.59  best_mae= 16.931@e25  bad=0/30
+12:55:00 [INFO] epoch   30  train_loss=0.00248  val_mae= 20.642  val_mse=  659.03  best_mae= 16.931@e25  bad=1/30
+12:55:00 [INFO] epoch   35  train_loss=0.00190  val_mae= 39.867  val_mse= 2918.63  best_mae= 16.931@e25  bad=2/30
+12:55:01 [INFO] epoch   40  train_loss=0.00137  val_mae= 40.199  val_mse= 2812.80  best_mae= 16.931@e25  bad=3/30
+12:55:01 [INFO] epoch   45  train_loss=0.00222  val_mae= 17.791  val_mse=  450.39  best_mae= 16.931@e25  bad=4/30
+12:55:02 [INFO] epoch   50  train_loss=0.00089  val_mae= 14.934  val_mse=  354.89  best_mae= 14.934@e50  bad=0/30
+12:55:02 [INFO] epoch   55  train_loss=0.00074  val_mae= 19.773  val_mse=  648.39  best_mae= 14.934@e50  bad=1/30
+12:55:03 [INFO] epoch   60  train_loss=0.00051  val_mae= 15.136  val_mse=  387.67  best_mae= 14.934@e50  bad=2/30
+12:55:03 [INFO] epoch   65  train_loss=0.00043  val_mae= 11.114  val_mse=  245.55  best_mae= 11.114@e65  bad=0/30
+12:55:04 [INFO] epoch   70  train_loss=0.00026  val_mae=  3.665  val_mse=   22.61  best_mae=  3.665@e70  bad=0/30
+12:55:04 [INFO] epoch   75  train_loss=0.00023  val_mae=  2.997  val_mse=   12.76  best_mae=  2.997@e75  bad=0/30
+12:55:05 [INFO] epoch   80  train_loss=0.00018  val_mae=  7.287  val_mse=  110.31  best_mae=  2.997@e75  bad=1/30
+12:55:05 [INFO] epoch   85  train_loss=0.00018  val_mae=  4.861  val_mse=   36.29  best_mae=  2.997@e75  bad=2/30
+12:55:06 [INFO] epoch   90  train_loss=0.00014  val_mae=  4.623  val_mse=   34.05  best_mae=  2.997@e75  bad=3/30
+12:55:06 [INFO] epoch   95  train_loss=0.00013  val_mae=  5.351  val_mse=   45.86  best_mae=  2.997@e75  bad=4/30
+12:55:07 [INFO] epoch  100  train_loss=0.00015  val_mae=  4.443  val_mse=   31.07  best_mae=  2.997@e75  bad=5/30
+12:55:07 [INFO]   test MAE=37.760  inner-val MAE=2.997  best@e75
+12:55:07 [INFO] 
+--- member=lstm_best  seed=1  holdout=B  window=30  scaler=minmax_0_1 ---
+12:55:07 [INFO] epoch    5  train_loss=0.05043  val_mae= 16.894  val_mse=  832.63  best_mae= 16.894@e5  bad=0/30
+12:55:07 [INFO] epoch   10  train_loss=0.01908  val_mae= 34.439  val_mse= 1939.59  best_mae= 16.894@e5  bad=1/30
+12:55:08 [INFO] epoch   15  train_loss=0.00621  val_mae= 24.598  val_mse= 1196.08  best_mae= 16.894@e5  bad=2/30
+12:55:08 [INFO] epoch   20  train_loss=0.00514  val_mae= 45.596  val_mse= 3224.72  best_mae= 16.894@e5  bad=3/30
+12:55:08 [INFO] epoch   25  train_loss=0.00327  val_mae= 46.223  val_mse= 3440.98  best_mae= 16.894@e5  bad=4/30
+12:55:08 [INFO] epoch   30  train_loss=0.00323  val_mae= 45.891  val_mse= 3635.58  best_mae= 16.894@e5  bad=5/30
+12:55:09 [INFO] epoch   35  train_loss=0.00219  val_mae= 36.011  val_mse= 2003.34  best_mae= 16.894@e5  bad=6/30
+12:55:09 [INFO] epoch   40  train_loss=0.00254  val_mae= 40.334  val_mse= 2787.43  best_mae= 16.894@e5  bad=7/30
+12:55:10 [INFO] epoch   45  train_loss=0.00235  val_mae= 22.011  val_mse=  968.09  best_mae= 16.894@e5  bad=8/30
+12:55:10 [INFO] epoch   50  train_loss=0.00119  val_mae= 46.106  val_mse= 3420.07  best_mae= 16.894@e5  bad=9/30
+12:55:10 [INFO] epoch   55  train_loss=0.00101  val_mae= 46.009  val_mse= 3439.32  best_mae= 16.894@e5  bad=10/30
+12:55:11 [INFO] epoch   60  train_loss=0.00074  val_mae= 12.802  val_mse=  477.06  best_mae= 12.802@e60  bad=0/30
+12:55:11 [INFO] epoch   65  train_loss=0.00067  val_mae= 35.723  val_mse= 2013.93  best_mae= 12.802@e60  bad=1/30
+12:55:12 [INFO] epoch   70  train_loss=0.00025  val_mae= 22.221  val_mse= 1005.75  best_mae= 12.802@e60  bad=2/30
+12:55:12 [INFO] epoch   75  train_loss=0.00021  val_mae= 34.239  val_mse= 1804.69  best_mae= 12.802@e60  bad=3/30
+12:55:13 [INFO] epoch   80  train_loss=0.00018  val_mae= 42.965  val_mse= 2938.25  best_mae= 12.802@e60  bad=4/30
+12:55:13 [INFO] epoch   85  train_loss=0.00016  val_mae= 42.129  val_mse= 2842.98  best_mae= 12.802@e60  bad=5/30
+12:55:14 [INFO] epoch   90  train_loss=0.00014  val_mae= 37.946  val_mse= 2217.56  best_mae= 12.802@e60  bad=6/30
+12:55:14 [INFO] epoch   95  train_loss=0.00013  val_mae= 37.214  val_mse= 2104.34  best_mae= 12.802@e60  bad=7/30
+12:55:15 [INFO] epoch  100  train_loss=0.00012  val_mae= 39.598  val_mse= 2454.09  best_mae= 12.802@e60  bad=8/30
+12:55:15 [INFO]   test MAE=25.212  inner-val MAE=12.802  best@e60
+12:55:15 [INFO] 
+--- member=lstm_best  seed=1  holdout=C  window=30  scaler=minmax_0_1 ---
+12:55:15 [INFO] epoch    5  train_loss=0.04531  val_mae= 50.867  val_mse= 4003.20  best_mae= 50.867@e5  bad=0/30
+12:55:15 [INFO] epoch   10  train_loss=0.03517  val_mae= 52.481  val_mse= 3884.17  best_mae= 50.867@e5  bad=1/30
+12:55:15 [INFO] epoch   15  train_loss=0.00675  val_mae= 68.176  val_mse= 7376.96  best_mae= 50.867@e5  bad=2/30
+12:55:15 [INFO] epoch   20  train_loss=0.00335  val_mae= 53.899  val_mse= 4783.00  best_mae= 50.867@e5  bad=3/30
+12:55:16 [INFO] epoch   25  train_loss=0.00306  val_mae= 54.030  val_mse= 6472.04  best_mae= 50.867@e5  bad=4/30
+12:55:16 [INFO] epoch   30  train_loss=0.00271  val_mae= 61.011  val_mse= 6141.75  best_mae= 50.867@e5  bad=5/30
+12:55:16 [INFO] epoch   35  train_loss=0.00166  val_mae= 62.933  val_mse= 8013.67  best_mae= 50.867@e5  bad=6/30
+12:55:16 [INFO] epoch   40  train_loss=0.00355  val_mae= 29.367  val_mse= 2427.00  best_mae= 29.367@e40  bad=0/30
+12:55:17 [INFO] epoch   45  train_loss=0.00108  val_mae= 57.868  val_mse= 5772.50  best_mae= 29.367@e40  bad=1/30
+12:55:17 [INFO] epoch   50  train_loss=0.00100  val_mae= 72.411  val_mse= 9125.80  best_mae= 29.367@e40  bad=2/30
+12:55:17 [INFO] epoch   55  train_loss=0.00101  val_mae= 50.969  val_mse= 5433.79  best_mae= 29.367@e40  bad=3/30
+12:55:18 [INFO] epoch   60  train_loss=0.00076  val_mae= 21.744  val_mse= 1068.86  best_mae= 21.744@e60  bad=0/30
+12:55:18 [INFO] epoch   65  train_loss=0.00057  val_mae= 38.838  val_mse= 3458.92  best_mae= 21.744@e60  bad=1/30
+12:55:18 [INFO] epoch   70  train_loss=0.00042  val_mae= 18.382  val_mse=  789.49  best_mae= 18.382@e70  bad=0/30
+12:55:19 [INFO] epoch   75  train_loss=0.00034  val_mae= 55.771  val_mse= 6955.02  best_mae= 18.382@e70  bad=1/30
+12:55:19 [INFO] epoch   80  train_loss=0.00030  val_mae= 58.771  val_mse= 7495.76  best_mae= 18.382@e70  bad=2/30
+12:55:20 [INFO] epoch   85  train_loss=0.00020  val_mae= 61.788  val_mse= 7916.67  best_mae= 18.382@e70  bad=3/30
+12:55:20 [INFO] epoch   90  train_loss=0.00021  val_mae= 66.088  val_mse= 8465.14  best_mae= 18.382@e70  bad=4/30
+12:55:21 [INFO] epoch   95  train_loss=0.00020  val_mae= 62.093  val_mse= 8014.51  best_mae= 18.382@e70  bad=5/30
+12:55:21 [INFO] epoch  100  train_loss=0.00023  val_mae= 66.262  val_mse= 8523.92  best_mae= 18.382@e70  bad=6/30
+12:55:21 [INFO]   test MAE=50.135  inner-val MAE=18.382  best@e70
+12:55:21 [INFO] 
+--- member=lstm_best  seed=2  holdout=A  window=30  scaler=minmax_0_1 ---
+12:55:21 [INFO] epoch    5  train_loss=0.03983  val_mae= 19.555  val_mse=  492.92  best_mae= 19.555@e5  bad=0/30
+12:55:21 [INFO] epoch   10  train_loss=0.01847  val_mae= 20.286  val_mse=  521.93  best_mae= 19.555@e5  bad=1/30
+12:55:22 [INFO] epoch   15  train_loss=0.00740  val_mae= 44.150  val_mse= 2721.35  best_mae= 19.555@e5  bad=2/30
+12:55:22 [INFO] epoch   20  train_loss=0.00678  val_mae= 17.970  val_mse=  519.46  best_mae= 17.970@e20  bad=0/30
+12:55:22 [INFO] epoch   25  train_loss=0.00368  val_mae= 18.581  val_mse=  493.08  best_mae= 17.970@e20  bad=1/30
+12:55:23 [INFO] epoch   30  train_loss=0.00286  val_mae= 36.805  val_mse= 2029.82  best_mae= 17.970@e20  bad=2/30
+12:55:23 [INFO] epoch   35  train_loss=0.00272  val_mae= 42.705  val_mse= 3222.13  best_mae= 17.970@e20  bad=3/30
+12:55:23 [INFO] epoch   40  train_loss=0.00216  val_mae= 19.540  val_mse=  597.49  best_mae= 17.970@e20  bad=4/30
+12:55:24 [INFO] epoch   45  train_loss=0.00189  val_mae= 28.008  val_mse= 1260.07  best_mae= 17.970@e20  bad=5/30
+12:55:24 [INFO] epoch   50  train_loss=0.00107  val_mae= 10.101  val_mse=  199.47  best_mae= 10.101@e50  bad=0/30
+12:55:25 [INFO] epoch   55  train_loss=0.00087  val_mae= 15.028  val_mse=  389.76  best_mae= 10.101@e50  bad=1/30
+12:55:25 [INFO] epoch   60  train_loss=0.00075  val_mae= 17.078  val_mse=  449.56  best_mae= 10.101@e50  bad=2/30
+12:55:26 [INFO] epoch   65  train_loss=0.00053  val_mae= 14.292  val_mse=  342.75  best_mae= 10.101@e50  bad=3/30
+12:55:26 [INFO] epoch   70  train_loss=0.00034  val_mae=  9.684  val_mse=  166.28  best_mae=  9.684@e70  bad=0/30
+12:55:27 [INFO] epoch   75  train_loss=0.00026  val_mae=  8.869  val_mse=  139.73  best_mae=  8.869@e75  bad=0/30
+12:55:27 [INFO] epoch   80  train_loss=0.00018  val_mae=  6.988  val_mse=  107.85  best_mae=  6.988@e80  bad=0/30
+12:55:28 [INFO] epoch   85  train_loss=0.00015  val_mae=  9.907  val_mse=  192.67  best_mae=  6.988@e80  bad=1/30
+12:55:29 [INFO] epoch   90  train_loss=0.00016  val_mae=  9.428  val_mse=  179.97  best_mae=  6.988@e80  bad=2/30
+12:55:30 [INFO] epoch   95  train_loss=0.00012  val_mae=  8.328  val_mse=  143.19  best_mae=  6.988@e80  bad=3/30
+12:55:30 [INFO] epoch  100  train_loss=0.00013  val_mae=  8.400  val_mse=  145.45  best_mae=  6.988@e80  bad=4/30
+12:55:30 [INFO]   test MAE=31.774  inner-val MAE=6.988  best@e80
+12:55:30 [INFO] 
+--- member=lstm_best  seed=2  holdout=B  window=30  scaler=minmax_0_1 ---
+12:55:31 [INFO] epoch    5  train_loss=0.05187  val_mae= 16.905  val_mse=  835.67  best_mae= 16.905@e5  bad=0/30
+12:55:31 [INFO] epoch   10  train_loss=0.03552  val_mae= 17.917  val_mse=  801.18  best_mae= 16.905@e5  bad=1/30
+12:55:31 [INFO] epoch   15  train_loss=0.00924  val_mae= 37.998  val_mse= 2084.07  best_mae= 16.905@e5  bad=2/30
+12:55:31 [INFO] epoch   20  train_loss=0.00417  val_mae= 51.082  val_mse= 3999.46  best_mae= 16.905@e5  bad=3/30
+12:55:32 [INFO] epoch   25  train_loss=0.00426  val_mae= 38.550  val_mse= 2392.26  best_mae= 16.905@e5  bad=4/30
+12:55:32 [INFO] epoch   30  train_loss=0.00281  val_mae= 47.229  val_mse= 3605.81  best_mae= 16.905@e5  bad=5/30
+12:55:32 [INFO] epoch   35  train_loss=0.00302  val_mae= 46.602  val_mse= 3540.86  best_mae= 16.905@e5  bad=6/30
+12:55:33 [INFO] epoch   40  train_loss=0.00200  val_mae= 49.679  val_mse= 4258.43  best_mae= 16.905@e5  bad=7/30
+12:55:33 [INFO] epoch   45  train_loss=0.00164  val_mae= 45.136  val_mse= 3249.65  best_mae= 16.905@e5  bad=8/30
+12:55:33 [INFO] epoch   50  train_loss=0.00139  val_mae= 52.078  val_mse= 4660.55  best_mae= 16.905@e5  bad=9/30
+12:55:34 [INFO] epoch   55  train_loss=0.00102  val_mae= 50.443  val_mse= 4318.92  best_mae= 16.905@e5  bad=10/30
+12:55:34 [INFO] epoch   60  train_loss=0.00125  val_mae= 46.145  val_mse= 3359.38  best_mae= 16.905@e5  bad=11/30
+12:55:35 [INFO] epoch   65  train_loss=0.00083  val_mae= 44.229  val_mse= 3114.24  best_mae= 16.905@e5  bad=12/30
+12:55:35 [INFO] epoch   70  train_loss=0.00131  val_mae= 44.330  val_mse= 3292.78  best_mae= 16.905@e5  bad=13/30
+12:55:36 [INFO] epoch   75  train_loss=0.00064  val_mae= 55.113  val_mse= 5440.80  best_mae= 16.905@e5  bad=14/30
+12:55:36 [INFO] epoch   80  train_loss=0.00070  val_mae= 46.042  val_mse= 3513.24  best_mae= 16.905@e5  bad=15/30
+12:55:37 [INFO] epoch   85  train_loss=0.00021  val_mae= 51.395  val_mse= 4567.69  best_mae= 16.905@e5  bad=16/30
+12:55:37 [INFO] epoch   90  train_loss=0.00021  val_mae= 51.997  val_mse= 4783.48  best_mae= 16.905@e5  bad=17/30
+12:55:38 [INFO] epoch   95  train_loss=0.00017  val_mae= 51.699  val_mse= 4716.72  best_mae= 16.905@e5  bad=18/30
+12:55:38 [INFO] epoch  100  train_loss=0.00015  val_mae= 52.053  val_mse= 4747.49  best_mae= 16.905@e5  bad=19/30
+12:55:38 [INFO]   test MAE=25.472  inner-val MAE=16.905  best@e5
+12:55:38 [INFO] 
+--- member=lstm_best  seed=2  holdout=C  window=30  scaler=minmax_0_1 ---
+12:55:38 [INFO] epoch    5  train_loss=0.04703  val_mae= 50.274  val_mse= 4036.08  best_mae= 50.274@e5  bad=0/30
+12:55:39 [INFO] epoch   10  train_loss=0.03976  val_mae= 53.671  val_mse= 3981.00  best_mae= 50.274@e5  bad=1/30
+12:55:39 [INFO] epoch   15  train_loss=0.00921  val_mae= 61.279  val_mse= 5696.75  best_mae= 50.274@e5  bad=2/30
+12:55:39 [INFO] epoch   20  train_loss=0.00400  val_mae= 30.903  val_mse= 2180.14  best_mae= 30.903@e20  bad=0/30
+12:55:39 [INFO] epoch   25  train_loss=0.00355  val_mae= 65.000  val_mse= 6893.54  best_mae= 30.903@e20  bad=1/30
+12:55:39 [INFO] epoch   30  train_loss=0.00237  val_mae= 41.871  val_mse= 3459.03  best_mae= 30.903@e20  bad=2/30
+12:55:40 [INFO] epoch   35  train_loss=0.00195  val_mae= 38.577  val_mse= 3571.71  best_mae= 30.903@e20  bad=3/30
+12:55:40 [INFO] epoch   40  train_loss=0.00185  val_mae= 59.428  val_mse= 5725.82  best_mae= 30.903@e20  bad=4/30
+12:55:40 [INFO] epoch   45  train_loss=0.00172  val_mae= 28.094  val_mse= 1872.88  best_mae= 28.094@e45  bad=0/30
+12:55:41 [INFO] epoch   50  train_loss=0.00099  val_mae= 27.135  val_mse= 1727.88  best_mae= 27.135@e50  bad=0/30
+12:55:41 [INFO] epoch   55  train_loss=0.00082  val_mae= 57.983  val_mse= 5246.82  best_mae= 27.135@e50  bad=1/30
+12:55:41 [INFO] epoch   60  train_loss=0.00037  val_mae= 54.838  val_mse= 5075.53  best_mae= 27.135@e50  bad=2/30
+12:55:42 [INFO] epoch   65  train_loss=0.00017  val_mae= 40.316  val_mse= 4015.26  best_mae= 27.135@e50  bad=3/30
+12:55:42 [INFO] epoch   70  train_loss=0.00013  val_mae= 55.801  val_mse= 4940.73  best_mae= 27.135@e50  bad=4/30
+12:55:43 [INFO] epoch   75  train_loss=0.00020  val_mae= 47.672  val_mse= 4724.82  best_mae= 27.135@e50  bad=5/30
+12:55:43 [INFO] epoch   80  train_loss=0.00013  val_mae= 68.379  val_mse= 7590.41  best_mae= 27.135@e50  bad=6/30
+12:55:43 [INFO] epoch   85  train_loss=0.00010  val_mae= 66.170  val_mse= 7384.17  best_mae= 27.135@e50  bad=7/30
+12:55:44 [INFO] epoch   90  train_loss=0.00012  val_mae= 67.726  val_mse= 8023.66  best_mae= 27.135@e50  bad=8/30
+12:55:44 [INFO] epoch   95  train_loss=0.00010  val_mae= 61.955  val_mse= 7339.08  best_mae= 27.135@e50  bad=9/30
+12:55:45 [INFO] epoch  100  train_loss=0.00009  val_mae= 62.249  val_mse= 7358.47  best_mae= 27.135@e50  bad=10/30
+12:55:45 [INFO]   test MAE=54.470  inner-val MAE=27.135  best@e50
+12:55:46 [INFO] 
+=== ensemble summary ===
+12:55:46 [INFO] {
+  "mean": 24.91359375579852,
+  "median": 25.844285083506254,
+  "weighted": 25.327485856200926
+}
+12:55:46 [INFO] winning strategy by mean MAE: mean (24.914)
+12:55:46 [INFO] 
+wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\baselines\milestone7_ensembles_top_per_family\REPORT.md

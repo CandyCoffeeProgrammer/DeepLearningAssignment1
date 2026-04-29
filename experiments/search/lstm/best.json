@@ -1,0 +1,25 @@
+{
+  "family": "lstm",
+  "trial": 7,
+  "mean_mae": 29.78320849330387,
+  "worst_mae": 48.27089730233624,
+  "per_holdout_mae": {
+    "A": 14.860712247194952,
+    "B": 26.21801593038042,
+    "C": 48.27089730233624
+  },
+  "params": {
+    "window": 30,
+    "hidden_dim": 128,
+    "num_layers": 1,
+    "dropout": 0.006182646611546972,
+    "scaler": "standard",
+    "lr": 0.004598222491825369,
+    "batch_size": 32,
+    "weight_decay": 1.4298589094443983e-05,
+    "lr_scheduler": "onecycle",
+    "k_max": 5,
+    "p_max": 0.0,
+    "input_noise_sigma": 0.005
+  }
+}

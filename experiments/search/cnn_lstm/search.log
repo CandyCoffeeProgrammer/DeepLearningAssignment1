@@ -1,0 +1,44 @@
+12:41:32 [INFO] family=cnn_lstm  n_trials=15  seed=42  epochs=60  device=cuda
+12:41:32 [INFO] storage=sqlite:///C:/Users/renat/OneDrive/Desktop/faks/Utrecht/Deep Learning/DeepLearningAssignment1/experiments/search/optuna.db  study=santa_fe_cnn_lstm  leaderboard=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\cnn_lstm\trials.csv
+12:41:44 [INFO] trial   0  family=cnn_lstm  mean_mae= 37.448  worst= 52.539  per_holdout=A=33.27, B=26.54, C=52.54
+12:41:53 [INFO] trial   1  family=cnn_lstm  mean_mae= 32.656  worst= 40.977  per_holdout=A=30.52, B=26.47, C=40.98
+12:42:05 [INFO] trial   2  family=cnn_lstm  mean_mae= 38.236  worst= 53.699  per_holdout=A=34.15, B=26.86, C=53.70
+12:42:15 [INFO] trial   3  family=cnn_lstm  mean_mae= 30.524  worst= 31.628  per_holdout=A=30.15, B=29.80, C=31.63
+12:42:36 [INFO] trial   4  family=cnn_lstm  mean_mae= 35.481  worst= 43.484  per_holdout=A=38.86, B=24.10, C=43.48
+12:43:09 [INFO] trial   5  family=cnn_lstm  mean_mae= 40.175  worst= 52.529  per_holdout=A=33.79, B=34.21, C=52.53
+12:43:15 [INFO] trial   6  family=cnn_lstm  mean_mae= 41.252  worst= 50.258  per_holdout=A=43.94, B=29.56, C=50.26
+12:43:30 [INFO] trial   7  family=cnn_lstm  mean_mae= 40.101  worst= 51.964  per_holdout=A=41.58, B=26.76, C=51.96
+12:43:44 [INFO] trial   8  family=cnn_lstm  mean_mae= 40.945  worst= 53.633  per_holdout=A=39.17, B=30.04, C=53.63
+12:44:04 [INFO] trial   9  family=cnn_lstm  mean_mae= 41.856  worst= 50.228  per_holdout=A=49.91, B=25.43, C=50.23
+12:44:14 [INFO] trial  10  family=cnn_lstm  mean_mae= 29.474  worst= 43.905  per_holdout=A=13.39, B=31.13, C=43.91
+12:44:25 [INFO] trial  11  family=cnn_lstm  mean_mae= 44.732  worst= 53.604  per_holdout=A=53.46, B=27.13, C=53.60
+12:44:37 [INFO] trial  12  family=cnn_lstm  mean_mae= 35.617  worst= 53.274  per_holdout=A=28.15, B=25.43, C=53.27
+12:44:47 [INFO] trial  13  family=cnn_lstm  mean_mae= 43.078  worst= 53.351  per_holdout=A=48.74, B=27.14, C=53.35
+12:45:03 [INFO] trial  14  family=cnn_lstm  mean_mae= 40.522  worst= 51.705  per_holdout=A=44.19, B=25.66, C=51.71
+12:45:03 [INFO] 
+finished cnn_lstm: 15 trials
+12:45:03 [INFO] best trial #10  mean_mae=29.4740
+12:45:03 [INFO] best params:
+{
+  "window": 40,
+  "hidden_dim": 128,
+  "num_layers": 1,
+  "dropout": 0.16906601855699682,
+  "kernel_size": 5,
+  "conv_layers": 1,
+  "scaler": "minmax_0_1",
+  "lr": 0.0011025839141573896,
+  "batch_size": 64,
+  "weight_decay": 0.00011478935083235049,
+  "lr_scheduler": "plateau",
+  "k_max": 3,
+  "p_max": 0.25,
+  "input_noise_sigma": 0.0
+}
+12:45:03 [INFO] best per-holdout:
+{
+  "A": 13.386465941406787,
+  "B": 31.130499088168143,
+  "C": 43.90510504223406
+}
+12:45:03 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\cnn_lstm\best.json

@@ -1,0 +1,42 @@
+12:29:31 [INFO] family=lstm  n_trials=15  seed=42  epochs=60  device=cuda
+12:29:31 [INFO] storage=sqlite:///C:/Users/renat/OneDrive/Desktop/faks/Utrecht/Deep Learning/DeepLearningAssignment1/experiments/search/optuna.db  study=santa_fe_lstm  leaderboard=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\lstm\trials.csv
+12:29:49 [INFO] trial   0  family=lstm  mean_mae= 45.146  worst= 50.446  per_holdout=A=47.96, B=37.04, C=50.45
+12:29:58 [INFO] trial   1  family=lstm  mean_mae= 33.023  worst= 51.770  per_holdout=A=51.77, B=25.05, C=22.25
+12:30:08 [INFO] trial   2  family=lstm  mean_mae= 34.933  worst= 49.716  per_holdout=A=28.99, B=26.09, C=49.72
+12:30:13 [INFO] trial   3  family=lstm  mean_mae= 38.863  worst= 51.861  per_holdout=A=38.75, B=25.97, C=51.86
+12:30:28 [INFO] trial   4  family=lstm  mean_mae= 35.007  worst= 45.159  per_holdout=A=33.70, B=26.17, C=45.16
+12:30:35 [INFO] trial   5  family=lstm  mean_mae= 35.499  worst= 48.912  per_holdout=A=29.85, B=27.74, C=48.91
+12:30:40 [INFO] trial   6  family=lstm  mean_mae= 43.747  worst= 54.088  per_holdout=A=54.09, B=25.79, C=51.36
+12:30:54 [INFO] trial   7  family=lstm  mean_mae= 29.783  worst= 48.271  per_holdout=A=14.86, B=26.22, C=48.27
+12:31:15 [INFO] trial   8  family=lstm  mean_mae= 36.192  worst= 38.186  per_holdout=A=33.39, B=38.19, C=37.00
+12:31:25 [INFO] trial   9  family=lstm  mean_mae= 36.202  worst= 49.826  per_holdout=A=39.09, B=19.69, C=49.83
+12:31:40 [INFO] trial  10  family=lstm  mean_mae= 33.635  worst= 51.883  per_holdout=A=23.03, B=25.99, C=51.88
+12:31:48 [INFO] trial  11  family=lstm  mean_mae= 37.778  worst= 56.335  per_holdout=A=31.12, B=25.88, C=56.33
+12:31:59 [INFO] trial  12  family=lstm  mean_mae= 31.289  worst= 56.652  per_holdout=A=11.22, B=25.99, C=56.65
+12:32:11 [INFO] trial  13  family=lstm  mean_mae= 37.759  worst= 48.714  per_holdout=A=33.13, B=31.43, C=48.71
+12:32:22 [INFO] trial  14  family=lstm  mean_mae= 45.062  worst= 59.236  per_holdout=A=46.81, B=29.14, C=59.24
+12:32:22 [INFO] 
+finished lstm: 15 trials
+12:32:22 [INFO] best trial #7  mean_mae=29.7832
+12:32:22 [INFO] best params:
+{
+  "window": 30,
+  "hidden_dim": 128,
+  "num_layers": 1,
+  "dropout": 0.006182646611546972,
+  "scaler": "standard",
+  "lr": 0.004598222491825369,
+  "batch_size": 32,
+  "weight_decay": 1.4298589094443983e-05,
+  "lr_scheduler": "onecycle",
+  "k_max": 5,
+  "p_max": 0.0,
+  "input_noise_sigma": 0.005
+}
+12:32:22 [INFO] best per-holdout:
+{
+  "A": 14.860712247194952,
+  "B": 26.21801593038042,
+  "C": 48.27089730233624
+}
+12:32:22 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\lstm\best.json

@@ -1,0 +1,43 @@
+12:37:54 [INFO] family=tcn  n_trials=15  seed=42  epochs=60  device=cuda
+12:37:54 [INFO] storage=sqlite:///C:/Users/renat/OneDrive/Desktop/faks/Utrecht/Deep Learning/DeepLearningAssignment1/experiments/search/optuna.db  study=santa_fe_tcn  leaderboard=C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\tcn\trials.csv
+12:38:05 [INFO] trial   0  family=tcn  mean_mae= 35.125  worst= 44.582  per_holdout=A=33.86, B=26.93, C=44.58
+12:38:37 [INFO] trial   1  family=tcn  mean_mae= 20.595  worst= 25.296  per_holdout=A=24.30, B=25.30, C=12.19
+12:38:47 [INFO] trial   2  family=tcn  mean_mae= 33.339  worst= 37.708  per_holdout=A=37.71, B=29.86, C=32.45
+12:38:54 [INFO] trial   3  family=tcn  mean_mae= 25.039  worst= 31.961  per_holdout=A=31.96, B=25.06, C=18.10
+12:39:00 [INFO] trial   4  family=tcn  mean_mae= 26.585  worst= 34.932  per_holdout=A=34.93, B=25.99, C=18.83
+12:39:06 [INFO] trial   5  family=tcn  mean_mae= 26.085  worst= 32.637  per_holdout=A=32.64, B=27.82, C=17.79
+12:39:16 [INFO] trial   6  family=tcn  mean_mae= 22.237  worst= 34.833  per_holdout=A=34.83, B=14.75, C=17.13
+12:39:36 [INFO] trial   7  family=tcn  mean_mae= 28.222  worst= 33.226  per_holdout=A=33.23, B=25.64, C=25.80
+12:39:46 [INFO] trial   8  family=tcn  mean_mae= 21.953  worst= 28.514  per_holdout=A=20.87, B=16.47, C=28.51
+12:39:54 [INFO] trial   9  family=tcn  mean_mae= 38.948  worst= 64.159  per_holdout=A=32.17, B=20.51, C=64.16
+12:40:08 [INFO] trial  10  family=tcn  mean_mae= 33.428  worst= 40.644  per_holdout=A=33.42, B=26.23, C=40.64
+12:40:40 [INFO] trial  11  family=tcn  mean_mae= 38.583  worst= 54.271  per_holdout=A=35.71, B=25.76, C=54.27
+12:40:49 [INFO] trial  12  family=tcn  mean_mae= 25.205  worst= 31.498  per_holdout=A=31.50, B=25.25, C=18.86
+12:41:21 [INFO] trial  13  family=tcn  mean_mae= 27.822  worst= 37.186  per_holdout=A=37.19, B=24.86, C=21.42
+12:41:30 [INFO] trial  14  family=tcn  mean_mae= 29.160  worst= 33.418  per_holdout=A=33.42, B=23.75, C=30.31
+12:41:30 [INFO] 
+finished tcn: 15 trials
+12:41:30 [INFO] best trial #1  mean_mae=20.5953
+12:41:30 [INFO] best params:
+{
+  "window": 10,
+  "hidden_dim": 32,
+  "num_layers": 2,
+  "dropout": 0.21868411173731186,
+  "kernel_size": 5,
+  "scaler": "minmax_neg1_1",
+  "lr": 0.001980933895203292,
+  "batch_size": 32,
+  "weight_decay": 3.87211803217458e-06,
+  "lr_scheduler": "plateau",
+  "k_max": 5,
+  "p_max": 0.5,
+  "input_noise_sigma": 0.02
+}
+12:41:30 [INFO] best per-holdout:
+{
+  "A": 24.30330254551023,
+  "B": 25.296459228247404,
+  "C": 12.186273729167878
+}
+12:41:30 [INFO] wrote C:\Users\renat\OneDrive\Desktop\faks\Utrecht\Deep Learning\DeepLearningAssignment1\experiments\search\tcn\best.json
