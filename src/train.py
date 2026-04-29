@@ -183,3 +183,83 @@ def train_model(
         "best_epoch": best_epoch,
         "best_inner_val_mae": best_mae,
     }
+
+
+def train_full(
+    model: BaseForecaster,
+    series_scaled,
+    cfg: dict,
+    *,
+    window: int,
+    epochs: int,
+    device: torch.device,
+    logger: logging.Logger | None = None,
+) -> dict[str, Any]:
+    """Final-stage training: fit on the full Xtrain (1..1000) for a fixed
+    number of epochs with no validation and no early stopping.
+
+    Used by milestone 8 (full-data retrain). The epoch count is normally the
+    median best-epoch across seeds from the search/holdout phase, since there
+    is no validation curve to early-stop against.
+
+    Returns final state dict + history.
+    """
+    log = logger or logging.getLogger("train_full")
+
+    ms_cfg = cfg.get("multistep", {}) or {}
+    k_max = int(ms_cfg.get("k_max", 1))
+    k_anneal = int(ms_cfg.get("anneal_epochs", 0))
+
+    ss_cfg = cfg.get("scheduled_sampling", {}) or {}
+    p_max = float(ss_cfg.get("p_max", 0.0))
+    p_anneal = int(ss_cfg.get("anneal_epochs", 0))
+
+    input_noise = float(cfg.get("input_noise_sigma", 0.0))
+
+    horizon = max(1, k_max)
+    train_ds = LaserWindowDataset(series_scaled, window=window, horizon=horizon)
+    train_loader = DataLoader(
+        train_ds,
+        batch_size=int(cfg["batch_size"]),
+        shuffle=True,
+        drop_last=False,
+    )
+
+    model.to(device)
+    optimizer = _build_optimizer(model, cfg)
+    scheduler = _build_scheduler(optimizer, cfg, epochs=epochs, steps_per_epoch=max(1, len(train_loader)))
+    is_onecycle = isinstance(scheduler, torch.optim.lr_scheduler.OneCycleLR)
+    grad_clip = float(cfg.get("grad_clip", 0.0))
+
+    history: list[dict[str, Any]] = []
+    for epoch in range(1, epochs + 1):
+        k_t = anneal_k(epoch - 1, k_anneal, k_max)
+        p_t = linear_anneal(epoch - 1, p_anneal, start=0.0, end=p_max)
+
+        model.train()
+        running = 0.0
+        n_obs = 0
+        for x, y in train_loader:
+            x = x.to(device, non_blocking=True)
+            y = y.to(device, non_blocking=True)
+            loss = multistep_step(model, x, y, k_t=k_t, p_t=p_t, input_noise=input_noise)
+            optimizer.zero_grad(set_to_none=True)
+            loss.backward()
+            if grad_clip > 0:
+                nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
+            optimizer.step()
+            if is_onecycle:
+                scheduler.step()
+            running += loss.item() * x.size(0)
+            n_obs += x.size(0)
+        epoch_loss = running / max(1, n_obs)
+        history.append({"epoch": epoch, "train_loss": epoch_loss, "k_t": k_t, "p_t": p_t})
+
+        if epoch % 25 == 0 or epoch == epochs:
+            log.info(f"epoch {epoch:4d}  train_loss={epoch_loss:.5f}  k_t={k_t}  p_t={p_t:.3f}")
+
+    return {
+        "history": history,
+        "final_state_dict": {k: v.detach().cpu().clone() for k, v in model.state_dict().items()},
+        "epochs": epochs,
+    }

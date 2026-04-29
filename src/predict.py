@@ -68,3 +68,62 @@ def predict_inner_val(
         "pred_orig": pred_orig,
         "true_orig": holdout.inner_val,
     }
+
+
+# ============================================================================
+# Ensembling
+# ============================================================================
+#
+# Critical rule: each ensemble member rolls out independently for the full
+# horizon using its OWN predictions. Then we aggregate the trajectories.
+# Aggregating per step and feeding the aggregate back destroys diversity and
+# consistently underperforms in the time-series literature.
+
+def ensemble_trajectories(
+    trajectories: list[np.ndarray],
+    *,
+    method: str = "mean",
+    weights: list[float] | None = None,
+) -> np.ndarray:
+    """Aggregate independent recursive trajectories.
+
+    Args:
+        trajectories: list of 1-D arrays each of length `n_steps`.
+        method:       'mean', 'median', or 'weighted'.
+        weights:      required for 'weighted'; will be normalised to sum to 1.
+                      Use weights inversely proportional to inner-val MAE.
+    Returns:
+        aggregated trajectory, shape (n_steps,).
+    """
+    if not trajectories:
+        raise ValueError("no trajectories provided")
+    arr = np.stack(
+        [np.asarray(t, dtype=np.float64).reshape(-1) for t in trajectories],
+        axis=0,
+    )  # (n_members, n_steps)
+
+    method = method.lower()
+    if method == "mean":
+        return arr.mean(axis=0)
+    if method == "median":
+        return np.median(arr, axis=0)
+    if method == "weighted":
+        if weights is None:
+            raise ValueError("weighted ensemble needs weights")
+        w = np.asarray(weights, dtype=np.float64).reshape(-1)
+        if w.shape != (arr.shape[0],):
+            raise ValueError(
+                f"len(weights)={w.shape[0]} != n_members={arr.shape[0]}"
+            )
+        if (w <= 0).any():
+            raise ValueError("weights must be strictly positive")
+        w = w / w.sum()
+        return (w[:, None] * arr).sum(axis=0)
+    raise ValueError(f"unknown ensemble method {method!r}")
+
+
+def inverse_inner_val_weights(inner_val_maes: list[float], eps: float = 1e-3) -> list[float]:
+    """Return weights inversely proportional to inner-val MAE (lower is better)."""
+    arr = np.asarray(inner_val_maes, dtype=np.float64) + eps
+    w = 1.0 / arr
+    return list(w)
