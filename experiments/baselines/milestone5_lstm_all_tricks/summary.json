@@ -1,0 +1,123 @@
+{
+  "family": "lstm",
+  "variant": "all_tricks",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 200,
+  "anneal": 150,
+  "overall_mean_mae": 35.945826330793395,
+  "worst_holdout": "C",
+  "worst_holdout_mean_mae": 53.87112639877946,
+  "per_holdout": {
+    "A": {
+      "mae_mean": 28.172092274924115,
+      "mae_std": 16.537950052885282,
+      "mae_best": 5.094743528105319,
+      "mae_worst": 43.00206867653876,
+      "mse_mean": 2559.663234142467,
+      "nmse_mean": 1.2892290655760308
+    },
+    "B": {
+      "mae_mean": 25.79426031867663,
+      "mae_std": 0.24118995684344727,
+      "mae_best": 25.465050350427628,
+      "mae_worst": 26.036160131394862,
+      "mse_mean": 989.2384631415631,
+      "nmse_mean": 1.0405741755315931
+    },
+    "C": {
+      "mae_mean": 53.87112639877946,
+      "mae_std": 1.316269343580606,
+      "mae_best": 52.01453373771161,
+      "mae_worst": 54.916235594302414,
+      "mse_mean": 4549.914992969035,
+      "nmse_mean": 6.690664041282955
+    }
+  },
+  "per_run": [
+    {
+      "holdout": "A",
+      "seed": 0,
+      "best_epoch": 85,
+      "best_inner_val_mae": 3.905129369571805,
+      "test_mae": 43.00206867653876,
+      "test_mse": 3963.795841204948,
+      "test_nmse": 1.9964504472022206
+    },
+    {
+      "holdout": "A",
+      "seed": 1,
+      "best_epoch": 145,
+      "best_inner_val_mae": 7.4457333824038505,
+      "test_mae": 36.419464620128274,
+      "test_mse": 3614.6462576648237,
+      "test_nmse": 1.820593801167885
+    },
+    {
+      "holdout": "A",
+      "seed": 2,
+      "best_epoch": 175,
+      "best_inner_val_mae": 1.7537597853690385,
+      "test_mae": 5.094743528105319,
+      "test_mse": 100.54760355763061,
+      "test_nmse": 0.05064294835798635
+    },
+    {
+      "holdout": "B",
+      "seed": 0,
+      "best_epoch": 15,
+      "best_inner_val_mae": 17.20682454586029,
+      "test_mae": 25.8815704742074,
+      "test_mse": 966.2507511065525,
+      "test_nmse": 1.0163935351810107
+    },
+    {
+      "holdout": "B",
+      "seed": 1,
+      "best_epoch": 5,
+      "best_inner_val_mae": 16.966149090230466,
+      "test_mae": 25.465050350427628,
+      "test_mse": 1044.2945436408593,
+      "test_nmse": 1.0984873458218165
+    },
+    {
+      "holdout": "B",
+      "seed": 2,
+      "best_epoch": 20,
+      "best_inner_val_mae": 17.494794408082964,
+      "test_mae": 26.036160131394862,
+      "test_mse": 957.1700946772777,
+      "test_nmse": 1.0068416455919522
+    },
+    {
+      "holdout": "C",
+      "seed": 0,
+      "best_epoch": 95,
+      "best_inner_val_mae": 33.15200242742896,
+      "test_mae": 54.682609864324334,
+      "test_mse": 4777.340390936654,
+      "test_nmse": 7.025093790983286
+    },
+    {
+      "holdout": "C",
+      "seed": 1,
+      "best_epoch": 65,
+      "best_inner_val_mae": 48.01527748987078,
+      "test_mae": 54.916235594302414,
+      "test_mse": 4630.553658506043,
+      "test_nmse": 6.809243447860711
+    },
+    {
+      "holdout": "C",
+      "seed": 2,
+      "best_epoch": 90,
+      "best_inner_val_mae": 20.831460030004383,
+      "test_mae": 52.01453373771161,
+      "test_mse": 4241.850929464407,
+      "test_nmse": 6.2376548850048685
+    }
+  ]
+}
