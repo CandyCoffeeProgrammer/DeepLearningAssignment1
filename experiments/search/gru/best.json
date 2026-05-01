@@ -1,25 +1,25 @@
 {
   "family": "gru",
-  "trial": 13,
-  "mean_mae": 18.592307439160844,
-  "worst_mae": 27.357493284344674,
+  "trial": 88,
+  "mean_mae": 19.33442403621148,
+  "worst_mae": 25.410316420255462,
   "per_holdout_mae": {
-    "A": 3.1277215551957487,
-    "B": 27.357493284344674,
-    "C": 25.291707477942108
+    "A": 19.736720067282473,
+    "B": 25.410316420255462,
+    "C": 12.856235621096507
   },
   "params": {
-    "window": 10,
-    "hidden_dim": 64,
-    "num_layers": 1,
-    "dropout": 0.39035860829291213,
-    "scaler": "minmax_neg1_1",
-    "lr": 0.004986605544517985,
+    "window": 20,
+    "hidden_dim": 256,
+    "num_layers": 3,
+    "dropout": 0.26373502341637955,
+    "scaler": "standard",
+    "lr": 0.001084687631037761,
     "batch_size": 32,
-    "weight_decay": 3.9395320896035135e-06,
+    "weight_decay": 0.00077992282963869,
     "lr_scheduler": "onecycle",
-    "k_max": 3,
-    "p_max": 0.25,
-    "input_noise_sigma": 0.02
+    "k_max": 7,
+    "p_max": 0.5,
+    "input_noise_sigma": 0.005
   }
 }

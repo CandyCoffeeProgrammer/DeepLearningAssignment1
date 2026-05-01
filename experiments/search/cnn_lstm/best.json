@@ -1,27 +1,27 @@
 {
   "family": "cnn_lstm",
-  "trial": 10,
-  "mean_mae": 29.47402335726967,
-  "worst_mae": 43.90510504223406,
+  "trial": 63,
+  "mean_mae": 17.72257513790036,
+  "worst_mae": 29.821331070549085,
   "per_holdout_mae": {
-    "A": 13.386465941406787,
-    "B": 31.130499088168143,
-    "C": 43.90510504223406
+    "A": 8.677394251880676,
+    "B": 14.669000091271323,
+    "C": 29.821331070549085
   },
   "params": {
-    "window": 40,
+    "window": 50,
     "hidden_dim": 128,
-    "num_layers": 1,
-    "dropout": 0.16906601855699682,
-    "kernel_size": 5,
+    "num_layers": 2,
+    "dropout": 0.22142340143887101,
+    "kernel_size": 3,
     "conv_layers": 1,
-    "scaler": "minmax_0_1",
-    "lr": 0.0011025839141573896,
-    "batch_size": 64,
-    "weight_decay": 0.00011478935083235049,
+    "scaler": "standard",
+    "lr": 0.0006027145427952646,
+    "batch_size": 16,
+    "weight_decay": 2.509143211118013e-05,
     "lr_scheduler": "plateau",
     "k_max": 3,
-    "p_max": 0.25,
-    "input_noise_sigma": 0.0
+    "p_max": 0.0,
+    "input_noise_sigma": 0.01
   }
 }

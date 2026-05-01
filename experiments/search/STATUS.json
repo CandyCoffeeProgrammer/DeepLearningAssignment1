@@ -1,0 +1,18 @@
+{
+  "updated_at": "2026-05-01T13:05:44.794872Z",
+  "epoch": 150,
+  "total_epochs": 200,
+  "train_loss": 0.04182549119874791,
+  "family": "cnn1d",
+  "trial": 27,
+  "n_trials_total": 40,
+  "holdout": "A",
+  "holdout_idx": 1,
+  "n_holdouts": 3,
+  "best_so_far": 25.109696200477583,
+  "val_mae": 18.91153695628047,
+  "best_mae": 7.475174796432257,
+  "best_epoch": 60,
+  "elapsed_seconds": 28.94058060646057,
+  "elapsed_human": "0:00:28"
+}

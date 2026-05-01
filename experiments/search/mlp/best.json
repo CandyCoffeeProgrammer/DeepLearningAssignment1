@@ -1,25 +1,25 @@
 {
   "family": "mlp",
-  "trial": 2,
-  "mean_mae": 21.678274588435887,
-  "worst_mae": 36.730086880847814,
+  "trial": 25,
+  "mean_mae": 15.747046067230405,
+  "worst_mae": 21.371507668308915,
   "per_holdout_mae": {
-    "A": 21.276198585107924,
-    "B": 7.028538299351931,
-    "C": 36.730086880847814
+    "A": 10.683694988489151,
+    "B": 15.185935544893146,
+    "C": 21.371507668308915
   },
   "params": {
-    "window": 25,
-    "hidden_dim": 128,
-    "num_layers": 2,
-    "dropout": 0.04634762381005189,
-    "scaler": "minmax_0_1",
-    "lr": 0.0005787997763336387,
-    "batch_size": 64,
-    "weight_decay": 0.0001544608907504709,
-    "lr_scheduler": "plateau",
+    "window": 20,
+    "hidden_dim": 32,
+    "num_layers": 3,
+    "dropout": 0.11633570863736406,
+    "scaler": "minmax_neg1_1",
+    "lr": 0.0012010305867474456,
+    "batch_size": 16,
+    "weight_decay": 1.843062657824076e-06,
+    "lr_scheduler": "onecycle",
     "k_max": 5,
     "p_max": 0.5,
-    "input_noise_sigma": 0.005
+    "input_noise_sigma": 0.01
   }
 }

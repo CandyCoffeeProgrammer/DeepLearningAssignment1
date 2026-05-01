@@ -1,0 +1,131 @@
+members:
+- name: mlp_best
+  window: 20
+  scaler: minmax_neg1_1
+  inner_val_mae_proxy: 15.75
+  model:
+    family: mlp
+    hidden_dim: 32
+    num_layers: 3
+    dropout: 0.11633570863736406
+  training_overrides:
+    lr: 0.0012010305867474456
+    batch_size: 16
+    weight_decay: 1.843062657824076e-06
+    lr_scheduler: onecycle
+    multistep:
+      k_max: 5
+      anneal_epochs: 75
+    scheduled_sampling:
+      p_max: 0.5
+      anneal_epochs: 75
+    input_noise_sigma: 0.01
+- name: cnn_lstm_best
+  window: 50
+  scaler: standard
+  inner_val_mae_proxy: 17.72
+  model:
+    family: cnn_lstm
+    hidden_dim: 128
+    num_layers: 2
+    dropout: 0.22142340143887101
+    kernel_size: 3
+    conv_layers: 1
+  training_overrides:
+    lr: 0.0006027145427952646
+    batch_size: 16
+    weight_decay: 2.509143211118013e-05
+    lr_scheduler: plateau
+    multistep:
+      k_max: 3
+      anneal_epochs: 75
+    scheduled_sampling:
+      p_max: 0.0
+      anneal_epochs: 0
+    input_noise_sigma: 0.01
+- name: lstm_best
+  window: 75
+  scaler: standard
+  inner_val_mae_proxy: 18.4
+  model:
+    family: lstm
+    hidden_dim: 256
+    num_layers: 2
+    dropout: 0.1983578625884575
+  training_overrides:
+    lr: 0.0017496729287767763
+    batch_size: 64
+    weight_decay: 0.00042282017847815995
+    lr_scheduler: plateau
+    multistep:
+      k_max: 10
+      anneal_epochs: 75
+    scheduled_sampling:
+      p_max: 0.5
+      anneal_epochs: 75
+    input_noise_sigma: 0.02
+- name: tcn_best
+  window: 40
+  scaler: minmax_0_1
+  inner_val_mae_proxy: 19.04
+  model:
+    family: tcn
+    hidden_dim: 64
+    num_layers: 2
+    dropout: 0.1974618095407878
+    kernel_size: 3
+  training_overrides:
+    lr: 0.0005562273790483636
+    batch_size: 32
+    weight_decay: 4.845898935632805e-06
+    lr_scheduler: onecycle
+    multistep:
+      k_max: 5
+      anneal_epochs: 75
+    scheduled_sampling:
+      p_max: 0.25
+      anneal_epochs: 75
+    input_noise_sigma: 0.0
+- name: gru_best
+  window: 20
+  scaler: standard
+  inner_val_mae_proxy: 19.33
+  model:
+    family: gru
+    hidden_dim: 256
+    num_layers: 3
+    dropout: 0.26373502341637955
+  training_overrides:
+    lr: 0.001084687631037761
+    batch_size: 32
+    weight_decay: 0.00077992282963869
+    lr_scheduler: onecycle
+    multistep:
+      k_max: 7
+      anneal_epochs: 75
+    scheduled_sampling:
+      p_max: 0.5
+      anneal_epochs: 75
+    input_noise_sigma: 0.005
+- name: cnn1d_best
+  window: 25
+  scaler: minmax_0_1
+  inner_val_mae_proxy: 25.11
+  model:
+    family: cnn1d
+    hidden_dim: 32
+    num_layers: 3
+    dropout: 0.3483759995386029
+    kernel_size: 5
+  training_overrides:
+    lr: 0.0007374048068172036
+    batch_size: 16
+    weight_decay: 3.8573407980197675e-06
+    lr_scheduler: onecycle
+    multistep:
+      k_max: 10
+      anneal_epochs: 75
+    scheduled_sampling:
+      p_max: 0.0
+      anneal_epochs: 0
+    input_noise_sigma: 0.0

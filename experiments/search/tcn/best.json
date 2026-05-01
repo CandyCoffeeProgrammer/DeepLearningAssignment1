@@ -1,26 +1,26 @@
 {
   "family": "tcn",
-  "trial": 1,
-  "mean_mae": 20.595345167641838,
-  "worst_mae": 25.296459228247404,
+  "trial": 54,
+  "mean_mae": 19.04135960943997,
+  "worst_mae": 25.07389518767595,
   "per_holdout_mae": {
-    "A": 24.30330254551023,
-    "B": 25.296459228247404,
-    "C": 12.186273729167878
+    "A": 13.781209394037724,
+    "B": 25.07389518767595,
+    "C": 18.26897424660623
   },
   "params": {
-    "window": 10,
-    "hidden_dim": 32,
+    "window": 40,
+    "hidden_dim": 64,
     "num_layers": 2,
-    "dropout": 0.21868411173731186,
-    "kernel_size": 5,
-    "scaler": "minmax_neg1_1",
-    "lr": 0.001980933895203292,
+    "dropout": 0.1974618095407878,
+    "kernel_size": 3,
+    "scaler": "minmax_0_1",
+    "lr": 0.0005562273790483636,
     "batch_size": 32,
-    "weight_decay": 3.87211803217458e-06,
-    "lr_scheduler": "plateau",
+    "weight_decay": 4.845898935632805e-06,
+    "lr_scheduler": "onecycle",
     "k_max": 5,
-    "p_max": 0.5,
-    "input_noise_sigma": 0.02
+    "p_max": 0.25,
+    "input_noise_sigma": 0.0
   }
 }
