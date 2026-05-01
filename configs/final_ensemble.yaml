@@ -5,7 +5,7 @@
 members:
 
   - name: mlp_best
-    epochs: 100
+    epochs: 115
     seeds: [0, 1, 2, 3, 4]
     window: 20
     scaler: minmax_neg1_1
@@ -25,7 +25,7 @@ members:
       input_noise_sigma:   0.01
 
   - name: cnn_lstm_best
-    epochs: 100
+    epochs: 115
     seeds: [0, 1, 2, 3, 4]
     window: 50
     scaler: standard
@@ -47,7 +47,7 @@ members:
       input_noise_sigma:   0.01
 
   - name: lstm_best
-    epochs: 100
+    epochs: 145
     seeds: [0, 1, 2, 3, 4]
     window: 75
     scaler: standard
@@ -67,7 +67,7 @@ members:
       input_noise_sigma:   0.02
 
   - name: tcn_best
-    epochs: 100
+    epochs: 70
     seeds: [0, 1, 2, 3, 4]
     window: 40
     scaler: minmax_0_1
@@ -88,7 +88,7 @@ members:
       input_noise_sigma:   0.0
 
   - name: gru_best
-    epochs: 100
+    epochs: 60
     seeds: [0, 1, 2, 3, 4]
     window: 20
     scaler: standard
@@ -108,7 +108,7 @@ members:
       input_noise_sigma:   0.005
 
   - name: cnn1d_best
-    epochs: 100
+    epochs: 150
     seeds: [0, 1, 2, 3, 4]
     window: 25
     scaler: minmax_0_1

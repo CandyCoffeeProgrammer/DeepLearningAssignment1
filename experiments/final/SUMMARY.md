@@ -56,42 +56,42 @@ Source: `experiments\baselines\full_sweep_ensemble`
 
 ## Final ensemble (retrained on full Xtrain)
 
-Generated at: `2026-05-01T16:22:29.283839Z`
+Generated at: `2026-05-01T17:17:13.928133Z`
 Strategy: **weighted**, members: **30**, horizon: 200
-Forecast range: min=13.69  max=175.04  mean=59.61  std=23.98
+Forecast range: min=13.43  max=173.62  mean=60.10  std=24.77
 
 | tag | family | window | epochs | scaler |
 | --- | --- | ---: | ---: | --- |
-| mlp_best_s0 | mlp | 20 | 100 | minmax_neg1_1 |
-| mlp_best_s1 | mlp | 20 | 100 | minmax_neg1_1 |
-| mlp_best_s2 | mlp | 20 | 100 | minmax_neg1_1 |
-| mlp_best_s3 | mlp | 20 | 100 | minmax_neg1_1 |
-| mlp_best_s4 | mlp | 20 | 100 | minmax_neg1_1 |
-| cnn_lstm_best_s0 | cnn_lstm | 50 | 100 | standard |
-| cnn_lstm_best_s1 | cnn_lstm | 50 | 100 | standard |
-| cnn_lstm_best_s2 | cnn_lstm | 50 | 100 | standard |
-| cnn_lstm_best_s3 | cnn_lstm | 50 | 100 | standard |
-| cnn_lstm_best_s4 | cnn_lstm | 50 | 100 | standard |
-| lstm_best_s0 | lstm | 75 | 100 | standard |
-| lstm_best_s1 | lstm | 75 | 100 | standard |
-| lstm_best_s2 | lstm | 75 | 100 | standard |
-| lstm_best_s3 | lstm | 75 | 100 | standard |
-| lstm_best_s4 | lstm | 75 | 100 | standard |
-| tcn_best_s0 | tcn | 40 | 100 | minmax_0_1 |
-| tcn_best_s1 | tcn | 40 | 100 | minmax_0_1 |
-| tcn_best_s2 | tcn | 40 | 100 | minmax_0_1 |
-| tcn_best_s3 | tcn | 40 | 100 | minmax_0_1 |
-| tcn_best_s4 | tcn | 40 | 100 | minmax_0_1 |
-| gru_best_s0 | gru | 20 | 100 | standard |
-| gru_best_s1 | gru | 20 | 100 | standard |
-| gru_best_s2 | gru | 20 | 100 | standard |
-| gru_best_s3 | gru | 20 | 100 | standard |
-| gru_best_s4 | gru | 20 | 100 | standard |
-| cnn1d_best_s0 | cnn1d | 25 | 100 | minmax_0_1 |
-| cnn1d_best_s1 | cnn1d | 25 | 100 | minmax_0_1 |
-| cnn1d_best_s2 | cnn1d | 25 | 100 | minmax_0_1 |
-| cnn1d_best_s3 | cnn1d | 25 | 100 | minmax_0_1 |
-| cnn1d_best_s4 | cnn1d | 25 | 100 | minmax_0_1 |
+| mlp_best_s0 | mlp | 20 | 115 | minmax_neg1_1 |
+| mlp_best_s1 | mlp | 20 | 115 | minmax_neg1_1 |
+| mlp_best_s2 | mlp | 20 | 115 | minmax_neg1_1 |
+| mlp_best_s3 | mlp | 20 | 115 | minmax_neg1_1 |
+| mlp_best_s4 | mlp | 20 | 115 | minmax_neg1_1 |
+| cnn_lstm_best_s0 | cnn_lstm | 50 | 115 | standard |
+| cnn_lstm_best_s1 | cnn_lstm | 50 | 115 | standard |
+| cnn_lstm_best_s2 | cnn_lstm | 50 | 115 | standard |
+| cnn_lstm_best_s3 | cnn_lstm | 50 | 115 | standard |
+| cnn_lstm_best_s4 | cnn_lstm | 50 | 115 | standard |
+| lstm_best_s0 | lstm | 75 | 145 | standard |
+| lstm_best_s1 | lstm | 75 | 145 | standard |
+| lstm_best_s2 | lstm | 75 | 145 | standard |
+| lstm_best_s3 | lstm | 75 | 145 | standard |
+| lstm_best_s4 | lstm | 75 | 145 | standard |
+| tcn_best_s0 | tcn | 40 | 70 | minmax_0_1 |
+| tcn_best_s1 | tcn | 40 | 70 | minmax_0_1 |
+| tcn_best_s2 | tcn | 40 | 70 | minmax_0_1 |
+| tcn_best_s3 | tcn | 40 | 70 | minmax_0_1 |
+| tcn_best_s4 | tcn | 40 | 70 | minmax_0_1 |
+| gru_best_s0 | gru | 20 | 60 | standard |
+| gru_best_s1 | gru | 20 | 60 | standard |
+| gru_best_s2 | gru | 20 | 60 | standard |
+| gru_best_s3 | gru | 20 | 60 | standard |
+| gru_best_s4 | gru | 20 | 60 | standard |
+| cnn1d_best_s0 | cnn1d | 25 | 150 | minmax_0_1 |
+| cnn1d_best_s1 | cnn1d | 25 | 150 | minmax_0_1 |
+| cnn1d_best_s2 | cnn1d | 25 | 150 | minmax_0_1 |
+| cnn1d_best_s3 | cnn1d | 25 | 150 | minmax_0_1 |
+| cnn1d_best_s4 | cnn1d | 25 | 150 | minmax_0_1 |
 
 ## Expected test-set performance
 
