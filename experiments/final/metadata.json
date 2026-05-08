@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T17:17:13.928133Z",
+  "generated_at": "2026-05-08T14:02:32.305907Z",
   "strategy": "weighted",
   "n_members": 30,
   "horizon": 200,
@@ -40,7 +40,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\mlp_best_s0.pt"
     },
     {
       "tag": "mlp_best_s1",
@@ -78,7 +79,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\mlp_best_s1.pt"
     },
     {
       "tag": "mlp_best_s2",
@@ -116,7 +118,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\mlp_best_s2.pt"
     },
     {
       "tag": "mlp_best_s3",
@@ -154,7 +157,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\mlp_best_s3.pt"
     },
     {
       "tag": "mlp_best_s4",
@@ -192,7 +196,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\mlp_best_s4.pt"
     },
     {
       "tag": "cnn_lstm_best_s0",
@@ -230,7 +235,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn_lstm_best_s0.pt"
     },
     {
       "tag": "cnn_lstm_best_s1",
@@ -268,7 +274,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn_lstm_best_s1.pt"
     },
     {
       "tag": "cnn_lstm_best_s2",
@@ -306,7 +313,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn_lstm_best_s2.pt"
     },
     {
       "tag": "cnn_lstm_best_s3",
@@ -344,7 +352,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn_lstm_best_s3.pt"
     },
     {
       "tag": "cnn_lstm_best_s4",
@@ -382,7 +391,8 @@
         "input_noise_sigma": 0.01,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn_lstm_best_s4.pt"
     },
     {
       "tag": "lstm_best_s0",
@@ -420,7 +430,8 @@
         "input_noise_sigma": 0.02,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\lstm_best_s0.pt"
     },
     {
       "tag": "lstm_best_s1",
@@ -458,7 +469,8 @@
         "input_noise_sigma": 0.02,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\lstm_best_s1.pt"
     },
     {
       "tag": "lstm_best_s2",
@@ -496,7 +508,8 @@
         "input_noise_sigma": 0.02,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\lstm_best_s2.pt"
     },
     {
       "tag": "lstm_best_s3",
@@ -534,7 +547,8 @@
         "input_noise_sigma": 0.02,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\lstm_best_s3.pt"
     },
     {
       "tag": "lstm_best_s4",
@@ -572,7 +586,8 @@
         "input_noise_sigma": 0.02,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\lstm_best_s4.pt"
     },
     {
       "tag": "tcn_best_s0",
@@ -610,7 +625,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\tcn_best_s0.pt"
     },
     {
       "tag": "tcn_best_s1",
@@ -648,7 +664,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\tcn_best_s1.pt"
     },
     {
       "tag": "tcn_best_s2",
@@ -686,7 +703,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\tcn_best_s2.pt"
     },
     {
       "tag": "tcn_best_s3",
@@ -724,7 +742,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\tcn_best_s3.pt"
     },
     {
       "tag": "tcn_best_s4",
@@ -762,7 +781,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\tcn_best_s4.pt"
     },
     {
       "tag": "gru_best_s0",
@@ -800,7 +820,8 @@
         "input_noise_sigma": 0.005,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\gru_best_s0.pt"
     },
     {
       "tag": "gru_best_s1",
@@ -838,7 +859,8 @@
         "input_noise_sigma": 0.005,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\gru_best_s1.pt"
     },
     {
       "tag": "gru_best_s2",
@@ -876,7 +898,8 @@
         "input_noise_sigma": 0.005,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\gru_best_s2.pt"
     },
     {
       "tag": "gru_best_s3",
@@ -914,7 +937,8 @@
         "input_noise_sigma": 0.005,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\gru_best_s3.pt"
     },
     {
       "tag": "gru_best_s4",
@@ -952,7 +976,8 @@
         "input_noise_sigma": 0.005,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\gru_best_s4.pt"
     },
     {
       "tag": "cnn1d_best_s0",
@@ -990,7 +1015,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn1d_best_s0.pt"
     },
     {
       "tag": "cnn1d_best_s1",
@@ -1028,7 +1054,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn1d_best_s1.pt"
     },
     {
       "tag": "cnn1d_best_s2",
@@ -1066,7 +1093,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn1d_best_s2.pt"
     },
     {
       "tag": "cnn1d_best_s3",
@@ -1104,7 +1132,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn1d_best_s3.pt"
     },
     {
       "tag": "cnn1d_best_s4",
@@ -1142,7 +1171,8 @@
         "input_noise_sigma": 0.0,
         "recursive_eval_every": 5,
         "early_stop_patience": 30
-      }
+      },
+      "checkpoint": "experiments\\final\\checkpoints\\cnn1d_best_s4.pt"
     }
   ],
   "summary": {

@@ -146,6 +146,21 @@ def main() -> int:
                 window=window, epochs=epochs, device=device, logger=log,
             )
 
+            ckpt_dir = out_dir / "checkpoints"
+            ckpt_dir.mkdir(parents=True, exist_ok=True)
+            ckpt_path = ckpt_dir / f"{tag}.pt"
+            torch.save({
+                "tag": tag,
+                "family": m_cfg["model"]["family"],
+                "window": window,
+                "epochs": epochs,
+                "scaler": scaler_name,
+                "scaler_state": scaler.__dict__,
+                "model_cfg": m_cfg["model"],
+                "training_cfg": m_cfg["training"],
+                "state_dict": {k: v.detach().cpu() for k, v in model.state_dict().items()},
+            }, ckpt_path)
+
             # recursive rollout in scaled space, then inverse_transform
             pred_scaled = recursive_rollout(model, seed_window_scaled, n_steps=args.horizon)
             pred_orig = scaler.inverse_transform(pred_scaled)
@@ -156,6 +171,7 @@ def main() -> int:
                 "epochs": epochs, "window": window, "scaler": scaler_name,
                 "family": m_cfg["model"]["family"],
                 "model": m_cfg["model"], "training": m_cfg["training"],
+                "checkpoint": str(ckpt_path.relative_to(ROOT)),
             })
 
     # ---- aggregate ----

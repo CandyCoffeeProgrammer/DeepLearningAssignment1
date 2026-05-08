@@ -56,7 +56,7 @@ Source: `experiments\baselines\full_sweep_ensemble`
 
 ## Final ensemble (retrained on full Xtrain)
 
-Generated at: `2026-05-01T17:17:13.928133Z`
+Generated at: `2026-05-08T14:02:32.305907Z`
 Strategy: **weighted**, members: **30**, horizon: 200
 Forecast range: min=13.43  max=173.62  mean=60.10  std=24.77
 
@@ -108,3 +108,4 @@ Per holdout:
 ## Plots
 
 - Final 200-step forecast: `experiments\final\ensemble_preview.png`
+- Test comparison (after Xtest released): `experiments\final\test_comparison.png`

@@ -33,12 +33,16 @@ experiments/*
 !experiments/search/
 !experiments/search/**
 
-# Within tracked experiment dirs, still ignore checkpoints + optuna DBs
+# Within tracked experiment dirs, still ignore checkpoints + optuna DBs ...
 **/checkpoints/
 *.pt
 *.pth
 **/optuna.db
 **/optuna_journal.log
+
+# ... but DO track the final-submission ensemble checkpoints so the model is reproducible
+!experiments/final/checkpoints/
+!experiments/final/checkpoints/**.pt
 
 # Data: keep Xtrain.mat (it's small, 1 KB), but ignore Xtest if it ever appears next to it
 # Xtest will be added later by the team / instructor
