@@ -1,0 +1,12 @@
+{
+  "scored_at": "2026-05-08T10:36:34.438702Z",
+  "predictions_path": "C:\\Users\\renat\\OneDrive\\Desktop\\faks\\Utrecht\\Deep Learning\\DeepLearningAssignment1\\experiments\\final\\predictions.npy",
+  "xtest_path": "C:\\Users\\renat\\OneDrive\\Desktop\\faks\\Utrecht\\Deep Learning\\DeepLearningAssignment1\\data\\Xtest.mat",
+  "n_steps": 200,
+  "metrics": {
+    "mae": 18.67467644916531,
+    "mse": 783.8329242431419,
+    "rmse": 27.997016345374053,
+    "nmse": 0.46988455280791025
+  }
+}
